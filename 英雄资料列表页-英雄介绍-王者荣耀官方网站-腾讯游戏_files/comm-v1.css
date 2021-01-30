@@ -59,7 +59,7 @@ body{padding-top:42px;background:#fff;font:14px/1.5 "Microsoft YaHei",Tahoma,"si
 .spc-header .wrapper{padding-top:480px;}
 .kv-bg{overflow: hidden;position:absolute;left:0;top:0;width:100%;height:1100px;background-repeat:no-repeat;background-position:center top;}
 .kv-bg video{width: 1920px;height:1100px;position: absolute;left:50%;top:0;margin-left:-960px;}
-.kv-link{position:absolute;z-index:2;width:400px;height:418px;top:84px;left:50%;margin-left:-200px;outline:none;text-indent:-9999px;overflow:hidden;}
+.kv-link{position:absolute;z-index:2;width:1200px;height:418px;top:84px;left:50%;margin-left:-600px;outline:none;text-indent:-9999px;overflow:hidden;}
 .kv-anni{position: absolute;z-index:2;width:110px;height:110px;top:336px;left:50%;display: block;text-indent: -9999px}
 .kv-anni-1{margin-left:-84px;}
 .kv-anni-2{margin-left:60px;}
@@ -67,18 +67,21 @@ body{padding-top:42px;background:#fff;font:14px/1.5 "Microsoft YaHei",Tahoma,"si
 .kv-anni-4{margin-left:348px;}
 
 .logo{left:0;top:16px;z-index:100;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/logo.png) no-repeat center center;width:200px;height:54px;text-indent:-999px;overflow:hidden;}
-.kv_link{position:absolute;z-index:2;width:400px;height:420px;top:80px;left:50%;margin-left:-200px;outline:none;text-indent:-9999px;overflow:hidden;}
+.kv_link{position:absolute;z-index:2;width:1200px;height:420px;top:80px;left:50%;margin-left:-600px;outline:none;text-indent:-9999px;overflow:hidden;}
 /*----header----*/
 .header{position:absolute;left:0;top:42px;width:100%;min-width:1280px;height:84px;z-index:99;background:#000;background:rgba(0,0,0,0.8);}
 .header-inner{width:1200px;height:84px;margin:0 auto;position:relative;}
 .header-dialog{position:absolute;left:0;top:0;z-index:9999;}
 .sub-nav {transition: all .3s ease; position:absolute;top:83px;left:0;width:100%;background:#000;background:rgba(0,0,0,0.7);z-index:3; overflow: hidden;height: 0;box-sizing: border-box;} 
 .header-nav:hover .sub-nav{height: 285px;}
-.sub-nav-inner {width:970px;height:240px;margin:0 auto;overflow:hidden;zoom:1;padding-top:15px;padding-bottom:30px;padding: 15px 0 30px 230px;}
+.sub-nav-inner {width:790px;height:240px;margin:0 auto;overflow:hidden;zoom:1;padding-top:15px;padding-bottom:30px;padding: 15px 0 30px 50px;}
 .view-btn{position:absolute;z-index:999;width:500px;height:186px;top:-190px;left:10px;outline:none;}
 .main{position:relative;min-height:600px;}
 .main-nav{width:790px;padding-left:230px;}
-.main-nav li{float:left;width:110px;height:84px;text-align:center;}
+.main-nav li{float:left;width:105px;height:84px;text-align:center;}
+.main-nav .nav-search{width: 38px;}
+.main-nav .nav-search a{display: block;width: 27px; height: 26px;background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/nav_search.png); margin: 29px auto 0;padding: 0;}
+.main-nav .nav-search:hover{background: none;}
 .main-nav li:hover{}
 .main-nav li:hover a{color:#e4b653;}
 .main-nav li:hover em{color:#91763f;}
@@ -90,7 +93,7 @@ body{padding-top:42px;background:#fff;font:14px/1.5 "Microsoft YaHei",Tahoma,"si
 .user_pic img{border:1px solid #d9ad50;border-radius:42px;}
 .per-infor{float:left;width:130px;}
 .view-btn {position:absolute;z-index:999;width:500px;height:186px;top:-190px;left:334px;outline:none;overflow:hidden;text-indent:-9999px;text-decoration:none;}
-.down-nav{float:left;display:inline;width:100px;padding:2px 5px 0;text-align:center;white-space:nowrap;}
+.down-nav{float:left;display:inline;width:100px;padding:2px 2.5px 0;text-align:center;white-space:nowrap;}
 .down-nav a{height:30px;line-height:30px;display:block;padding:0;font-size:14px;color:#c9c9dd;}
 .down-nav a:hover{color:#f3c258;text-decoration:underline;}
 .down-nav .down-nav-fans{padding-right:16px;}
@@ -196,8 +199,8 @@ body{padding-top:42px;background:#fff;font:14px/1.5 "Microsoft YaHei",Tahoma,"si
 .pop2{width:530px;height:354px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/sec.jpg) no-repeat;} 
 .se-input{padding:117px 0 0 50px;}
 .se-input select{display:block;width:430px;height:37px;line-height:37px;margin-bottom:10px;}
-.se-btn{padding:16px 0 0 146px;}
-.se-btn a{width:116px;height:34px;margin-right:13px;background:url(about:blank);}
+.se-btn{padding:16px 0 0 146px;position: absolute;bottom: 45px; left: 0;right: 0;}
+.se-btn a{width:116px;height:34px;margin-right:13px;opacity: 0;}
 /*----ä½?----*/
 .icon{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/sprite.png) no-repeat;text-indent:-9999px;display:block;}
 .con1-pos{width:100%;margin-bottom:40px;height:20px;line-height:20px;color:#464547;font-size:16px;}
