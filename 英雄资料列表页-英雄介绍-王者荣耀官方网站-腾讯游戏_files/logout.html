@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0044)https://game.qq.com/act/logout.html?20121029 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="./pt_utility.js.&#19979;&#36733;"></script>
+<script>
+document.domain="qq.com";
+function ptCallback(){
+	var oDate = new Date(), expires;
+	oDate.setTime(0);
+	expires = oDate.toGMTString();
+	document.cookie="uin=; expires="+expires+"; domain=game.qq.com; path=/; ";
+	document.cookie="p_uin=; expires="+expires+"; domain=game.qq.com; path=/; ";
+	document.cookie="skey=; expires="+expires+"; domain=game.qq.com; path=/; ";
+	document.cookie="p_skey=; expires="+expires+"; domain=game.qq.com; path=/; ";
+	document.cookie="pt4_token=; expires="+expires+"; domain=game.qq.com; path=/; ";
+	
+	document.cookie="IED_LOG_INFO2=; expires="+expires+"; domain=game.qq.com; path=/; ";
+	
+	document.cookie="sid=; expires="+expires+"; domain=qq.com; path=/; ";
+	parent.window["logoutCallback"]();
+}
+if ( document.referrer.indexOf('qq.com') >= 0 ){
+	var r = pt_utility.logout(1, ptCallback);
+	if (r!=0) ptCallback();
+}
+</script>
+</head>
+<body>
+
+
+
+
+<!--[if !IE]>|xGv00|72da1e37170b628d77ea4086147bbba8<![endif]--></body></html>

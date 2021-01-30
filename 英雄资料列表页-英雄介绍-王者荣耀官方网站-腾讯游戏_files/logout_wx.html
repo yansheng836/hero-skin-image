@@ -1,0 +1,40 @@
+
+<!-- saved from url=(0043)https://apps.game.qq.com/ams/logout_wx.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<script>
+function clearWxCodeInfoCallback(){
+	var expires=new Date(0).toGMTString();
+	document.cookie="p_skey=; expires="+expires;
+	document.cookie="p_uin=; expires="+expires;
+	document.cookie="uin=; expires="+expires;
+	document.cookie="skey=; expires="+expires;
+	document.cookie="IED_LOG_INFO2=; expires="+expires;
+	document.cookie="openid=; expires="+expires;
+	document.cookie="access_token=; expires="+expires;
+	document.cookie="acctype=; expires="+expires;
+	document.cookie="appid=; expires="+expires;
+	
+	//path为/下面再清理一次
+	document.cookie="p_skey=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="p_uin=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="uin=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="skey=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="IED_LOG_INFO2=; expires="+expires+"; path=/;domain=apps.game.qq.com";
+	document.cookie="openid=; expires="+expires+"; path=/;domain=apps.game.qq.com";
+	document.cookie="access_token=; expires="+expires+"; path=/;domain=apps.game.qq.com";
+	document.cookie="acctype=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="appid=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	
+	parent.window["logoutWxCallback"]();
+}
+if (document.referrer.indexOf('qq.com') >= 0){
+	document.domain = 'qq.com';
+	clearWxCodeInfoCallback();
+}
+</script>
+</head>
+<body>
+
+
+</body></html>

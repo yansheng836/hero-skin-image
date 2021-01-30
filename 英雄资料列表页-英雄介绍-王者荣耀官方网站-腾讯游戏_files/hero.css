@@ -1,0 +1,242 @@
+.ls{ width:494px;}
+.rs{ width:650px; margin-left:56px;}
+.fl{ float: left; }
+.hidden{display:none;}
+.icon{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/sprite.png) no-repeat; text-indent:-9999px; display:block;}
+.more{ display:block; position:absolute; width:120px; height:31px; border-radius:40px; border:solid 2px #e5e5e5; text-align:center; line-height:31px; color:#858587; font-size:14px; }
+.zk-con-box{ width:1200px; margin:0 auto;}
+.zk-con{ overflow:hidden;}
+.zk-con1{ padding-top:40px;}
+.con1-pos{ height:20px; line-height:20px; color:#464547; font-size:16px;}
+.con1-pos .tb1{ background-position:0 -4px; width:18px; height:18px; margin-right:9px;}
+.con1-pos a,.con1-pos span{ margin-right:8px;}
+.con1-pos a{ text-decoration:underline;}
+.con1-pic{ width:1200px; height:530px; margin-top:35px;}
+.pic-show-box{ width:1200px; height:530px; position:relative;}
+.pic-show1 img{ display:none;}
+.cover{ width:315px; height:530px; position:absolute; left:0; top:0; background:url(//game.gtimg.cn/images/yxzj/web201605/page/pf_cover.png) no-repeat; padding-left:50px; overflow:hidden;}
+.cover-title{ font-size:20px; color:#009999; line-height:30px; padding-top:50px;}
+.cover-name{ font-size:58px; font-weight:bold; color:#FFF; line-height:70px;}
+.cover-icon{ display:block; width:155px; height:75px; background:url(//game.gtimg.cn/images/yxzj/web201605/page/hero_icon.png) no-repeat; margin-top:20px;}
+.cover-list{ height:136px; overflow:hidden; margin-top:16px;}
+.cover-list li{ height:24px; vertical-align:top; overflow:hidden; margin-top:10px;}
+.cover-list-text{ width:62px; height:21px; line-height:19px; *line-height:17px; text-align:center; font-size:15px; color:#009999; background:#003333; border-radius:4px;}
+.cover-list-bar{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/hero_info.png) no-repeat; width:164px; height:21px; margin-left:4px;}
+.bar1{ background-position:0 0;}
+.bar2{ background-position:0 -29px;}
+.bar3{ background-position:0 -57px;}
+.bar4{ background-position:0 -86px;}
+.ibar{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/hero_info.png) no-repeat -19px -134px; height:9px; float:left; margin:6px 0 0 20px;}
+.ibar1{ margin-top:7px;}
+.cover-play{ width:210px; height:44px; margin-top:46px;}
+.cover-play .play{ display:block; width:210px; height:44px; border:solid 3px #FFF; border-radius:40px; line-height:42px;  text-align:center; font-size:22px; color:#FFF;cursor:pointer; }
+.cover-play .voice{ display:block; position:absolute; top:-99999px; left:-99999px;}
+.pic-pf{ position:absolute; right:0; top:419px;}
+.pic-pf-list{ float:right;width: 450px;height: 88px;overflow: hidden;}
+.pic-pf-list li{ width:89px; height:88px; float:right; display:inline;cursor:pointer;}
+.pic-pf-list li i{ float:left; width:67px; height:67px; margin-left:11px;}
+.pic-pf-list li i img{ width:67px; height:67px; float:left;}
+.pic-pf-list li i.curr{ background:#6efefc; width:63px; height:63px; padding:2px; border-radius:5px;}
+.pic-pf-list li i.curr img{ width:63px; height:63px;}
+.pic-pf-list li p{ font-size:14px; color:#FFF; text-align:center;}
+.pic-pf .pf{ display:block; width:36px; height:52px; float:right; border-radius:5px 0 0 5px; background:#089fa8; line-height:18px; text-align:center; font-size:16px; padding-top:15px; color:#FFF;}
+
+.zk-con2{ padding-top:62px;}
+.tlt{ color:#535353; font-size:22px; line-height:24px; height:53px; position:relative;}
+.tlt2{ height:36px;}
+.tlt3{ height:41px;}
+.tlt4{ height:45px;}
+.tlt5{ height:39px;}
+.tlt6{ color:#f0f3f5; height:56px; padding-top:24px;}
+.tlt .tb2{ background-position:-44px -137px; width:30px; height:24px; margin:0 6px 0 13px;}
+.tlt .tb3{ background-position:-44px -95px; width:30px; height:24px; margin:0 6px 0 0;}
+.tlt .tb4{ background-position:-46px -49px; width:26px; height:24px; margin:0 9px 0 0px;}
+.tlt .tb5{ background-position:0 -47px; width:28px; height:28px; margin:0 9px 0 14px;}
+.tlt .tb6{ background-position:-94px -5px; width:30px; height:24px; margin:0 8px 0 0px;}
+.tlt .tb7{ background-position:-46px -5px; width:24px; height:24px; margin:0 11px 0 1px;}
+.tlt .tb8{ background-position:-46px -178px; width:25px; height:27px; margin:0 11px 0 1px;}
+.tlt .tb9{ background-position:-1px -139px; width:24px; height:24px; margin:0 10px 0 0;}
+.tlt .tb10{width:24px;height:27px;background-position:0 -273px;margin:0 10px 0 0;}                      
+.info{ height:492px; background:#f2f3f3; border-radius:5px;}
+.rec-info1{ overflow:hidden; height:279px;}
+.rec-info1 .lv{ width:113px; padding:39px 0 0 61px; text-align:center;}
+.rec-info1 .lv i{ display:block; width:100px; height:100px; background:#e4e4e4; border-radius:150px; padding:6px 7px 7px 6px; margin-bottom:7px;}
+.rec-info1 .lv i img{ width:100px; height:100px; border-radius:150px;}
+.rec-info1 .lv span{ font-size:16px; display:inline-block; height:18px; line-height:18px; padding:0 7px; color:#FFF; background:#338ada; border-radius:20px;}
+.rec-info1 .xx{ margin-left:41px; padding-top:70px;}
+.rec-info1 .xp{ color:#535353; font-size:16px; line-height:30px;}
+.rec-info1 .xp span{ color:#3589dd; margin:0 5px;}
+.rec-info1 .xx-id{ font-size:24px; font-weight:bold; color:#3589dd; line-height:26px;}
+.rec-info1 .xx-use{ padding-top:12px;}
+.rec-info2{ overflow:hidden; padding-left:47px;}
+.rec-info2 .near{ height:45px; position:relative;}
+.rec-info2 .em{ font-size:22px; line-height:26px; color:#535353;}
+.rec-info2 .more{ top:9px; right:37px;}
+.rec-info2 .near-xx{ margin-top:17px; height:55px;}
+.rec-info2 .near-xx *{ display:inline-block; line-height:55px; float:left;}
+.rec-info2 .near-xx .sn1{ font-size:22px; color:#338ada; text-indent:2px;}
+.rec-info2 .near-xx .sn2{ padding:0 11px; color:#535353; font-size:16px;}
+.rec-info2 .near-xx i{ background:#d8d8d8; border-radius:4px; width:51px; height:51px; padding:2px; margin:0 14px;}
+.story-tlt{ position:relative;}
+.story-tlt .tlt{ line-height:28px;}
+.story-tlt .more{ top:-7px; right:9px;}
+.story-info{ padding:21px 0 0 28px; height:441px; padding-bottom:30px;}
+.story-info .nr p,.story-info .nr{ color:#6d6d6f; line-height:30px; font-size:16px; text-align:justify;padding-right:10px;}
+.story-info .show,.story-info .hide{ cursor:pointer;display:none; color:#6d6d6f; font-size:16px; line-height:18px; width:58px; height:18px; margin:0 auto;}
+.story-info .ishow,.story-info .ihide{ width:20px; height:18px; float:right;}
+.story-info .ishow{ background-position:-50px -228px; }
+.story-info .ihide{ background-position:-99px -228px; }
+.history{margin-top:20px;display:none;}
+.history  .story-info{height:58px;}
+.hishow-hide{margin-top:5px;}
+.zk-con3{ padding-top:91px;}
+.skill-info{ height: auto; min-height:376px; overflow: hidden;}
+.skill-u1{ height:120px; padding-top:26px;}
+.skill-u1 li{ width:93px; height:93px; padding:6px 6px 16px 7px; float:left; display:inline; margin:0 8px;cursor:pointer;}
+.skill-u1 li.no5{display: none;}
+.skill-u1 li img{width:93px;height:93px;}
+.skill-u1 li.curr{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/jn_hover.png) no-repeat;}
+.skill-u1new li{ width:65px; height:65px;}  
+.skill-u1new li img{width:65px;height:65px;}
+.skill-u1new li.curr{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/jn_hover1.png) no-repeat;}                      
+.skill-u1new li.no5{display: block;}
+
+.show-list{ display:none;}
+.show-list p{padding:5px 0 0px 16px;color: #6d6d6f;font-size: 16px;}
+.skill-btn{ display:block; width:457px; height:49px; margin-left:15px; background:#338ada; line-height:47px; text-align:center; color:#FFF; font-size:22px; border-radius:5px;}
+.skill-p1{ color:#6d6d6f; font-size:16px; line-height:30px; padding:40px 0 20px 16px; width:457px; text-align:justify;}
+.sugg-info{ height:180px;}
+.sugg-tlt{ margin-top:33px;}
+.sugg-tlt .tlt{ line-height:28px;}
+.sugg-u1{ padding-top:37px; height:58px;}
+.sugg-u1 li{width: 178px;height: 75px;padding:8px 0 16px; background:#338ada; border-radius:5px; float:left; display:inline; margin:0 18px 0 20px; position:relative;}
+.sugg-u1 li .sugg-pic1{ position:absolute; width:45px; height:53px; top:12px; left:19px;}
+.sugg-u1 li p{ padding:0px 0 0 84px; font-size:12px; line-height:20px; color:#FFF;}
+.sugg-u1 li p em{ font-size:16px;}
+.sugg-p1{ width:578px; color:#6d6d6f; font-size:16px; line-height:30px; padding:10px 0 0 21px; text-align:justify;}
+.sugg-info2{ height:100px; padding-top:22px;}
+.sugg-info2 span{ display:inline-block; float:left; color:#6d6d6f;}
+.sugg-info2 span.span1{ line-height:53px; margin:0 10px 0 11px; font-size:16px;}
+.sugg-info2 span.span2{ margin-left:67px;}
+.sugg-info2 span.span3{ margin-left:12px;}
+
+.zk-con4{ padding-top:27px;}
+.hero-info{ height:78px; padding-top:23px;}
+.hero-info1{ margin-top:11px;}
+.hero-info2{ margin-top:18px;}
+.hero-f1{ padding-left:22px; width:139px; line-height:65px; color:#4e4f52; font-size:16px;}
+.hero-f1 i{ width:26px; height:26px; margin:20px 6px 0 0;}
+.hero-f1 i.hr1{ background-position:0 -96px;}
+.hero-f1 i.hr2{ background-position:-101px -97px;}
+.hero-f1 i.hr3{ background-position:0 -222px;}
+.page-hero-list{ width:331px;}
+.page-hero-list img{ width:66px; height:65px; margin-left:11px; float:left;}
+.equip .tlt{ line-height:27px;}
+.equip-info{ height:88px; padding-top:13px;}
+.equip-f1{ width:153px; text-indent:24px; line-height:70px; color:#535353; font-size:18px;}
+.equip-f1 em{ font-size:22px;}
+.equip-list{ height:52px;}
+.equip-list li{ width:64px; text-align:center; float:left; display:inline; color:#6d6d6f; font-size:12px;}
+
+.zk-con5{ padding:105px 0 92px 0; height:419px;}
+.video{ width:759px;}
+.video-tlt{ position:relative;}
+.video-tlt .more{ top:-4px; right:0;}
+.video-info{ overflow:hidden;}
+.video-u1 li{ width:172px; float:left; display:inline; margin-left:20px; position:relative; font-size:0; margin-top:39px;}
+.video-u1 li.li1{ margin-left:0;}
+.video-u1 li .p1{ line-height:22px; font-size:14px; color:#545353; height:44px; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; margin-top:3px;}
+.video-u1 li .video-play{ width:172px; height:14px; line-height:14px; color:#8c8c8e; font-size:12px; position:absolute; top:83px; left:0;}
+.video-u1 li .play-num{ padding-left:10px;}
+.video-u1 li .play-time{ float:right; padding-right:6px;}
+.video-u1 li .play{ background-position:-103px -54px; width:12px; height:14px; float:left; margin-right:5px;}
+.strategy{ width:386px; margin-left:31px;}
+.strategy-tlt{ position:relative;}
+.strategy-tlt .tlt{ line-height:27px;}
+.strategy-tlt .more{ top:-6px; right:0;}
+.strategy-info{ width:386px; overflow:hidden; margin-top:30px;}
+.strategy-info li{ color:#505050; font-size:14px; line-height:32px;}
+.strategy-info li a{ display:block; color:#505050; width:386px; height:32px;}
+.strategy-info li a:hover{ color:#278be1;}
+.strategy-info li .p-dec{ width:300px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.strategy-info li span{ float:right; padding-right:3px; color:#909090;}
+
+.zk2{ background:#3d4253; padding-bottom:90px;}
+.comment-txt{ height:195px;}
+.com-text{ display:block; width:1175px; height:129px; background:#212635; border-radius:10px; color:#bcbcbc; font-size:16px; line-height:20px; padding:10px 0 0 25px; border:none; overflow-x:hidden;overflow-y:hidden; font-family:'\5FAE\8F6F\96C5\9ED1';}
+.com-btn{ float:right; width:192px; height:46px; line-height:44px; text-align:center; font-size:22px; color:#FFF; background:#338ada; margin-top:9px; border-radius:6px;}
+.com-list-box{ margin-top:7px; overflow:hidden;}
+.comment-list{ padding:32px 0 16px 0; height:auto; border-bottom:dashed 1px #434652; overflow:hidden; position:relative;}
+.comment-list .com-img{ position:absolute; top:32px; left:0;}
+.comment-list .com-xx{ padding-left:77px;}
+.comment-list .com-p1{ width:1123px; height:20px;}
+.comment-list .com-p1 .name{ float:left; color:#2584e4; font-size:18px; line-height:20px;}
+.comment-list .com-p1 .time{ float:right; font-size:12px; color:#6d6d6f; line-height:20px;}
+.comment-list .com-p2{ font-size:14px; color:#6f7d8d; line-height:20px; margin-top:13px;}
+.comment-list .com-p3{ color:#bdc7d4; height:26px; float:right;}
+.comment-list .com-p3 a{ color:#277cd4; line-height:26px;}
+.comment-list .com-p3 a:hover{ text-decoration:underline;}
+.comment-list .com-p3 .lab{ background-position:0 -180px; width:22px; height:22px; margin-right:4px;}
+.comment-list .com-p3 .num{ margin:0 21px 0 11px;}
+.comment-list .com-p3 .respon{ display:inline-block; width:61px; height:22px; text-align:center; line-height:22px; border-radius:40px; border:solid 2px #277cd4;}
+.respon-show{ width:1123px; padding-top:20px; float:left; display:none;}
+.respon-show .respon-txt{ height:50px; border-radius:0; width:1098px;}
+.respon-show .respon-btn{ width:120px; height:40px; line-height:40px; font-size:20px;}
+.comment-page{ text-align:center;}
+.page-box{ display:inline-block;}
+.page{ padding-top:77px; height:20px; line-height:20px; float:left;}
+.page *{ float:left; color:#FFF;}
+.page .prev,.page .next,.page span,.page input{ background:#212635; border-radius:5px; margin:0 5px;}
+.page .prev i,.page .next i,.page span,.page input{ display:inline-block;  height:20px; line-height:20px; padding:0 8px; }
+.page .prev i.icon{ background-position:-102px -179px; width:6px;}
+.page .next i.icon{ background-position:-102px -139px; width:6px;}
+.page span.curr{ background:#358add;}
+.page em{ margin:0 5px;}
+.page input{ border:none; padding:0; width:24px; font-family:'\5FAE\8F6F\96C5\9ED1';}
+.page .go{ margin:0 5px;}
+.hero-relate-list{margin-top:0;}
+.hero-relate-list img{width:65px;height:65px;}
+.equip-list img{width:52px;height:52px;border-radius:52px;}
+.sugg-info2 img{width:60px;height:60px;border-radius:47px;margin-right:10px;}
+/*start jasminjiang*/
+.herolist-title{ margin-top: 50px; padding-left: 25px; font: bold 20px/22px '\5FAE\8F6F\96C5\9ED1';  background: url(//game.gtimg.cn/images/yxzj/web201605/page/icon_hero.png) no-repeat;}
+.herolist-nav{ margin-top: 20px; height: 32px; font-size: 16px; border-bottom: 3px solid #D4D4D4; border-radius: 0 0 3px 3px;}
+.herolist-nav li{float: left; width:33%;  margin-bottom: -3px; position: relative;}
+.herolist-nav li a{ display: block; width: 100%;line-height: 32px; text-align: center; color: #4B4B4B;}
+.herolist-nav li.current{ border-bottom: 3px solid #3589DD; border-radius: 0 0 3px 3px;}
+.herolist-nav li.current a{ color: #3589DD; font-weight: bold;}
+.herolist-box{ margin-bottom: 50px; padding: 35px 28px; border: 2px solid #E8E8E8; border-top:0;position: relative;}
+.herolist-types{ background-color: #EFEFEF; border-radius: 5px; color: #686869}
+.item-types{ background: none}
+.types-left{ float: left; width: 80px; height:106px; text-align: center; background-color: #2C88E2; color: #fff; border-radius: 5px 0 0 5px;}
+.types-left li{ display: block; height: 52px; line-height: 52px;font-size: 16px;}
+.types-ms{ float: left; width: 900px; padding: 16px 0; height: 20px; line-height: 21px;}
+.types-ms li{ float: left; padding-left: 15px;min-width: 90px; font-size: 14px; cursor: pointer;}
+.ms-radio{display: inline-block; width: 18px; height: 18px; margin-right: 7px; border: 1px solid #B3B3B3; border-radius: 50px; position: relative;}
+.ms-radio .i{ display: inline-block; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; background-color: none; border-radius: 50px;}
+.types-ms .ms-radio{float: left;}
+.types-ms .current .ms-radio .i{background-color: #358ADD;}
+.types-ms label{float: left; cursor: pointer; line-height: 19px;}
+
+.herosearch{ position: absolute; top: 86px; right: 60px; border: 1px solid #D2D2D2; padding: 10px; height: 22px; width: 220px;}
+.herosearch-input{float: left; border: none; width: 80%; height: 22px; line-height: 20px; font-size: 12px;color: #747475; background: none; }
+.herosearch-icon{ float: right; padding-left: 10px; width: 22px; height: 22px; border-left: 1px solid #D5D5D5; background: url(//game.gtimg.cn/images/yxzj/web201605/page/vl_search_icon.png) no-repeat 12px center;}
+.itemsearch{ top: 40px; right: 28px;}
+
+.herolist-content{ margin-top: 40px; }
+.herolist-content ul{margin-right: -50px; overflow: hidden;}
+.herolist-content li{float: left; width: 87px; margin-bottom: 34px; margin-right: 30px;}
+.herolist-content a{display: block; width: 100%; text-align: center;}
+.herolist-content img{ width: 83px; height: 83px; border: 2px solid #258DF2; border-radius: 10px 0 10px 0;}
+
+/*end jasminjiang*/
+/*by colorli*/
+.herodetail-sort {width: 290px;height: 70px;margin-bottom: 20px;overflow: hidden;display: block;}
+.herodetail-sort i{display: block; width: 100%; height: 100%; overflow: hidden; text-indent: -9999em; background-image: url(//game.gtimg.cn/images/yxzj/web201605/page/hero-sort.png);background-repeat: no-repeat;}
+.herodetail-sort-1{ background-position: 0 -140px}
+.herodetail-sort-2{ background-position: 0 -70px}
+.herodetail-sort-3{ background-position: 0 0}
+.herodetail-sort-4{ background-position: 0 -280px}
+.herodetail-sort-5{ background-position: 0 -350px}
+.herodetail-sort-6{ background-position: 0 -210px}
+                      

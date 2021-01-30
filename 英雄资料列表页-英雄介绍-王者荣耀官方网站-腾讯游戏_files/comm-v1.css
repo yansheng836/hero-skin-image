@@ -1,0 +1,236 @@
+/*------reset------*/
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+em,i,b{font-style:normal;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:#363636;}
+a:hover{text-decoration:none;}
+img{display:block;border:0;border-radius:2px 2px 2px 2px;}
+button,input,select,textarea{font-size:100%;outline:none;}
+textarea{resize:none;}
+table{border-collapse:collapse;border-spacing:0;}
+td,th,ul,ol{padding:0;}
+cite{font-style:normal;}
+/*------common------*/
+body{max-width:1920px;margin:0 auto}
+.pr{position:relative}
+.pa{position:absolute}
+.fl{float:left}
+.fr{float:right}
+.clearfix{zoom:1}
+.clearfix:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both}
+.none{display:none}
+.ht{overflow:hidden;text-indent:-9999px;text-decoration:none}
+.fb{font-weight:bold}
+.fn{font-weight:normal}
+.f12{font-size:12px}
+.f16{font-size:16px}
+.f22{font-size:22px}
+.tc{text-align:center}
+.tr{text-align:right}
+/*----素材---*/
+.spr {background:url(//game.gtimg.cn/images/yxzj/web201605/main/spr.png) no-repeat;}
+.logo1 {width:285px;height:64px;}
+.logo2 {width:70px;height:64px;background-position:-285px 0;}
+.main-nav li:hover,.download_btn,.freshman_btn,.tiyan_btn,.item_title,.more_btn,.mask-play-ico,.icon_arrow,.icon_watch,.ico-play{background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat;display:inline-block;}
+.download_btn{width:236px;height:128px;background-position:0 -219px;}
+.freshman_btn{width:236px;height:106px;background-position:0 -350px;}
+.tiyan_btn{width:236px;height:108px;background-position:0 -461px;}
+.strategy_center .item_title{width:127px;height:26px;background-position:0 -106px;}
+.skin_center .item_title{width:136px;height:25px;background-position:0 -144px;}
+.match_center .item_title{width:134px;height:24px;background-position:0 -184px;}
+.more_btn{position:absolute;top:0;right:0;padding-left:22px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png)no-repeat -252px 4px;color:#999;}
+.icon_arrow{position:absolute;top:20px;left:42px;width:11px;height:6px;background-position:-257px  -28px;}
+.icon_watch{width:14px;height:14px;background-position:-256px  -43px;margin-right:10px;vertical-align:middle;}
+.arrow-ico {display:inline-block;width:7px;height:6px;margin:10px 0 0 15px;background-position:-348px -86px;}
+/*font-face*/
+@font-face {
+    font-family:'light';
+    src:url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.eot');/* IE9 Compat Modes */
+    src:url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.eot?#iefix') format('embedded-opentype'),
+         url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.woff') format('woff'),
+         url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.ttf')  format('truetype');
+}
+/*------private------*/
+body{padding-top:42px;background:#fff;font:14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;color:#323235;}
+.wrapper{position:relative;min-width:1280px;}
+.old-header .wrapper,.spc-header .wrapper{padding-top:618px;background: no-repeat center top;}*/
+/*.old-header .wrapper,.spc-header .wrapper{padding-top:618px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/main-kv-bg.jpg) no-repeat center top;}*/
+.spc-header .wrapper{padding-top:480px;}
+.kv-bg{overflow: hidden;position:absolute;left:0;top:0;width:100%;height:1100px;background-repeat:no-repeat;background-position:center top;}
+.kv-bg video{width: 1920px;height:1100px;position: absolute;left:50%;top:0;margin-left:-960px;}
+.kv-link{position:absolute;z-index:2;width:400px;height:418px;top:84px;left:50%;margin-left:-200px;outline:none;text-indent:-9999px;overflow:hidden;}
+.kv-anni{position: absolute;z-index:2;width:110px;height:110px;top:336px;left:50%;display: block;text-indent: -9999px}
+.kv-anni-1{margin-left:-84px;}
+.kv-anni-2{margin-left:60px;}
+.kv-anni-3{margin-left:204px;}
+.kv-anni-4{margin-left:348px;}
+
+.logo{left:0;top:16px;z-index:100;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/logo.png) no-repeat center center;width:200px;height:54px;text-indent:-999px;overflow:hidden;}
+.kv_link{position:absolute;z-index:2;width:400px;height:420px;top:80px;left:50%;margin-left:-200px;outline:none;text-indent:-9999px;overflow:hidden;}
+/*----header----*/
+.header{position:absolute;left:0;top:42px;width:100%;min-width:1280px;height:84px;z-index:99;background:#000;background:rgba(0,0,0,0.8);}
+.header-inner{width:1200px;height:84px;margin:0 auto;position:relative;}
+.header-dialog{position:absolute;left:0;top:0;z-index:9999;}
+.sub-nav {transition: all .3s ease; position:absolute;top:83px;left:0;width:100%;background:#000;background:rgba(0,0,0,0.7);z-index:3; overflow: hidden;height: 0;box-sizing: border-box;} 
+.header-nav:hover .sub-nav{height: 285px;}
+.sub-nav-inner {width:970px;height:240px;margin:0 auto;overflow:hidden;zoom:1;padding-top:15px;padding-bottom:30px;padding: 15px 0 30px 230px;}
+.view-btn{position:absolute;z-index:999;width:500px;height:186px;top:-190px;left:10px;outline:none;}
+.main{position:relative;min-height:600px;}
+.main-nav{width:790px;padding-left:230px;}
+.main-nav li{float:left;width:110px;height:84px;text-align:center;}
+.main-nav li:hover{}
+.main-nav li:hover a{color:#e4b653;}
+.main-nav li:hover em{color:#91763f;}
+.main-nav a{display:block;width:110px;height:64px;padding:20px 0 0;color:#c9c9dd;font-size:18px;line-height:30px;}
+.main-nav a:hover{text-decoration: none;}
+.main-nav em{display:block;padding-top:5px;-webkit-transform:scale(0.95);-o-transform:scale(0.95);font-size:12px;line-height:16px;color:#858792;}
+.login_pannel{right:0px;top:21px;width:182px;}
+.user_pic{float:left;margin-right:7px;}
+.user_pic img{border:1px solid #d9ad50;border-radius:42px;}
+.per-infor{float:left;width:130px;}
+.view-btn {position:absolute;z-index:999;width:500px;height:186px;top:-190px;left:334px;outline:none;overflow:hidden;text-indent:-9999px;text-decoration:none;}
+.down-nav{float:left;display:inline;width:100px;padding:2px 5px 0;text-align:center;white-space:nowrap;}
+.down-nav a{height:30px;line-height:30px;display:block;padding:0;font-size:14px;color:#c9c9dd;}
+.down-nav a:hover{color:#f3c258;text-decoration:underline;}
+.down-nav .down-nav-fans{padding-right:16px;}
+.down-nav .icon-guard,.down-nav .icon-health,.down-nav .icon-fans,.down-nav .icon-hot{overflow:hidden;display:inline-block;*display:inline;*zoom:1;width:24px;height:24px;vertical-align: middle;background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;}
+.down-nav .icon-health{background-position:-137px -36px;}
+.down-nav .icon-fans{background-position:-137px -68px;padding-right:2px;}
+.down-nav .icon-hot{background-position:-163px -68px;padding-right:2px;}
+.info-box{position:relative;margin:419px auto 0;width:1200px;height:115px;background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_header.png) no-repeat;}
+.login-box{width:408px;padding:12px 10px;}
+.unlogin_info{color:#858792;}
+.unlogin_info a{color:#ffffff;font-size:16px;}
+.login_pannel .user-name{color:#858792;white-space:nowrap;}
+.login_pannel .user-name em{font-size:16px;color:#ffffff;}
+.login_pannel .user-name a{color:#8ea0b0;margin-left:10px;}
+.personal_link a{color:#8ea0b0;}
+.userinfo-list{display:none;}
+.userinfo-list li{float:left;display:inline;width:68px;height:46px;margin-right:2px;background:#0b3b61;border:1px solid #0c3253;border-radius:5px;overflow:hidden;}
+.userinfo-list em{display:block;color:#b3bbc5;margin-top:3px;height:20px;overflow:hidden;}
+.userinfo-list i{color:#406380;font-size:12px;}
+.main{padding-top:540px;width:1200px;margin:0 auto;}
+.main_top{width:1200px;height:342px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/rotate_bg.png) no-repeat left top;}
+.rotate{width:605px;height:342px;}
+.news_center{width:325px;height:342px;overflow:hidden;padding:0 17px;}
+.download_pannel{width:236px;height:342px;}
+.download_pannel a{display:block;}
+.tab-hd{border-bottom:1px solid #000;}
+.tab-hd li{float:left;width:52px;font-size:14px;text-align:center;line-height:45px;height:45px;padding-bottom:3px;}
+.tab-hd li a{display:inline-block;color:#b8b9c5;}
+.tab-hd li.on{padding:0;border-bottom:3px solid #f3c258;}
+.tab-hd li:hover a,.tab-hd li.on a{color:#f3c258;}
+.newsTab{position:relative;width:325px;}
+.tab_more{position:absolute;top:10px;right:10px;width:52px;display:block;color:#b8b9c5;text-align:center;font-size:14px;}
+/* old-header add by sonic 2017-08-11 */
+.info-box .hero-box{width:732px;padding:8px 20px 0;color:#a6afbc;}
+.info-box .hero-list{margin-top:8px;}
+.info-box .hero-list li{float:left;display:inline;position:relative;margin-right:10px;width:69px;-webkit-transition:0.4s ease-in-out;transition:0.4s ease-in-out; overflow: hidden;}
+.info-box .hero-list a{display:block;position:relative; width: 69px;height: 69px;}
+.info-box .hero-list img{border-radius:5px; -webkit-transition:0.4s ease-in-out;transition:0.4s ease-in-out; opacity: 1; position: absolute; left: 0; top: 0;}
+.info-box .hero-list li.active{width: 224px;}
+.info-box .hero-list li.active a{width: 224px;}
+.info-box .hero-list li.active .small{opacity: 0;}
+.info-box .hero-list li.active .large{opacity: 1;}
+.info-box .hero-list li .large{opacity: 0;}
+.info-box .more-hero{top:10px;right:15px;line-height:15px;padding:30px 10px 10px;color:#626a7a;}
+.info-box .txt1,.info-box .more-hero:hover{color:#6595c2;}
+.info-box #unlogin{margin-top:32px;}
+.info-box .avatar{top:-5px;left:10px;width:106px;height:120px;display:block;background-position:-110px -174px;}
+.info-box .avatar img{margin:24px 0 0 15px;border-radius:10px;}
+.info-box .level-ico{top:81px;left:68px;width:21px;height:20px;padding-left:3px;background-position:-331px -105px;color:#ffffff;}
+.info-box .per-infor{width:300px;margin-left:115px;}
+.info-box .per-infor .user-name{margin-bottom:20px;}
+.info-box .per-infor .user-name em{font-size:16px;color:#ffffff;}
+.info-box .per-infor .user-name i,.info-box .per-infor .user-name a{color:#8ea0b0;margin-left:10px;}
+.info-box .userinfo-list{display: block;}
+.info-box .userinfo-list li{float:left;display:inline;width:68px;height:46px;margin-right:2px;background:#0b3b61;border:1px solid #0c3253;border-radius:5px;overflow:hidden;}
+.info-box .userinfo-list em{display:block;color:#b3bbc5;margin-top:3px;height:20px;overflow:hidden;}
+.info-box .userinfo-list i{color:#406380;font-size:12px;}
+.info-box .txt2{color:#b3bbc5;}
+.info-box .txt2 a{color:#2d84d3;}
+.old-header{background-color: #fafafa;}
+.zkcontent{ width:100%; min-width:1200px;min-height:620px; height:auto; margin:0 auto; background:url(//game.gtimg.cn/images/yxzj/web201605/page/ny_con_bg.jpg) no-repeat center top;}
+
+/*----footer1----*/
+.foot-media,.foot-t .media-pic{display: none;}
+.footer-wrap{position:relative;z-index:2;height:362px;background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_footer.jpg) no-repeat center 0;}
+.footer-wrap img{display:inline-block;}
+.footer{width:1200px;padding-top:80px;margin:0 auto;}
+.foot-t{padding-bottom:10px;margin-bottom:20px;border-bottom:2px solid #d4d4d4;}
+.foot-logo{width:377px;}
+.logo1{width:285px;height:64px;}
+.logo2{width:70px;height:64px;background-position:-285px 0;}
+.foot-tips{width:508px;}
+.foot-tips em{margin-right:12px;color:#6d6d6d;}
+.foot-tips .intro{font-size: 12px;color: #666;margin-top:6px;}
+.foot-media{width:285px;margin-top:20px;background:#f7f7f7;color:#666666;cursor:pointer;}
+.media-tit{width:270px;height:30px;line-height:30px;padding-left:10px;border:3px solid #b8b8b8;}
+.arrow-ico-btn{top:6px;right:3px;width:38px;height:24px;border-left:1px solid #b8b8b8;}
+.media-list{width:280px;height:200px;margin-top:-3px;border:3px solid #b8b8b8;overflow-y:auto;background-color:#F7F7F7}
+.media-list a{display:block;padding-left:15px;height:28px;line-height:28px;background:#f7f7f7;}
+.media-list a:hover{background:#3589dd;color:#ffffff;text-decoration:none;}
+.foot-b,.foot-b a{color:#646467;}
+.foot-b{float:right;width:632px;text-align: left;padding-top:18px;}
+.foot-txt{overflow: hidden;margin:5px 0;}
+.foot-t .media-pic{margin-top:17px;margin-left:36px;letter-spacing:-0.35em;width: 480px;text-align: right;}
+.foot-t .media-pic a{letter-spacing:normal;display:inline-block;*display:inline;*zoom:1;height:36px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/cooperative-bg.png) no-repeat;}
+.foot-t .media-pic .m1{width:108px;background-position:0 0px;}
+.foot-t .media-pic .m2{width:90px;background-position:0 -36px;}
+.foot-t .media-pic .m3{width:64px;background-position:-10px -72px;}
+.foot-t .media-pic .m4{width:72px;background-position:0 -108px;}
+.foot-t .media-pic .m5{width:63px;background-position:0 -144px;}
+.foot-t .media-pic .m6{width:75px;background-position:0 -180px;}
+.foot-b .cb{clear: both;text-align:left;}
+/*----footer2----*/
+.footer-wrap2{height:502px;background:#3d4253 url(//game.gtimg.cn/images/yxzj/web201605/page/footer_bg.jpg) no-repeat center 0;color:#82879b;}
+.footer-wrap2 .foot-t{border-bottom:2px solid #82879b;}
+.footer-wrap2 .logo1{background:url(//game.gtimg.cn/images/yxzj/web201605/page/footer_logo.png) no-repeat;}
+.footer-wrap2 .logo2{background:url(//game.gtimg.cn/images/yxzj/web201605/page/footer_logo.png) no-repeat -285px 0;}
+/*----pop----*/                 
+.pop{width:530px;height:254px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/login.jpg) no-repeat;}
+.close{right:0;top:0;width:40px;height:40px;background:url(about:blank);}
+.wx-login{top:143px;left:60px;width:197px;height:46px;background:url(about:blank);}
+.qq-login{top:143px;left:272px;width:197px;height:46px;background:url(about:blank);}
+.pop2{width:530px;height:354px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/sec.jpg) no-repeat;} 
+.se-input{padding:117px 0 0 50px;}
+.se-input select{display:block;width:430px;height:37px;line-height:37px;margin-bottom:10px;}
+.se-btn{padding:16px 0 0 146px;}
+.se-btn a{width:116px;height:34px;margin-right:13px;background:url(about:blank);}
+/*----�?----*/
+.icon{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/sprite.png) no-repeat;text-indent:-9999px;display:block;}
+.con1-pos{width:100%;margin-bottom:40px;height:20px;line-height:20px;color:#464547;font-size:16px;}
+.con1-pos .tb1{ background-position:0 -4px;width:18px;height:18px;margin-right:9px;}
+.con1-pos a,.con1-pos span{ margin-right:8px;}
+.con1-pos a{ text-decoration:underline;}
+/*-----------*/
+.dia-zhushou{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/zhushou.png);}
+.dia-weixin{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/weixin.png);}
+.dia-story{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/story.png);}
+.dia-skin{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/skin.png);}
+.dia-version{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/version.png);}
+.dia-kefu{width:368px;height:358px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/kf.png);overflow:hidden;}
+.dia-kefu p{margin:266px 0 0 76px;color:#b7bde1;font-size:18px;}
+.dia-kefu a{color:#7b96e4;}
+.dia-close{position:absolute;top:0;right:0;width:45px;height:45px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/close.png);}
+.dia-qq{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/shouq.png);}
+.dia-vote1001{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/vote1001.jpg);}
+.dia-qgc{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/qgc.jpg);}
+.dia-applets{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/applets.png);}
+.dia-applets2{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/applets2.png);}
+.download-popup .dia-con{width:auto;background:none;}
+.dia-download{padding:30px  76px 23px 48px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/down_bg.png);}
+.dia-download .code{float:left;margin-right:36px;}
+.dia-download .btnlist{float:left;}
+.dia-download .btnlist a,.download-popup .dia-close{width:212px;height:46px;display:block;margin-bottom:9px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/down.png);}
+.dia-download .btnlist .pc{background-position:0 -112px;}
+.dia-download .btnlist .ios{background-position:0 -56px;}
+.dia-download .btnlist .android{background-position:0 0;}
+.dia-download .btnlist .android1{background-position:0 -169px;}
+.download-popup .dia-close{top:10px;right:10px;width:36px;height:36px;background-position:-264px -17px;}
+.dia-weiquan{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/weiquan.png);}
+.dia-hero-pop{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/hero_pop.png);}
+.dia-wgc {width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/wgc.png);}
+
+.zkcontent .detail-process {display: none;}

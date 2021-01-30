@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://apps.game.qq.com/ams/asyncCookie.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	
+	<title>AME登录态同步页</title>
+	<link rel="stylesheet" href="https://apps.game.qq.com/ams/asyncCookie.html">
+<script type="text/javascript">
+document.domain="qq.com";
+//本页面专用于内部业务请求AME同步登录态等操作
+  /*
+  调用方如何使用：
+  var cookieObj={
+	openid:["openidtest","pathtest",600],
+	access_token:["access_token_test","/",600]
+  }
+  var callbackName="callback_111";
+  window[callbackName]=function(){
+	alert("跨域cookie设置好了");
+  }
+
+  同时支持iframe url调用方式和postMessage方式【白名单机制，支持外部平台，入斗鱼等】
+
+  //url方式
+  var frame=$("<iframe style='width:0;height:0;display:none'></iframe>").appendTo("body");
+  frame.attr("src","http://game.qq.com/setcookie.html?cookie="+encodeURIComponent(JSON.stringify(cookieObj))+"&callback="+callbackName);
+
+  //postMessage方式
+  frame.postMessage({
+	action:'cookie',
+	callbackName:"callback_xxx",//标识请求，回调
+	cookieObj:{
+		openid:["openidtest","pathtest",600],
+		access_token:["access_token_test","/",600]
+	}
+  })
+
+  window.parent.postMessage({
+	action:"done",
+	callbackName:"callback_xxx"//标识请求，回调
+  },"*")
+  */
+
+  var cookieUtil={
+  	set : function(sName,sValue,iExpireSec,sDomain,sPath,bSecure){
+		if(sName==undefined) {
+			return;
+		}
+		if(sValue==undefined) {
+			sValue="";
+		}
+		var oCookieArray = [sName+"="+escape(sValue)];
+		if(!isNaN(iExpireSec)){
+			var oDate = new Date();
+			oDate.setTime(oDate.getTime()+iExpireSec*1000);
+			oCookieArray.push("expires=" + oDate.toGMTString());
+		}
+		if(sDomain!=undefined){
+			oCookieArray.push("domain="+sDomain);
+		}
+		if(sPath!=undefined){
+			oCookieArray.push("path="+sPath);
+		}
+		if(bSecure){
+			oCookieArray.push("secure");
+		}
+		document.cookie=oCookieArray.join("; ");
+	},
+	/**
+	 * 获取cookie
+	 * @param {string} sName cookie名
+	 * @param {string} sValue 默认值
+	 * @return {string} cookie值
+	 */
+	get : function(sName,sDefaultValue){
+		var sRE = "(?:; |^)" + sName + "=([^;]*);?";
+		var oRE = new RegExp(sRE);
+		
+		if (oRE.test(document.cookie)) {
+			return unescape(RegExp["$1"]);
+		} else {
+			return sDefaultValue||null;
+		}
+	},
+	/**
+	 * 获取cookie
+	 * @param {string} sName cookie名
+	 * @param {string} sDomain 作用域
+	 * @param {sPath} sPath 作用路径
+	 * @return {void} 
+	 */
+	clear : function(sName, sDomain, sPath){
+		var oDate = new Date();
+		this.set(sName,"", -oDate.getTime()/1000, sDomain, sPath);
+	}
+  }
+
+  //获取url参数
+  	var  getUrlVal=function(pa){ 
+		var url = window.location.href.replace(/#+.*$/, ''),
+			params = url.substring(url.indexOf("?")+1,url.length).split("&"),
+			param = {} ;
+		for (var i=0; i<params.length; i++){  
+			var pos = params[i].indexOf('='),//查找name=value  
+				key = params[i].substring(0,pos),
+				val = params[i].substring(pos+1);//提取value 
+			param[key] = val;
+		} 
+		return (typeof(param[pa])=="undefined") ? "" : param[pa];
+	}
+	var domain="game.qq.com";//写死game.qq.com
+
+
+  	//==============方式1：  父级直接调用============
+
+  	window.syncCookie=function(params,callback){
+  		var action=params.action;
+  		var objCookie=params.cookieObj;
+  		if('ame' == action){
+  			//ame专用
+  			//先清除qq.com下的登录态,防止污染
+			cookieUtil.clear('appid','qq.com','/');
+			cookieUtil.clear('openid','qq.com','/');
+			cookieUtil.clear('acctype','qq.com','/');
+			cookieUtil.clear('access_token','qq.com','/');
+			for(var k in objCookie){
+				var name=k;
+				var value="",path="",expire="";
+				var cfg=objCookie[k];
+				if(cfg instanceof Array){
+					value=cfg[0];
+					path=cfg[1];
+					expire=new Date(new Date().getTime()+parseInt(cfg[2])*1000).toGMTString();
+					document.cookie=name+"="+value+"; expires="+expire+"; domain=" + domain + "; path="+ path +"; ";
+				}else{
+					continue;
+				}
+			}
+			if("function" == typeof callback){
+				callback({
+					action:'done'
+				});
+			}
+  		}else if('onlygame' == action){
+  			//只操作game.qq.com下的登录态
+  			for(var k in objCookie){
+				var name=k;
+				var value="",path="",expire="";
+				var cfg=objCookie[k];
+				if(cfg instanceof Array){
+					value=cfg[0];
+					path=cfg[1];
+					expire=new Date(new Date().getTime()+parseInt(cfg[2])*1000).toGMTString();
+					document.cookie=name+"="+value+"; expires="+expire+"; domain=" + domain + "; path="+ path +"; ";
+				}else{
+					continue;
+				}
+			}
+			if("function" == typeof callback){
+				callback({
+					action:'done'
+				});
+			}
+  		}else if('storeProxyStatus' == action){
+  			//存储登录态
+  			var acctype=objCookie[0];
+  			objCookie.unshift();
+  			var value=objCookie.join('_$$_');
+  			cookieUtil.set('iegams_milo_proxylogin_'+acctype,value,undefined,'game.qq.com','/');
+  			if("function" == typeof callback){
+				callback({
+					action:'done'
+				});
+			}
+  		}else if('getProxyStatus' == action){
+  			//获取存储的登录态
+			var qc=cookieUtil.get('iegams_milo_proxylogin_qc') || '';
+			var wx=cookieUtil.get('iegams_milo_proxylogin_wx') || '';
+			var wg=cookieUtil.get('iegams_milo_proxylogin_wg') || '';
+			var data={
+				qc:qc?qc.split('_$$_'):[],
+				wx:wx?wx.split('_$$_'):[],
+				wg:wg?wg.split('_$$_'):[]
+			};
+			if("function" == typeof callback){
+				callback({
+					action:'done',
+					data:data
+				});
+			}
+  		}
+  	}
+
+	//==============方式2：  postMessage方式============
+	//检测是否合法域名
+		//合法域名列表
+		var whiteDomain=['qq.com'];//白名单
+		var blackDomain=['p.imtt.qq.com'];//黑名单
+		var isLegalDomain=function(url){
+			var isLegal=false;
+			var regStr='^(https\\:\\/\\/|http\\:\\/\\/|\\/\\/|)([0-9a-z\-A-Z]+\\.)*reg(\\:[0-9]*){0,1}(\\/{1,2}.*){0,1}$';
+			var regWhite=null;
+			//判断白名单
+			for(var i=0;i<whiteDomain.length;i++){
+				regWhite=new RegExp(regStr.replace('reg',whiteDomain[i].replace(/\./g,'\\.')));
+				if(regWhite.test(url)){
+					isLegal=true;
+				}
+			}
+			if(isLegal==false){//不在白名单
+				return false;
+			}
+			//判断黑名单
+			var regBlack=null;
+			for(var i=0;i<blackDomain.length;i++){
+				regBlack=new RegExp(regStr.replace('reg',blackDomain[i].replace(/\./g,'\\.')));
+				if(regBlack.test(url)){
+					isLegal=false;
+				}
+			}
+			return isLegal;
+		}
+		window.onload = function() {
+			var onmessage = function(e) {
+				//检查来源 origin
+				if(!isLegalDomain(e.origin)){
+					return;
+				}
+				//检查data
+				if(!e.data){
+					return;
+				}
+				var oData={};
+				eval('oData='+e.data);
+				var callbackName=oData.callbackName;
+				var objCookie=oData.cookieObj;
+
+				if('ame' == oData.action){
+					//AME请求专用，需要先清除qq.com下的登录态
+					cookieUtil.clear('appid','qq.com','/');
+					cookieUtil.clear('openid','qq.com','/');
+					cookieUtil.clear('acctype','qq.com','/');
+					cookieUtil.clear('access_token','qq.com','/');
+					for(var k in objCookie){
+						var name=k;
+						var value="",path="",expire="";
+						var cfg=objCookie[k];
+						if(cfg instanceof Array){
+							value=cfg[0];
+							path=cfg[1];
+							expire=new Date(new Date().getTime()+parseInt(cfg[2])*1000).toGMTString();
+							document.cookie=name+"="+value+"; expires="+expire+"; domain=" + domain + "; path="+ path +"; ";
+						}else{
+							continue;
+						}
+					}
+					//设置完了
+					window.parent.postMessage(JSON.stringify({
+						action:"done",
+						callbackName:callbackName
+					}),"*");
+				}else if('onlygame' == oData.action){
+					//只操作game.qq.com下的cookie
+					for(var k in objCookie){
+						var name=k;
+						var value="",path="",expire="";
+						var cfg=objCookie[k];
+						if(cfg instanceof Array){
+							value=cfg[0];
+							path=cfg[1];
+							expire=new Date(new Date().getTime()+parseInt(cfg[2])*1000).toGMTString();
+							document.cookie=name+"="+value+"; expires="+expire+"; domain=" + domain + "; path="+ path +"; ";
+						}else{
+							continue;
+						}
+					}
+					//设置完了
+					window.parent.postMessage(JSON.stringify({
+						action:"done",
+						callbackName:callbackName
+					}),"*");
+				}else if('storeProxyStatus' == oData.action){
+					//存储登录态
+		  			var acctype=objCookie[0];
+		  			objCookie.shift();
+		  			var value=objCookie.join('_$$_');
+		  			cookieUtil.set('iegams_milo_proxylogin_'+acctype,value,undefined,'game.qq.com','/');
+		  			//设置完了
+					window.parent.postMessage(JSON.stringify({
+						action:"done",
+						callbackName:callbackName
+					}),"*");
+				}else if('getProxyStatus' == oData.action){
+					//获取存储的登录态
+					var qc=cookieUtil.get('iegams_milo_proxylogin_qc') || '';
+					var wx=cookieUtil.get('iegams_milo_proxylogin_wx') || '';
+					var wg=cookieUtil.get('iegams_milo_proxylogin_wg') || '';
+					var data={
+						qc:qc?qc.split('_$$_'):[],
+						wx:wx?wx.split('_$$_'):[],
+						wg:wg?wg.split('_$$_'):[]
+					};
+					window.parent.postMessage(JSON.stringify({
+						action:"done",
+						data:data,
+						callbackName:callbackName
+					}),"*");
+				}
+				
+			};
+			
+			//监听postMessage消息事件
+			if (typeof window.addEventListener != 'undefined') {
+				window.addEventListener('message', onmessage, false);
+			} else if (typeof window.attachEvent != 'undefined') {
+				window.attachEvent('onmessage', onmessage);
+			}
+		};
+</script></head>
+
+<body>
+	
+
+</body></html>
