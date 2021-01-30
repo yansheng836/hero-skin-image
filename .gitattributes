@@ -1,0 +1,3 @@
+*.html linguist-language=Java
+*.shtml linguist-language=Java
+*.json linguist-language=Java
