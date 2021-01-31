@@ -2,6 +2,24 @@
 
 本项目仅仅用于备份图片。
 
+存储：
+
+- Gitee：<https://gitee.com/yansheng0083/hero-skin-image>
+- GitHub：<https://github.com/yansheng836/hero-skin-image>
+
+访问照片：
+
+![103澜-1-鲨之猎刃](https://cdn.jsdelivr.net/gh/yansheng836/hero-skin-image/5wallpaper-bigskin-images/103%E6%BE%9C-1-%E9%B2%A8%E4%B9%8B%E7%8C%8E%E5%88%83.jpg)
+
+- [https://gitee.com/yansheng0083/hero-skin-image/blob/main/5wallpaper-bigskin-images/103澜-1-鲨之猎刃.jpg](https://gitee.com/yansheng0083/hero-skin-image/blob/main/5wallpaper-bigskin-images/103澜-1-鲨之猎刃.jpg)
+- [https://gitee.com/yansheng0083/hero-skin-image/raw/main/5wallpaper-bigskin-images/103澜-1-鲨之猎刃.jpg](https://gitee.com/yansheng0083/hero-skin-image/raw/main/5wallpaper-bigskin-images/103澜-1-鲨之猎刃.jpg)
+
+- [https://github.com/yansheng836/hero-skin-image/blob/main/5wallpaper-bigskin-images/104司空震-1-雷霆之王.jpg](https://github.com/yansheng836/hero-skin-image/blob/main/5wallpaper-bigskin-images/104司空震-1-雷霆之王.jpg)
+- [https://raw.githubusercontent.com/yansheng836/hero-skin-image/main/5wallpaper-bigskin-images/104司空震-1-雷霆之王.jpg](https://raw.githubusercontent.com/yansheng836/hero-skin-image/main/5wallpaper-bigskin-images/104司空震-1-雷霆之王.jpg)
+- [https://cdn.jsdelivr.net/gh/yansheng836/hero-skin-image/5wallpaper-bigskin-images/104司空震-1-雷霆之王.jpg](https://cdn.jsdelivr.net/gh/yansheng836/hero-skin-image/5wallpaper-bigskin-images/104司空震-1-雷霆之王.jpg)
+
+## 英雄、皮肤数量
+
 |         时间          | 英雄数量 | 皮肤数量 |
 | :-------------------: | :------: | :------: |
 |      2019-11-14       |    96    |   366    |
