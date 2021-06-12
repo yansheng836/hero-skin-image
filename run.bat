@@ -1,3 +1,3 @@
 @
-@java -jar hero-skin-0.0.2-SNAPSHOT.jar
+@java -jar hero-skin-0.0.3-SNAPSHOT.jar
 @pause
