@@ -941,29 +941,35 @@
 			"newType":null,
 			"phoneBigskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-bigskin-1.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-bigskin-2.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-bigskin-2.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-bigskin-3.jpg"
 			],
 			"phoneMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-mobileskin-1.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-mobileskin-2.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-mobileskin-2.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-mobileskin-3.jpg"
 			],
 			"phoneSmallskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-smallskin-1.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-smallskin-2.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-smallskin-2.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137-smallskin-3.jpg"
 			],
-			"skinName":"寂灭之心|魇语军师",
+			"skinName":"寂灭之心|魇语军师|暗渊魔法",
 			"skins":[
 				"寂灭之心",
-				"魇语军师"
+				"魇语军师",
+				"暗渊魔法"
 			],
 			"title":"寂灭之心",
 			"wallpaperBigskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-bigskin-1.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-bigskin-2.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-bigskin-2.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-bigskin-3.jpg"
 			],
 			"wallpaperMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-mobileskin-1.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-mobileskin-2.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-mobileskin-2.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/137/137-mobileskin-3.jpg"
 			]
 		},
 		{
@@ -4715,7 +4721,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-3.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-5.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-6.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-6.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-7.jpg"
 			],
 			"phoneMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-1.jpg",
@@ -4723,7 +4730,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-3.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-5.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-6.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-6.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-mobileskin-7.jpg"
 			],
 			"phoneSmallskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-1.jpg",
@@ -4731,16 +4739,18 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-3.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-5.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-6.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-6.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-smallskin-7.jpg"
 			],
-			"skinName":"逍遥幻梦|鲤鱼之梦|蜃楼王|云端筑梦师|奇妙博物学|玄嵩",
+			"skinName":"逍遥幻梦|鲤鱼之梦|蜃楼王|云端筑梦师|奇妙博物学|玄嵩|高山流水",
 			"skins":[
 				"逍遥幻梦",
 				"鲤鱼之梦",
 				"蜃楼王",
 				"云端筑梦师",
 				"奇妙博物学",
-				"玄嵩"
+				"玄嵩",
+				"高山流水"
 			],
 			"title":"逍遥幻梦",
 			"wallpaperBigskinUrl":[
@@ -4749,7 +4759,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-bigskin-3.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-bigskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-bigskin-5.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-bigskin-6.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-bigskin-6.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-bigskin-7.jpg"
 			],
 			"wallpaperMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-1.jpg",
@@ -4757,7 +4768,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-3.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-5.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-6.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-6.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/113/113-mobileskin-7.jpg"
 			]
 		},
 		{
