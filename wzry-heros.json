@@ -36,24 +36,30 @@
 			"id":113,
 			"newType":null,
 			"phoneBigskinUrl":[
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-bigskin-1.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-bigskin-1.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-bigskin-2.jpg"
 			],
 			"phoneMobileskinUrl":[
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-mobileskin-1.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-mobileskin-1.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-mobileskin-2.jpg"
 			],
 			"phoneSmallskinUrl":[
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-smallskin-1.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-smallskin-1.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545-smallskin-2.jpg"
 			],
-			"skinName":"火鹰船长",
+			"skinName":"火鹰船长|西部游侠",
 			"skins":[
-				"火鹰船长"
+				"火鹰船长",
+				"西部游侠"
 			],
 			"title":"火鹰船长",
 			"wallpaperBigskinUrl":[
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/545/545-bigskin-1.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/545/545-bigskin-1.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/545/545-bigskin-2.jpg"
 			],
 			"wallpaperMobileskinUrl":[
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/545/545-mobileskin-1.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/545/545-mobileskin-1.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/545/545-mobileskin-2.jpg"
 			]
 		},
 		{
