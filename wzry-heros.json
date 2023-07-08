@@ -1,6 +1,34 @@
 {
 	"hero-list":[
 		{
+			"cname":"亚连",
+			"ename":514,
+			"heroType":null,
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/514.shtml",
+			"id":115,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/514-bigskin-1.jpg"
+			],
+			"phoneMobileskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/514-mobileskin-1.jpg"
+			],
+			"phoneSmallskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/514-smallskin-1.jpg"
+			],
+			"skinName":"追忆之刃",
+			"skins":[
+				"追忆之刃"
+			],
+			"title":"追忆之刃",
+			"wallpaperBigskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/514/514-bigskin-1.jpg"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/514/514-mobileskin-1.jpg"
+			]
+		},
+		{
 			"cname":"姬小满",
 			"ename":564,
 			"heroType":null,
