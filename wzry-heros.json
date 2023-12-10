@@ -1,10 +1,66 @@
 {
 	"hero-list":[
 		{
+			"cname":"海诺",
+			"ename":563,
+			"heroType":null,
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/hainuo.shtml",
+			"id":117,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/563-bigskin-1.jpg"
+			],
+			"phoneMobileskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/563-mobileskin-1.jpg"
+			],
+			"phoneSmallskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/563-smallskin-1.jpg"
+			],
+			"skinName":"命运之引",
+			"skins":[
+				"命运之引"
+			],
+			"title":"命运之引",
+			"wallpaperBigskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/563/563-bigskin-1.jpg"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/563/563-mobileskin-1.jpg"
+			]
+		},
+		{
+			"cname":"朵莉亚",
+			"ename":159,
+			"heroType":null,
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/duoliya.shtml",
+			"id":116,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159-bigskin-1.jpg"
+			],
+			"phoneMobileskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159-mobileskin-1.jpg"
+			],
+			"phoneSmallskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159-smallskin-1.jpg"
+			],
+			"skinName":"人鱼之歌",
+			"skins":[
+				"人鱼之歌"
+			],
+			"title":"人鱼之歌",
+			"wallpaperBigskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/159/159-bigskin-1.jpg"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/159/159-mobileskin-1.jpg"
+			]
+		},
+		{
 			"cname":"亚连",
 			"ename":514,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/514.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yalian.shtml",
 			"id":115,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -38,7 +94,7 @@
 			"cname":"姬小满",
 			"ename":564,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/564.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/jixiaoman.shtml",
 			"id":114,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -72,7 +128,7 @@
 			"cname":"莱西奥",
 			"ename":545,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/545.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/laixiao.shtml",
 			"id":113,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -112,7 +168,7 @@
 			"cname":"赵怀真",
 			"ename":544,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/544.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhaohuaizhen.shtml",
 			"id":112,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -152,7 +208,7 @@
 			"cname":"海月",
 			"ename":521,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/521.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/haiyue.shtml",
 			"id":111,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -198,7 +254,7 @@
 			"cname":"戈娅",
 			"ename":548,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/548.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/geya.shtml",
 			"id":110,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -238,7 +294,7 @@
 			"cname":"桑启",
 			"ename":534,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/534.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sangqi.shtml",
 			"id":109,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -278,7 +334,7 @@
 			"cname":"暃",
 			"ename":542,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/542.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/fei.shtml",
 			"id":108,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -318,7 +374,7 @@
 			"cname":"金蝉",
 			"ename":540,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/540.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/jinchan.shtml",
 			"id":107,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -358,7 +414,7 @@
 			"cname":"云缨",
 			"ename":538,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/538.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yunying.shtml",
 			"id":106,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -398,7 +454,7 @@
 			"cname":"艾琳",
 			"ename":155,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/155.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/ailin.shtml",
 			"id":105,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -444,7 +500,7 @@
 			"cname":"司空震",
 			"ename":537,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/537.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sikongzhen.shtml",
 			"id":104,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -484,7 +540,7 @@
 			"cname":"澜",
 			"ename":528,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/528.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lan.shtml",
 			"id":103,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -530,7 +586,7 @@
 			"cname":"夏洛特",
 			"ename":536,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/536.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xialuote.shtml",
 			"id":102,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -570,7 +626,7 @@
 			"cname":"阿古朵",
 			"ename":533,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/533.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/aguduo.shtml",
 			"id":101,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -616,7 +672,7 @@
 			"cname":"蒙恬",
 			"ename":527,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/527.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/mengtian.shtml",
 			"id":100,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -656,7 +712,7 @@
 			"cname":"镜",
 			"ename":531,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/531.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/jing.shtml",
 			"id":99,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -714,7 +770,7 @@
 			"cname":"蒙犽",
 			"ename":524,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/524.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/mengya.shtml",
 			"id":98,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -766,7 +822,7 @@
 			"cname":"鲁班大师",
 			"ename":525,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/525.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lubandashi.shtml",
 			"id":97,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -818,7 +874,7 @@
 			"cname":"西施",
 			"ename":523,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/523.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xishi.shtml",
 			"id":96,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -876,7 +932,7 @@
 			"cname":"马超",
 			"ename":518,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/518.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/machao.shtml",
 			"id":95,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -922,7 +978,7 @@
 			"cname":"曜",
 			"ename":522,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/522.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/dongfangyao.shtml",
 			"id":94,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -974,7 +1030,7 @@
 			"cname":"云中君",
 			"ename":506,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/506.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yunzhongjun.shtml",
 			"id":93,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1020,7 +1076,7 @@
 			"cname":"瑶",
 			"ename":505,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/505.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yao.shtml",
 			"id":92,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1084,7 +1140,7 @@
 			"cname":"盘古",
 			"ename":529,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/529.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/pangu.shtml",
 			"id":91,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1130,7 +1186,7 @@
 			"cname":"猪八戒",
 			"ename":511,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/511.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhubajie.shtml",
 			"id":90,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1182,7 +1238,7 @@
 			"cname":"嫦娥",
 			"ename":515,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/515.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/change.shtml",
 			"id":89,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1234,7 +1290,7 @@
 			"cname":"上官婉儿",
 			"ename":513,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/513.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/shangguanwaner.shtml",
 			"id":88,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1292,7 +1348,7 @@
 			"cname":"李信",
 			"ename":507,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/507.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lixin.shtml",
 			"id":87,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1338,7 +1394,7 @@
 			"cname":"沈梦溪",
 			"ename":312,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/312.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/shenmengxi.shtml",
 			"id":86,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1402,7 +1458,7 @@
 			"cname":"伽罗",
 			"ename":508,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/508.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/jialuo.shtml",
 			"id":85,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1460,7 +1516,7 @@
 			"cname":"盾山",
 			"ename":509,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/509.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/dunshan.shtml",
 			"id":84,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1512,7 +1568,7 @@
 			"cname":"司马懿",
 			"ename":137,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/137.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/simayi.shtml",
 			"id":83,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1552,7 +1608,7 @@
 			"cname":"孙策",
 			"ename":510,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/510.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sunce.shtml",
 			"id":82,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1604,7 +1660,7 @@
 			"cname":"元歌",
 			"ename":125,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/125.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yuange.shtml",
 			"id":81,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1650,7 +1706,7 @@
 			"cname":"米莱狄",
 			"ename":504,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/504.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/milaidi.shtml",
 			"id":80,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1708,7 +1764,7 @@
 			"cname":"狂铁",
 			"ename":503,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/503.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/kuangtie.shtml",
 			"id":79,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1760,7 +1816,7 @@
 			"cname":"弈星",
 			"ename":197,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/197.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yixing.shtml",
 			"id":78,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1806,7 +1862,7 @@
 			"cname":"裴擒虎",
 			"ename":502,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/502.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/peiqinhu.shtml",
 			"id":77,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1870,7 +1926,7 @@
 			"cname":"杨玉环",
 			"ename":176,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/176.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yangyuhuan.shtml",
 			"id":76,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1922,7 +1978,7 @@
 			"cname":"公孙离",
 			"ename":199,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/199.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/gongsunli.shtml",
 			"id":75,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -1986,7 +2042,7 @@
 			"cname":"明世隐",
 			"ename":501,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/501.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/mingshiyin.shtml",
 			"id":74,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2038,7 +2094,7 @@
 			"cname":"女娲",
 			"ename":179,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/179.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/nvwa.shtml",
 			"id":73,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2084,7 +2140,7 @@
 			"cname":"梦奇",
 			"ename":198,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/198.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/mengqi.shtml",
 			"id":72,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2136,7 +2192,7 @@
 			"cname":"苏烈",
 			"ename":194,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/194.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sulie.shtml",
 			"id":71,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2188,7 +2244,7 @@
 			"cname":"百里玄策",
 			"ename":195,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/195.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/bailixuance.shtml",
 			"id":70,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2240,7 +2296,7 @@
 			"cname":"百里守约",
 			"ename":196,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/196.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/bailishouyue.shtml",
 			"id":69,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2298,7 +2354,7 @@
 			"cname":"铠",
 			"ename":193,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/193.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/kai.shtml",
 			"id":68,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2356,7 +2412,7 @@
 			"cname":"鬼谷子",
 			"ename":189,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/189.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/guiguzi.shtml",
 			"id":67,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2408,7 +2464,7 @@
 			"cname":"干将莫邪",
 			"ename":182,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/182.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/ganjiangmoye.shtml",
 			"id":66,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2472,7 +2528,7 @@
 			"cname":"东皇太一",
 			"ename":187,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/187.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/donghuangtaiyi.shtml",
 			"id":65,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2518,7 +2574,7 @@
 			"cname":"大乔",
 			"ename":191,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/191.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/daqiao.shtml",
 			"id":64,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2588,7 +2644,7 @@
 			"cname":"黄忠",
 			"ename":192,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/192.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/huangzhong.shtml",
 			"id":63,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2634,7 +2690,7 @@
 			"cname":"诸葛亮",
 			"ename":190,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/190.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhugeliang.shtml",
 			"id":62,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2704,7 +2760,7 @@
 			"cname":"哪吒",
 			"ename":180,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/180.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/nezha.shtml",
 			"id":61,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2762,7 +2818,7 @@
 			"cname":"太乙真人",
 			"ename":186,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/186.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/taiyizhenren.shtml",
 			"id":60,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2814,7 +2870,7 @@
 			"cname":"蔡文姬",
 			"ename":184,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/184.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/caiwenji.shtml",
 			"id":59,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2878,7 +2934,7 @@
 			"cname":"雅典娜",
 			"ename":183,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/183.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yadianna.shtml",
 			"id":58,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2936,7 +2992,7 @@
 			"cname":"杨戬",
 			"ename":178,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/178.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yangjian.shtml",
 			"id":57,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -2994,7 +3050,7 @@
 			"cname":"成吉思汗",
 			"ename":177,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/177.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/chengjisihan.shtml",
 			"id":56,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3028,7 +3084,7 @@
 			"cname":"钟馗",
 			"ename":175,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/175.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhongkui.shtml",
 			"id":55,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3080,7 +3136,7 @@
 			"cname":"虞姬",
 			"ename":174,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/174.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yuji.shtml",
 			"id":54,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3144,7 +3200,7 @@
 			"cname":"李元芳",
 			"ename":173,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/173.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/liyuanfang.shtml",
 			"id":53,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3220,7 +3276,7 @@
 			"cname":"张飞",
 			"ename":171,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/171.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhangfei.shtml",
 			"id":52,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3272,7 +3328,7 @@
 			"cname":"刘备",
 			"ename":170,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/170.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/liubei.shtml",
 			"id":51,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3336,7 +3392,7 @@
 			"cname":"后羿",
 			"ename":169,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/169.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/houyi.shtml",
 			"id":50,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3406,7 +3462,7 @@
 			"cname":"牛魔",
 			"ename":168,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/168.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/niumo.shtml",
 			"id":49,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3464,7 +3520,7 @@
 			"cname":"孙悟空",
 			"ename":167,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/167.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sunwukong.shtml",
 			"id":48,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3546,7 +3602,7 @@
 			"cname":"亚瑟",
 			"ename":166,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/166.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yase.shtml",
 			"id":47,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3604,7 +3660,7 @@
 			"cname":"橘右京",
 			"ename":163,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/163.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/jvyoujing.shtml",
 			"id":46,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3644,7 +3700,7 @@
 			"cname":"娜可露露",
 			"ename":162,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/162.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/nakelulu.shtml",
 			"id":45,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3684,7 +3740,7 @@
 			"cname":"不知火舞",
 			"ename":157,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/157.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/buzhihuowu.shtml",
 			"id":44,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3724,7 +3780,7 @@
 			"cname":"张良",
 			"ename":156,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/156.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhangliang.shtml",
 			"id":43,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3794,7 +3850,7 @@
 			"cname":"花木兰",
 			"ename":154,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/154.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/huamulan.shtml",
 			"id":42,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3876,7 +3932,7 @@
 			"cname":"兰陵王",
 			"ename":153,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/153.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lanlingwang.shtml",
 			"id":41,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -3940,7 +3996,7 @@
 			"cname":"王昭君",
 			"ename":152,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/152.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/wangzhaojun.shtml",
 			"id":40,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4010,7 +4066,7 @@
 			"cname":"韩信",
 			"ename":150,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/150.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/hanxin.shtml",
 			"id":39,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4080,7 +4136,7 @@
 			"cname":"刘邦",
 			"ename":149,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/149.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/liubang.shtml",
 			"id":38,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4132,7 +4188,7 @@
 			"cname":"姜子牙",
 			"ename":148,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/148.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/jiangziya.shtml",
 			"id":37,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4178,7 +4234,7 @@
 			"cname":"露娜",
 			"ename":146,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/146.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/luna.shtml",
 			"id":36,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4188,7 +4244,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-bigskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-bigskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-bigskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-bigskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-bigskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-bigskin-8.jpg"
 			],
 			"phoneMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-1.jpg",
@@ -4197,7 +4254,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-mobileskin-8.jpg"
 			],
 			"phoneSmallskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-1.jpg",
@@ -4206,9 +4264,10 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146-smallskin-8.jpg"
 			],
-			"skinName":"月光之女|哥特玫瑰|绯红之刃|紫霞仙子|一生所爱|瓷语鉴心|启示之音",
+			"skinName":"月光之女|哥特玫瑰|绯红之刃|紫霞仙子|一生所爱|瓷语鉴心|启示之音|霜月吟",
 			"skins":[
 				"月光之女",
 				"哥特玫瑰",
@@ -4216,7 +4275,8 @@
 				"紫霞仙子",
 				"一生所爱",
 				"瓷语鉴心",
-				"启示之音"
+				"启示之音",
+				"霜月吟"
 			],
 			"title":"月光之女",
 			"wallpaperBigskinUrl":[
@@ -4226,7 +4286,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-8.jpg"
 			],
 			"wallpaperMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-1.jpg",
@@ -4235,14 +4296,15 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-mobileskin-8.jpg"
 			]
 		},
 		{
 			"cname":"程咬金",
 			"ename":144,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/144.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/chengyaojin.shtml",
 			"id":35,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4312,7 +4374,7 @@
 			"cname":"安琪拉",
 			"ename":142,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/142.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/anqila.shtml",
 			"id":34,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4376,7 +4438,7 @@
 			"cname":"貂蝉",
 			"ename":141,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/141.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/diaochan.shtml",
 			"id":33,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4452,7 +4514,7 @@
 			"cname":"关羽",
 			"ename":140,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/140.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/guanyu.shtml",
 			"id":32,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4516,7 +4578,7 @@
 			"cname":"老夫子",
 			"ename":139,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/139.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/laofuzi.shtml",
 			"id":31,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4574,7 +4636,7 @@
 			"cname":"武则天",
 			"ename":136,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/136.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/wuzetian.shtml",
 			"id":30,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4626,7 +4688,7 @@
 			"cname":"项羽",
 			"ename":135,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/135.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xiangyu.shtml",
 			"id":29,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4696,7 +4758,7 @@
 			"cname":"达摩",
 			"ename":134,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/134.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/damo.shtml",
 			"id":28,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4754,7 +4816,7 @@
 			"cname":"狄仁杰",
 			"ename":133,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/133.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/direnjie.shtml",
 			"id":27,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4830,7 +4892,7 @@
 			"cname":"马可波罗",
 			"ename":132,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/132.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/makeboluo.shtml",
 			"id":26,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4900,7 +4962,7 @@
 			"cname":"李白",
 			"ename":131,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/131.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/libai.shtml",
 			"id":25,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -4964,7 +5026,7 @@
 			"cname":"宫本武藏",
 			"ename":130,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/130.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/gongbenwuzang.shtml",
 			"id":24,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5028,7 +5090,7 @@
 			"cname":"典韦",
 			"ename":129,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/129.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/dianwei.shtml",
 			"id":23,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5086,7 +5148,7 @@
 			"cname":"曹操",
 			"ename":128,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/128.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/caocao.shtml",
 			"id":22,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5150,7 +5212,7 @@
 			"cname":"甄姬",
 			"ename":127,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/127.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhenji.shtml",
 			"id":21,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5220,7 +5282,7 @@
 			"cname":"夏侯惇",
 			"ename":126,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/126.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xiahoudun.shtml",
 			"id":20,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5278,7 +5340,7 @@
 			"cname":"周瑜",
 			"ename":124,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/124.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhouyv.shtml",
 			"id":19,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5330,7 +5392,7 @@
 			"cname":"吕布",
 			"ename":123,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/123.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lvbu.shtml",
 			"id":18,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5406,7 +5468,7 @@
 			"cname":"芈月",
 			"ename":121,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/121.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/miyue.shtml",
 			"id":17,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5464,7 +5526,7 @@
 			"cname":"白起",
 			"ename":120,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/120.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/baiqi.shtml",
 			"id":16,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5522,7 +5584,7 @@
 			"cname":"扁鹊",
 			"ename":119,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/119.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/bianque.shtml",
 			"id":15,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5574,7 +5636,7 @@
 			"cname":"孙膑",
 			"ename":118,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/118.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sunbin.shtml",
 			"id":14,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5584,7 +5646,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-bigskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-bigskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-bigskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-bigskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-bigskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-bigskin-8.jpg"
 			],
 			"phoneMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-1.jpg",
@@ -5593,7 +5656,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-mobileskin-8.jpg"
 			],
 			"phoneSmallskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-1.jpg",
@@ -5602,9 +5666,10 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118-smallskin-8.jpg"
 			],
-			"skinName":"逆流之时|未来旅行|天使之翼|妖精王|归虚梦演|天狼运算者|寅虎·展翼",
+			"skinName":"逆流之时|未来旅行|天使之翼|妖精王|归虚梦演|天狼运算者|寅虎·展翼|小动物乐团",
 			"skins":[
 				"逆流之时",
 				"未来旅行",
@@ -5612,7 +5677,8 @@
 				"妖精王",
 				"归虚梦演",
 				"天狼运算者",
-				"寅虎·展翼"
+				"寅虎·展翼",
+				"小动物乐团"
 			],
 			"title":"逆流之时",
 			"wallpaperBigskinUrl":[
@@ -5622,7 +5688,8 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-bigskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-bigskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-bigskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-bigskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-bigskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-bigskin-8.jpg"
 			],
 			"wallpaperMobileskinUrl":[
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-1.jpg",
@@ -5631,14 +5698,15 @@
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-4.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-5.jpg",
 				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-6.jpg",
-				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-7.jpg"
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-7.jpg",
+				"https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/118/118-mobileskin-8.jpg"
 			]
 		},
 		{
 			"cname":"钟无艳",
 			"ename":117,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/117.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhongwuyan.shtml",
 			"id":13,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5696,7 +5764,7 @@
 			"cname":"阿轲",
 			"ename":116,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/116.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/ake.shtml",
 			"id":12,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5754,7 +5822,7 @@
 			"cname":"高渐离",
 			"ename":115,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/115.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/gaojianli.shtml",
 			"id":11,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5806,7 +5874,7 @@
 			"cname":"刘禅",
 			"ename":114,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/114.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/liushan.shtml",
 			"id":10,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5870,7 +5938,7 @@
 			"cname":"庄周",
 			"ename":113,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/113.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhuangzhou.shtml",
 			"id":9,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -5940,7 +6008,7 @@
 			"cname":"鲁班七号",
 			"ename":112,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/112.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lubanqihao.shtml",
 			"id":8,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6022,7 +6090,7 @@
 			"cname":"孙尚香",
 			"ename":111,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/111.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/sunshangxiang.shtml",
 			"id":7,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6104,7 +6172,7 @@
 			"cname":"嬴政",
 			"ename":110,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/110.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yingzheng.shtml",
 			"id":6,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6156,7 +6224,7 @@
 			"cname":"妲己",
 			"ename":109,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/109.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/daji.shtml",
 			"id":5,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6238,7 +6306,7 @@
 			"cname":"墨子",
 			"ename":108,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/108.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/mozi.shtml",
 			"id":4,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6296,7 +6364,7 @@
 			"cname":"赵云",
 			"ename":107,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/107.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/zhaoyun.shtml",
 			"id":3,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6378,7 +6446,7 @@
 			"cname":"小乔",
 			"ename":106,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/106.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xiaoqiao.shtml",
 			"id":2,
 			"newType":null,
 			"phoneBigskinUrl":[
@@ -6454,7 +6522,7 @@
 			"cname":"廉颇",
 			"ename":105,
 			"heroType":null,
-			"heroUrl":"https://pvp.qq.com/web201605/herodetail/105.shtml",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lianpo.shtml",
 			"id":1,
 			"newType":null,
 			"phoneBigskinUrl":[
