@@ -1,35 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0043)https://pvp.qq.com/web201605/herolist.shtml -->
-<html><script id="allow-copy_script">(function agent() {
-    let unlock = false
-    document.addEventListener('allow_copy', (event) => {
-      unlock = event.detail.unlock
-    })
-
-    const copyEvents = [
-      'copy',
-      'cut',
-      'contextmenu',
-      'selectstart',
-      'mousedown',
-      'mouseup',
-      'mousemove',
-      'keydown',
-      'keypress',
-      'keyup',
-    ]
-    const rejectOtherHandlers = (e) => {
-      if (unlock) {
-        e.stopPropagation()
-        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
-      }
-    }
-    copyEvents.forEach((evt) => {
-      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
-        capture: true,
-      })
-    })
-  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<html><script id="allow-copy_script" src="chrome-extension://aefehdhdciieocakfobpaaolhipkcpgc/content_scripts/copy.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
     
     <meta name="author" content="Tencent-CP">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -1060,11 +1031,1312 @@ div.wegameLoginIcon {
   height: 50px;
   cursor: pointer;
 }
-</style><style>.footer-wrap{position:relative;z-index:2;height:362px;background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_footer.jpg) no-repeat center 0;}.footer-wrap p,.footer-wrap .foot_links li{margin:0;font-size:12px;}.footer-wrap .foot{position: relative;background:none;width:1200px;padding-top:80px;}.footer-wrap .foot_lefts{display: block;float:none;height: 66px;padding-bottom:10px;margin-bottom:12px;border-bottom:2px solid #d4d4d4;}.footer-wrap .foot_cpright{padding:0;}.footer-wrap .foot_ieg_logo{width:285px;height:64px;margin:0;background: url(//game.gtimg.cn/images/yxzj/web201605/main/spr.png) no-repeat;}.footer-wrap .logo1{width:70px;height:64px;margin:0;background: url(//game.gtimg.cn/images/yxzj/web201605/main/spr.png) no-repeat -285px 0;}.footer-wrap .logo2,.footer-wrap .limit_age{display: none;}.footer-wrap .foot_links,.footer-wrap .foot_links a:link,.footer-wrap .foot_links a:visited{color:#646467;text-decoration: none;}.footer-wrap .foot_links{position: relative;margin:0;width:650px;}.footer-wrap .copyright_en{padding-top:6px;}.footer-wrap .copyright_zh{float:right;padding-top:6px;}.footer-wrap .foot-tips{position: absolute;left:0;top:170px;padding-top:0;width:508px;font-size: 12px;color: #666;}.footer-wrap .foot-tips .fb{color: #333;font-weight: bold;}.footer-wrap .foot-tips em{font-style:normal;margin-right:12px;color:#6d6d6d;}.footer-wrap .foot-tips .intro{margin-top:6px;}.footer-wrap .foot-tips .report{position: absolute;left:550px;top:106px;width: 300px;}</style><link href="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/ost.css" rel="stylesheet" type="text/css"><style>.qConnectLogin {z-index: 99;}</style><style>.foot{background:#fff;color:#000;font:12px/20px "微软雅黑","宋体";min-width:1050px;margin:0 auto;text-align:left;}.foot_dark{background:#000;color:#494949}.foot_dark a{color:#494949}.foot_cpright{padding:15px 20px}.foot_cpright:after{content:"";display:block;height:0;line-height:0;visibility:hidden;clear:both}.f_line{margin:0 2px}.foot_lefts{float:left;display:inline}.foot_ieg_logo{float:left;width:180px;height:35px;text-indent:-999em;overflow:hidden;margin:10px 0 0 10px;background:url(//game.gtimg.cn/images/js/2018foot/logo/foot-light.png)}.foot_dark .foot_ieg_logo{background:url(//game.gtimg.cn/images/js/2018foot/logo/foot-dark.png)}.foot_left{float:left;text-indent:-999em;overflow:hidden;margin:10px 0 0 10px;width:85px;height:35px;}.foot_links{display:inline;float:right;width:682px;list-style: none;}.foot_links li{line-height:20px;overflow:hidden;}.copyright_zh a{padding-right:10px}.foot_links .link_map{font-size:0;}.foot_links .link_map .f_line:last-child{display:none}.foot_links .copyright_txt{font-size:10px;}.foot_links .link_map span,.foot_links .link_map a{font-size:12px;color:#494949}.foot_links li img{vertical-align:middle;margin-right:3px;display:inline;}.foot_ratetext_inner {text-align: center;padding: 15px 20px 0;margin: 0}.foot_ratetext + .foot_cpright {padding: 0 20px 15px;}</style></head>
+</style><style>.header-container-2023 {position: relative; width: 1920px; min-height: 80px; padding-top: 80px; box-sizing: border-box; transform-origin: 0% 0%; z-index: 10;}.logo-container-2023 {position: absolute; left: 35px; top: 15px;}.login-container-2023 {position: absolute; right: 20px; top: 22px;}.download-button-2023 {position: absolute; display: none; right: 170px; top: 20px; cursor: pointer; user-select: none;}.download-word-2023 {position: absolute; width: 124px; height: 38px; left: 0px; top: -1px; line-height: 38px; font-size: 16px; font-weight: bold; color: #30210d; text-align: center;}.show-more-ip-2023 {position: absolute; left: 200px; top: 16px; transform: scale(0.8, 0.8)}.ip-drawer-2023 {position: absolute; top: -236px; z-index: 20; width: 1920px; height: 236px; transform-origin: 0% 0%; }.menu-container-2023 {position: absolute; top: 0; width: 1190px; user-select: none; display: flex;}ul,li {list-style: none; padding: 0; margin: 0;}.li-2023 {padding-top: 0px; padding-bottom: 20px;}.menu1-2023 {width: 150px; text-align: center; padding-top: 18px;}.menu1-word-contianer-2023 {color: #FFFFFF;}.menu1-big-word-2023 {font-size: 16px;}.menu1-big-word-link-2023 {font-size: 16px; cursor: pointer;}.menu1-small-word-2023 {font-size: 12px; opacity: 0.35;}.menu1-2023 .menu2-bg-2023 {display: none;}.menu1-2023:hover .menu2-bg-2023 {display: block; transition-duration: 0.3s; transition-timing-function: ease; transition-delay: 0s;}.menu2-bg-2023 {width: 150px; background-color: rgba(11, 11, 11, 0.5); margin-top: 20px; color: #FFFFFF; z-index: 15;}.menu2-bg-2023 {margin-left: 0px;} .menu2-triangle-tip-2023 {position: relative; top: -16px; opacity: 1;}.menu2-2023 {font-size: 13px; opacity: 0.7; cursor: pointer; text-align: left; position: relative; left: 28px;}.menu2-2023:hover {color: #FFA500; opacity: 1;}.menu2-word-2023-1 {padding-left: 20px;}.menu2-word-2023-2 {padding-left: 20px;}.menu2-word-2023-3 {padding-left: 20px;}.menu2-word-2023-4 {padding-left: 5px;}.menu2-word-2023-5 {padding-left: 3px;}.menu2-word-2023-6 {padding-left: 10px;}.menu2-new-2023 {font-size: 13px; opacity: 0.7; cursor: pointer; text-align: left; position: relative; background-image: url("https://game.gtimg.cn/images/yxzj/pvpcommonimage/header/new.png"); background-repeat: no-repeat; background-position: 0px 0px;}.menu2-new-2023-position-2 {left: 18px; padding-left: 10px;}.menu2-new-2023-position-3 {left: 18px; padding-left: 10px;}.menu2-new-2023-position-4 {left: 8px; padding-left: 20px;}.menu2-new-2023-position-5 {left: 8px; padding-left: 20px;}.menu2-new-2023-position-6 {left: 8px; padding-left: 15px;}.menu2-new-2023:hover {color: #FFA500; opacity: 1;}.menu2-hot-2023 {font-size: 13px; opacity: 0.7; cursor: pointer; text-align: left; position: relative; background-image: url("https://game.gtimg.cn/images/yxzj/pvpcommonimage/header/hot.png"); background-repeat: no-repeat; background-position: 0px 0px;}.menu2-hot-2023:hover {color: #FFA500; opacity: 1;}.service-container-2023 {position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 25;}.service-qrcode-2023 {position: absolute; width: 368px; height: 358px; left: 50%; top: 300px; transform: translateX(-50%);}.service-close-button-2023 {position: absolute; width: 45px; height: 45px; top: 10px; right: 10px; cursor: pointer;}.service-word-2023 {position: absolute; bottom: 50px; width: 368px; text-align: center; font-size: 18px; color: #b7bde1}.header-container-2023 {background-color: #191919;}.banner-image-2023 {display: block; width: 1920px; height: 360px;}.detail-button-2023 {position: absolute; left: 150px; top: 340px; cursor: pointer;}</style><style>/*
+	PC端登录相关样式
+	less使用方式：
+	lessc login.css login-min.css -x
+*/
 
-<body class="old-header" style="padding-top: 42px;"><div id="header" class="header tganime-header-fix"><div class="header-nav">    <div class="header-inner">      <h1><a href="https://pvp.qq.com/" class="logo pa" title="王者荣耀" onclick="PTTSendClick(&#39;link&#39;,&#39;logo&#39;,&#39;logo&#39;);">王者荣耀</a></h1>      <!--=========主导航==========-->      <ul class="main-nav clearfix">        <li>          <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" title="游戏资料" onclick="PTTSendClick(&#39;link&#39;,&#39;data&#39;,&#39;游戏资料&#39;);">游戏资料<em>DATA</em></a>        </li>        <li>          <a href="https://pvp.qq.com/raiders/" target="_blank" title="内容中心" onclick="PTTSendClick(&#39;link&#39;,&#39;strategy&#39;,&#39;内容中心&#39;);">内容中心<em>CONTENTS</em></a>        </li>        <li>          <a href="https://kpl.qq.com/?ADTAG=pvp.index.nav.matchcenter" target="_blank" title="赛事中心" onclick="PTTSendClick(&#39;link&#39;,&#39;match&#39;,&#39;赛事中心&#39;);">赛事中心<em>MATCH</em></a>        </li>        <li>          <a href="https://pvp.qq.com/cp/a20171023pvppc/" target="_blank" title="百态王者" onclick="PTTSendClick(&#39;link&#39;,&#39;CULTURE&#39;,&#39;百态王者&#39;);">百态王者<em>CULTURE</em></a>        </li>        <li>          <a href="javascript:void(0)" title="社区互动" onclick="PTTSendClick(&#39;link&#39;,&#39;Community&#39;,&#39;社区互动&#39;);">社区互动<em>COMMUNITY</em></a>        </li>        <li>          <a href="javascript:void(0)" title="玩家支持" onclick="PTTSendClick(&#39;link&#39;,&#39;player&#39;,&#39;玩家支持&#39;);">玩家支持<em>PLAYER</em></a>        </li>        <li>          <a href="javascript:void(0)" title="IP新游" onclick="PTTSendClick(&#39;link&#39;,&#39;ipnewgame&#39;,&#39;IP新游&#39;);">IP新游<em>NEW GAMES</em></a>        </li>      </ul>    </div>    <!--=====二级导航=====-->      <div id="J_subNav" class="sub-nav">        <ul class="sub-nav-inner">          <li class="down-nav">             <a href="https://pvp.qq.com/cp/a20170829bbgxsm/index.html" target="_blank" title="版本介绍" onclick="PTTSendClick(&#39;link&#39;,&#39;version&#39;,&#39;版本介绍&#39;);">版本介绍</a>             <a href="https://pvp.qq.com/web201605/introduce.shtml" target="_blank" title="游戏介绍" onclick="PTTSendClick(&#39;link&#39;,&#39;gameinfomation&#39;,&#39;游戏介绍&#39;);">游戏介绍</a>             <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" title="英雄资料" onclick="PTTSendClick(&#39;link&#39;,&#39;hero&#39;,&#39;英雄资料&#39;);">英雄资料</a>             <a href="https://pvp.qq.com/coming/v2/" target="_blank" title="爆料站" onclick="PTTSendClick(&#39;link&#39;,&#39;data_coming&#39;,&#39;爆料站&#39;);"><i class="icon-hot"></i>爆料站</a>             <a href="https://pvp.qq.com/ip/index.html?adtag=pvp.pc" target="_blank" title="世界观体验站" onclick="PTTSendClick(&#39;link&#39;,&#39;data_story&#39;,&#39;世界观体验站&#39;);"><i class="icon-fans"></i>世界观体验站</a>             <a href="https://pvp.qq.com/web201605/wallpaper.shtml" target="_blank" title="游戏壁纸" onclick="PTTSendClick(&#39;link&#39;,&#39;wallpaper&#39;,&#39;游戏壁纸&#39;);">游戏壁纸</a>          </li>          <li class="down-nav">             <a href="https://pvp.qq.com/raiders/" target="_blank" title="攻略中心" onclick="PTTSendClick(&#39;link&#39;,&#39;strategy_center&#39;,&#39;攻略中心&#39;);">攻略中心</a>             <a href="https://pvp.icreate.qq.com/" target="_blank" title="开放素材库" onclick="PTTSendClick(&#39;link&#39;,&#39;strategy_sucai&#39;,&#39;开放素材库&#39;);">开放素材库</a>             <a href="https://yyds.qq.com/creation" target="_blank" title="内容共创平台" onclick="PTTSendClick(&#39;link&#39;,&#39;creation&#39;,&#39;内容共创平台&#39;);"><i class="icon-fans"></i>内容共创平台</a>             <a href="https://pvp.qq.com/cp/a20220914wza/" target="_blank" title="手语打法参考" onclick="PTTSendClick(&#39;link&#39;,&#39;wza&#39;,&#39;手语打法参考&#39;);"><i class="icon-fans"></i>手语打法参考</a>          </li>          <li class="down-nav">             <a href="https://pvp.qq.com/cp/kic2023/index.html" target="_blank" title="王者世冠KIC" onclick="PTTSendClick(&#39;link&#39;,&#39;match_worldcup&#39;,&#39;王者世冠KIC&#39;);"><i class="icon-hot"></i>王者世冠KIC</a>            <a href="https://pvp.qq.com/match/kpl/kingproleague/index.html" target="_blank" title="KPL职业联赛" onclick="PTTSendClick(&#39;link&#39;,&#39;match_KPL&#39;,&#39;KPL&#39;);">KPL</a>            <a href="https://pvp.qq.com/match/kgl/index.html" target="_blank" title="K甲联赛" onclick="PTTSendClick(&#39;link&#39;,&#39;match_Kjia&#39;,&#39;K甲联赛&#39;);">K甲联赛</a>             <a href="https://pvp.qq.com/match/WCC/KCC2023S1/index.html" target="_blank" title="挑战者杯" onclick="PTTSendClick(&#39;link&#39;,&#39;match_kcc&#39;,&#39;挑战者杯&#39;);">挑战者杯</a>             <a href="https://pvp.qq.com/cp/a20220328qgds/index.shtml" target="_blank" title="全国大赛" onclick="PTTSendClick(&#39;link&#39;,&#39;match_city&#39;,&#39;全国大赛&#39;);"><i class="icon-hot"></i>全国大赛</a>             <a href="https://pvp.qq.com/cp/a20220315open/index.shtml" target="_blank" title="王者高校联赛" onclick="PTTSendClick(&#39;link&#39;,&#39;match_gaoxiao&#39;,&#39;王者高校联赛&#39;);">高校联赛</a>             <a href="https://pvp.qq.com/saibao/index.shtml" target="_blank" title="王者赛宝" onclick="PTTSendClick(&#39;link&#39;,&#39;match_saibao&#39;,&#39;saibao&#39;);"><i class="icon-fans"></i>王者赛宝</a>             <a href="https://pvp.qq.com/matchdata/index.html" target="_blank" title="赛事数据" onclick="PTTSendClick(&#39;link&#39;,&#39;match_datamore&#39;,&#39;赛事数据&#39;);">赛事数据</a>          </li>          <li class="down-nav">             <a href="https://pvp.qq.com/memory/index.html" target="_blank" title="荣耀·传承" onclick="PTTSendClick(&#39;link&#39;,&#39;culture&#39;,&#39;荣耀·传承&#39;);">荣耀·传承</a>             <a href="https://pvp.qq.com/history/" target="_blank" title="王者文化站" onclick="PTTSendClick(&#39;link&#39;,&#39;history&#39;,&#39;王者文化站&#39;);">王者文化站</a>             <a href="https://pvp.qq.com/wonder/" target="_blank" title="万千世界" onclick="PTTSendClick(&#39;link&#39;,&#39;wonder&#39;,&#39;万千世界&#39;);">万千世界</a>             <a href="https://pvp.qq.com/cp/a20221020wzjwhb/" target="_blank" title="王者绝悟" onclick="PTTSendClick(&#39;link&#39;,&#39;wzjw&#39;,&#39;王者绝悟&#39;);"><i class="icon-fans"></i>王者绝悟</a>             <a href="https://pvp.qq.com/cp/a20190102starlight/index.html" target="_blank" title="星光殿堂" onclick="PTTSendClick(&#39;link&#39;,&#39;star&#39;,&#39;星光殿堂&#39;);">星光殿堂</a>             <a href="https://pvp.qq.com/cp/a20210427ipgzzt/" target="_blank" title="IP共创计划" onclick="PTTSendClick(&#39;link&#39;,&#39;ip&#39;,&#39;IP共创计划&#39;);"><i class="icon-fans"></i>IP共创计划</a>             <a href="https://igame.qq.com/newcss/pvp/privilegePC/index.html" target="_blank" title="商户特权" onclick="PTTSendClick(&#39;link&#39;,&#39;wifi&#39;,&#39;商户特权&#39;);">商户特权</a>             <a href="https://wangzhe.recogame.com/wangzhe.html" target="_blank" title="龙翼王者卡" onclick="PTTSendClick(&#39;link&#39;,&#39;wangka&#39;,&#39;龙翼王者卡&#39;);"><i class="icon-fans"></i>龙翼王者卡</a>          </li>          <li class="down-nav">            <a href="https://pvp.qq.com/hdy/p1/index.html" title="创意互动营" onclick="PTTSendClick(&#39;link&#39;,&#39;creative_community&#39;,&#39;创意互动营&#39;);"><i class="icon-hot"></i>创意互动营</a>            <a href="javascript:void(0)" title="王者营地" onclick="TGDialogS(&#39;zhushou&#39;);PTTSendClick(&#39;link&#39;,&#39;Community_tools&#39;,&#39;王者营地&#39;);"><i class="icon-hot"></i>王者营地</a>            <a href="javascript:void(0)" title="微信圈子" onclick="TGDialogS(&#39;weiquan&#39;);PTTSendClick(&#39;link&#39;,&#39;Community_wx&#39;,&#39;微信圈子&#39;);">微信圈子</a>            <a href="https://weibo.com/heromoba" target="_blank" title="官方微博" onclick="PTTSendClick(&#39;link&#39;,&#39;Community_wb&#39;,&#39;官方微博&#39;);">官方微博</a>            <a href="javascript:void(0)" title="微信公众号" onclick="TGDialogS(&#39;weixin&#39;);PTTSendClick(&#39;link&#39;,&#39;Community_wxgzh&#39;,&#39;微信公众号&#39;);">微信公众号</a>            <a href="javascript:void(0)" title="手Q订阅号" onclick="TGDialogS(&#39;qq&#39;);PTTSendClick(&#39;link&#39;,&#39;Community_qqdyh&#39;,&#39;手Q订阅号&#39;);">手Q订阅号</a>          </li>          <li class="down-nav">             <a href="https://game.qq.com/act/a20210705protect/index.html" target="_blank" title="腾讯游戏防沉迷" onclick="PTTSendClick(&#39;link&#39;,&#39;player_addict&#39;,&#39;腾讯游戏防沉迷&#39;);">腾讯游戏防沉迷</a>             <a href="https://jiazhang.qq.com/jz/home.html" target="_blank" title="成长守护平台" onclick="PTTSendClick(&#39;link&#39;,&#39;player_watch&#39;,&#39;成长守护平台&#39;);"><i class="icon-guard"></i>成长守护平台</a>             <a href="https://pvp.qq.com/cp/a20190909talk/index.html" target="_blank" title="对局环境情报站" onclick="PTTSendClick(&#39;link&#39;,&#39;player_drj&#39;,&#39;对局环境情报站&#39;);">对局环境情报站</a>             <a href="javascript:void(0)" title="客服专区" onclick="TGDialogS(&#39;kefu&#39;);PTTSendClick(&#39;link&#39;,&#39;player_kf&#39;,&#39;客服专区&#39;);">客服专区</a>             <a href="https://pvp.qq.com/webplat/info/news_version3/15592/24091/24092/24095/m15241/201508/370256.shtml" title="礼包兑换" onclick="PTTSendClick(&#39;link&#39;,&#39;player_feedback&#39;,&#39;礼包兑换&#39;);" target="_blank">礼包兑换</a>             <a href="https://tool.helper.qq.com/v3/wzry/official_website/index.html" title="自助服务" onclick="PTTSendClick(&#39;link&#39;,&#39;player_service&#39;,&#39;自助服务&#39;);" target="_blank">自助服务</a>          </li>          <li class="down-nav">             <a href="https://world.qq.com/?ADTAG=pvp.nav.hokpc" target="_blank" title="世界" onclick="PTTSendClick(&#39;link&#39;,&#39;shijie&#39;,&#39;世界&#39;);"><i class="icon-fans"></i>王者荣耀·世界</a>             <a href="https://poxiao.qq.com/?ADTAG=pvp.nav.hokpc" target="_blank" title="破晓" onclick="PTTSendClick(&#39;link&#39;,&#39;poxiao&#39;,&#39;破晓&#39;);"><i class="icon-fans"></i>王者荣耀 星之破晓</a>             <a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=18&amp;tid=488378" target="_blank" title="启程" onclick="PTTSendClick(&#39;link&#39;,&#39;qicheng&#39;,&#39;启程&#39;);"><i class="icon-fans"></i>代号:启程</a>             <a href="https://wxq.qq.com/?ADTAG=pvp.qqpc" target="_blank" title="王者万象棋" onclick="PTTSendClick(&#39;link&#39;,&#39;wxq&#39;,&#39;王者万象棋&#39;);"><i class="icon-fans"></i>王者万象棋</a>          </li>        </ul>      </div>      </div><!--=========周免英雄和用户登录==========--><div class="info-box clearfix">  <div class="hero-box fl pr">	<p id="FreeHeros-Title"><b>周免英雄（<span id="freeHerosPeriod">1月22日-1月28日</span>）</b></p>	<ul id="FreeHeros-Cont" class="hero-list clearfix"><li class="active">	<a href="https://pvp.qq.com/web201605/herodetail/111.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-0&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="111" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/111.jpg" width="69" height="69">		<img class="large" data-id="111" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/111-freehover.png" width="224" height="69">	</a></li><li>	<a href="https://pvp.qq.com/web201605/herodetail/118.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-1&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="118" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/118.jpg" width="69" height="69">		<img class="large" data-id="118" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/118-freehover.png" width="224" height="69">	</a></li><li>	<a href="https://pvp.qq.com/web201605/herodetail/129.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-2&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="129" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/129.jpg" width="69" height="69">		<img class="large" data-id="129" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/129-freehover.png" width="224" height="69">	</a></li><li>	<a href="https://pvp.qq.com/web201605/herodetail/146.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-3&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="146" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/146.jpg" width="69" height="69">		<img class="large" data-id="146" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/146-freehover.png" width="224" height="69">	</a></li><li>	<a href="https://pvp.qq.com/web201605/herodetail/190.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-4&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="190" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/190.jpg" width="69" height="69">		<img class="large" data-id="190" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/190-freehover.png" width="224" height="69">	</a></li><li>	<a href="https://pvp.qq.com/web201605/herodetail/176.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-5&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="176" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/176.jpg" width="69" height="69">		<img class="large" data-id="176" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/176-freehover.png" width="224" height="69">	</a></li><li>	<a href="https://pvp.qq.com/web201605/herodetail/564.shtml" target="_blank" onclick="PTTSendClick(&#39;header&#39;,&#39;freeHero-6&#39;,&#39;周免英雄&#39;);">		<img class="small" data-id="564" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/564.jpg" width="69" height="69">		<img class="large" data-id="564" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/564-freehover.png" width="224" height="69">	</a></li></ul>	<a href="https://pvp.qq.com/web201605/herolist.shtml" onclick="PTTSendClick(&#39;head&#39;,&#39;morehero&#39;,&#39;更多英难&#39;);" target="_blank" title="更多英雄" class="more-hero pa">更<br>多<br>英<br>雄</a>  </div>  <div class="login-box clearfix fl pr">	<a class="avatar pa spr" href="https://pvp.qq.com/web201605/personal.shtml">	  <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/avatar1.jpg" width="75" height="75">	  <span class="pa spr level-ico db">0</span>	</a>	<!--=====登录后已选择大区=====-->	<div id="logined_selected" class="per-infor fl" style="display:none;">	  <p class="user-name f12">		<em>用户名称</em>		<i id="nickname">--</i>		<a class="logout_btn" href="javascript:void(0)">注销</a>		<a class="select_role" style="color:#2d84d3" href="javascript:void(0)">切换大区&gt;</a>	  </p>	  <ul class="userinfo-list tc">		<li><em class="grade_level">倔强青铜III</em><i>段位</i></li>		<li><em class="win_count">-</em><i>胜场</i></li>		<li><em class="hero_count">-</em><i>英雄数</i></li>		<li><em class="skin_count">-</em><i>皮肤数</i></li>	  </ul>	</div>	<!--=====登录前=====-->	<div id="unlogin" class="per-infor txt2 fl" style="display:block;">	  <p class="user-name">		亲爱的召唤师，欢迎  <a href="javascript:TGDialogS(&#39;login_select&#39;);" onclick="PTTSendClick(&#39;head&#39;,&#39;loginBtnSub&#39;,&#39;登录&#39;);">登录</a>	  </p>	</div>	<!--=====登录后未选择大区=====-->	<div id="logined_not_selected" class="per-infor txt2 fl" style="display:none;">	  <p class="user-name">		您已登录，请<a class="select_role" href="javascript:void(0)">选择大区</a>，或者<a class="logout_btn" href="javascript:void(0)">注销</a>		<!--您已登录，个人中心暂未开放<a class="logout_btn" href="javascript:void(0)">注销</a>-->	  </p>	  <!--p>登录后查看自己的英雄联盟游戏信息，包括召唤师等级、游戏胜场数、账户信息、声望值 等。</p-->	</div>  </div></div><!--=========周免英雄和用户登录==========--><a target="_blank" href="https://pvp.qq.com/coming/v2/skins/0119-syjxlb.shtml" onclick="PTTSendClick(&#39;btn&#39;,&#39;subtopkv&#39;,&#39;进入专题&#39;);" class="kv-link" title="查看详情">查看详情</a></div><div class="header-dialog">  <div class="pop pr tganime-fadein on" style="display:none;" id="login_select">    <a href="javascript:showDialog.hide()" class="close pa db ht">关闭</a>    <a href="javascript:void(0)" id="wxlogin" class="wx-login pa db ht">微信用户登录</a>    <a href="javascript:void(0)" id="qqlogin" class="qq-login pa db ht">QQ用户登录</a>  </div>  <div class="pop3 pr" style="display:none;" id="area_select">    <a href="javascript:showDialog.hide()" class="close pa db ht">关闭</a>    <div class="se-input">      <select name="channelContentId" id="channelContentId"><option selected="">选择渠道</option></select>      <select name="areaContentId" id="areaContentId"><option selected="">选择大区</option></select>      <select name="roleContentId" id="roleContentId"><option selected="">选择角色</option></select>    	 <div class="se-checkbox">    		 <input type="checkbox" id="se-checkbox"><label for="se-checkbox" id="se-checkbox-txt">我同意授权“本页面获取并存储我的游戏区服和角色相关信息用于正常的抽奖、领取、发货、签到等操作”</label>    	 </div>    </div>    <div class="se-btn clearfix">      <a id="RoleSelectBtn" href="javascript:;" class="fl ht">确定</a>      <a href="javascript:showDialog.hide()" class="fl ht">取消</a>    </div>  </div>  <div class="zhushou pr" id="zhushou" style="display:none">    <div class="dia-zhushou pr">       <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="weixin pr" id="weixin" style="display:none">    <div class="dia-weixin pr">       <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="story pr" id="story" style="display:none">    <div class="dia-story">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="skin pr" id="skin" style="display:none">    <div class="dia-skin">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="version pr" id="version" style="display:none">    <div class="dia-version">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>   <div class="weiquan pr" id="weiquan" style="display:none">    <div class="dia-weiquan">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="hero_pop pr" id="hero_pop" style="display:none">    <div class="dia-hero-pop">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="kefu pr" id="kefu" style="display:none">    <div class="dia-kefu">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>      <p>微信扫一扫，联系客服</p>    </div>   </div>  <div class="qq pr" id="qq" style="display:none">    <div class="dia-qq">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="wgc pr" id="wgc" style="display:none">    <div class="dia-wgc">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="qgc pr" id="qgc" style="display:none">    <div class="dia-qgc">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="applets pr" id="applets" style="display:none">    <div class="dia-applets">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div>  <div class="applets2 pr" id="applets2" style="display:none">    <div class="dia-applets2">      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>    </div>  </div></div>
-    
-    <div class="wrapper" style="background-image: url(&quot;https://ossweb-img%2Eqq%2Ecom/upload/webplat/info/yxzj/20240119/189991465057266%2Ejpg&quot;);">
+
+/*qq登录*/
+.milo-qqLogin{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.milo-qqLogin .qqLoginCover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.milo-qqLogin .qqLoginContent{
+    width: 650px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -225px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+.milo-qqLogin .qqLoginFrame{
+	width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 0px solid white
+}
+
+/*微信登录*/
+.milo-wxLogin{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.milo-wxLogin .wxLoginCover{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.milo-wxLogin .wxLoginContent{
+    box-sizing: content-box;
+	width: 300px;
+    height: 460px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -150px;
+    margin-top: -230px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    padding:0px 20px;
+}
+.milo-wxLogin .wxLoginContent .wxLoginClose{
+    height: 40px;
+    width: 100%;  
+}
+.milo-wxLogin .wxLoginContent .wxLoginClose a{
+	line-height: 36px;
+    text-align: center;
+	float: right;
+	margin-right: -20px;
+    height: 40px;
+    width: 40px;
+    display:inline-block;
+	color: rgb(102, 102, 102);
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration:none;
+    cursor: pointer;
+}
+.milo-wxLogin .wxLoginContent .wxLoginClose a:hover{
+	color: rgb(240, 115, 115);
+    font-family: Verdana, sans-serif;
+}
+.milo-wxLogin .wxLoginContent .wxLoginBox{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+
+/*qq微信登录*/
+
+.milo-qqwx-login {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none
+}
+
+.qqwx-login-cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.qqwx-login-frame {
+    width: 750px;
+    height: 470px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -240px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.qqwx-tabs {
+    line-height: 40px;
+    /* position: absolute; */
+    z-index: 100001;
+    width: 100%;
+    height: 40px;
+}
+
+.qqwx-tabs .qq-tab,
+.qqwx-tabs .wx-tab {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #b1b1b1;
+    text-decoration: none
+}
+
+.qqwx-active-qq a.qq-tab {
+    color: #fff;
+    background-color: #51b7ec
+}
+
+.qqwx-active-wx a.wx-tab {
+    color: #fff;
+    background-color: #4ab218
+}
+
+.qqwx-tabs .qqwxtab-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0px 5px;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid
+}
+
+.qqwx-active-qq .qqwx-tabs .qqwxtab-close {
+    border-color: #e0dcdc
+}
+
+.qqwx-active-wx .qqwx-tabs .qqwxtab-close {
+    border-color: #8BC34A;
+    color: #d4d2d2
+}
+
+.qqwx-tabs .qqwxtab-close:hover {
+    font-weight: bold
+}
+
+.qqwx-tips {
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #a2a2a2;
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    top: 40px;
+    z-index: 10001;
+    background-color: #fff;
+    border: none;
+}
+
+.qqwx-frame {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    border: none;
+    top: 70px;
+}
+
+.qqwx-frame div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    display: none;
+    border: none;
+}
+
+.qqwx-frame div iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.qqwx-active-qq div.qqwx-frame-qq-div {
+    display: block
+}
+
+.qqwx-active-wx div.qqwx-frame-wx-div {
+    display: block
+}
+
+i.ico-qq-logo,
+i.ico-wx-logo {
+    display: inline-block;
+    height: 23px;
+    vertical-align: middle;
+    margin: 0px 5px;
+    margin-top: -4px;
+    background: url(https://vm.gtimg.cn/tencentvideo/vstyle/web/common/style/img/login/sprite_login.png?d=0210&max_age=31104000) no-repeat
+}
+
+i.ico-qq-logo {
+    width: 20px
+}
+
+i.ico-wx-logo {
+    width: 24px
+}
+
+.qqwx-active-wx i.ico-qq-logo {
+    background-position: -180px -90px
+}
+
+.qqwx-active-wx i.ico-wx-logo {
+    background-position: -250px -90px
+}
+
+.qqwx-active-qq i.ico-qq-logo {
+    background-position: -200px -90px
+}
+
+.qqwx-active-qq i.ico-wx-logo {
+    background-position: -220px -90px
+}
+
+div#qqwx-frame-wx-div {
+    top: 20px
+}
+
+
+/*qc登录*/
+
+.loginframe {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 0px solid white
+}
+
+.milo-qConnectLogin {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px
+}
+
+.qConnectLoginCover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.qConnectLoginContent {
+    width: 752px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -220px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.qConnectLoginContent>div {
+    height: 30px;
+    width: 100%;
+    /* background-color: #4fb7ec; */
+    background-color: #fff;
+    font-size: 18px
+}
+
+.qConnectLoginContent>div span {
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0px 5px
+}
+
+.qConnectLoginContent>div a {
+    float: right;
+    line-height: 30px;
+    text-decoration: none;
+    color: #009aff;
+    font-weight: bold;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.qConnectLoginContent>div a:hover {
+    color: #f57272
+}
+
+.qConnectLoginContent>div {
+    position: absolute;
+    z-index: 100001;
+    right: 0px;
+    width: 30px;
+    top: 0px;
+    height: 48px;
+    text-align: center
+}
+
+.qConnectLoginContent>div a {
+    line-height: 40px;
+    display: inline-block
+}
+
+
+/*qc微信登录*/
+
+.milo-qcwx-login {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none
+}
+
+.qcwx-login-cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.qcwx-login-frame {
+    width: 750px;
+    height: 470px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -240px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.qcwx-tabs {
+    line-height: 40px;
+    position: absolute;
+    z-index: 100001;
+    width: 100%
+}
+
+.qcwx-tabs .qc-tab,
+.qcwx-tabs .wx-tab {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #b1b1b1;
+    text-decoration: none
+}
+
+.qcwx-active-qc a.qc-tab {
+    color: #fff;
+    background-color: #51b7ec
+}
+
+.qcwx-active-wx a.wx-tab {
+    color: #fff;
+    background-color: #4ab218
+}
+
+.qcwx-tabs .qcwxtab-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0px 5px;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid
+}
+
+.qcwx-active-qc .qcwx-tabs .qcwxtab-close {
+    border-color: #e0dcdc
+}
+
+.qcwx-active-wx .qcwx-tabs .qcwxtab-close {
+    border-color: #8BC34A;
+    color: #d4d2d2
+}
+
+.qcwx-tabs .qcwxtab-close:hover {
+    font-weight: bold
+}
+
+.qcwx-tips {
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #a2a2a2;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    z-index: 10001;
+    background-color: #fff;
+}
+
+.qcwx-frame {
+    width: 750px;
+    height: 470px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.qcwx-frame div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    display: none
+}
+
+.qcwx-frame div iframe {
+    width: 100%;
+    height: 100%
+}
+
+.qcwx-active-qc div.qcwx-frame-qc-div {
+    display: block
+}
+
+.qcwx-active-wx div.qcwx-frame-wx-div {
+    display: block;
+    top: 70px;
+    height: 400px;
+}
+
+i.ico-qc-logo,
+i.ico-wx-logo {
+    display: inline-block;
+    height: 23px;
+    vertical-align: middle;
+    margin: 0px 5px;
+    margin-top: -4px;
+    background: url(https://vm.gtimg.cn/tencentvideo/vstyle/web/common/style/img/login/sprite_login.png?d=0210&max_age=31104000) no-repeat
+}
+
+i.ico-qc-logo {
+    width: 20px
+}
+
+i.ico-wx-logo {
+    width: 24px
+}
+
+.qcwx-active-wx i.ico-qc-logo {
+    background-position: -180px -90px
+}
+
+.qcwx-active-wx i.ico-wx-logo {
+    background-position: -250px -90px
+}
+
+.qcwx-active-qc i.ico-qc-logo {
+    background-position: -200px -90px
+}
+
+.qcwx-active-qc i.ico-wx-logo {
+    background-position: -220px -90px
+}
+
+div#qcwx-frame-wx-div {
+    top: 20px
+}
+
+
+/*wegame登录*/
+
+.wegameloginframe {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border: 0px solid white
+}
+
+.milo-wegameLogin {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px
+}
+
+.wegameLoginCover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.wegameLoginContent {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -400px;
+    margin-top: -300px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.wegameLoginContent>div {
+    height: 30px;
+    width: 100%;
+    background-color: none;
+    font-size: 18px
+}
+
+.wegameLoginContent>div.wegameLoginTitle {
+    width: 100%;
+    background-color: #0e0e0e
+}
+
+div.wegameLoginIcon {
+    display: none
+}
+
+.wegameLoginTitle>div.wegameLoginIcon {
+    display: block;
+    float: left;
+    width: 239px;
+    height: 60px;
+    background: url(https://api.rail.tgp.qq.com/web/oauth2.0/login/images/wegame-logo-m.png) no-repeat center;
+    margin-left: 10px
+}
+
+.wegameLoginContent>div span {
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0px 5px
+}
+
+.wegameLoginContent>div a {
+    float: right;
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.wegameLoginContent>div a:hover {
+    color: #f57272
+}
+
+.wegameLoginContent>div {
+    position: absolute;
+    z-index: 100001;
+    right: 0px;
+    width: 30px;
+    top: 0px;
+    height: 60px;
+    text-align: center
+}
+
+.wegameLoginContent>div a {
+    line-height: 55px;
+    display: inline-block
+}
+
+</style><style>#milo_qzone_share {
+    width: 860px;
+    height: 445px;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border: 1px solid #225EA8;
+    background-color: #fff;
+}
+
+#milo_qzone_share_title {
+    width: 100%;
+    background: url(https://ossweb-img.qq.com/images/gamevip/act/act_comm/lz_top_spr_v2.png) repeat-x 0 -97px;
+    height: 36px;
+    margin: 0px;
+}
+
+#milo_qzone_share_title span {
+    float: left;
+    display: inline;
+    margin: 5px 0 0 12px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 25px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#milo_qzone_share_content {
+    text-align: center;
+    overflow: hidden;
+    height: 440px;
+}
+
+#milo_qzone_share_title a {
+    float: right;
+    display: inline;
+    margin: 10px 10px 0 0;
+    width: 14px;
+    height: 13px;
+    text-indent: -999em;
+    overflow: hidden;
+    background: url(https://ossweb-img.qq.com/images/gamevip/act/act_comm/lz_top_spr_v2.png) no-repeat -297px -5px;
+}</style><style>.milo-dialog__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+}
+.milo-dialog__wrapper .milo-dialog {
+  position: relative;
+  margin: 100px auto;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 300px;
+  background-color: #fff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header {
+  padding: 20px 20px 10px;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__title {
+  line-height: 24px;
+  font-size: 18px;
+  color: #303133;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__headerbtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  background: 0 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #909399;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__headerbtn:focus,
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__headerbtn :hover {
+  color: #409eff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__body {
+  padding: 30px 20px;
+  color: #606266;
+  font-size: 14px;
+  word-break: break-all;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer {
+  padding: 10px 20px 20px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button:focus,
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button:hover {
+  color: #409eff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button.primary {
+  background: #3a8ee6;
+  border-color: #3a8ee6;
+  color: #fff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button.primary:focus,
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button.primary:hover {
+  background: #66b1ff;
+  border-color: #66b1ff;
+  color: #fff;
+}
+.milo-dialog-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: 2002;
+}
+</style><style>.milo-item {
+  line-height: 45px;
+  font-size: 14px;
+  padding: 3px 0;
+  width: 100%;
+}
+.milo-item select,
+.milo-item .milo_input {
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+.milo-item select {
+  padding: 0 15px;
+}
+.milo-item .milo_input {
+  padding: 0 19px;
+}
+#milo_auto_role_text {
+  margin-left: 5px;
+}
+#milo_auto_role {
+  max-height: 130px;
+  overflow: scroll;
+}
+#milo_auto_role_wrapper {
+  line-height: 26px;
+}
+.milo-PIPInfo {
+  margin-right: 5px;
+  border: 1px solid #dcdfe6;
+  -webkit-appearance: checkbox;
+}
+#milo-error-message {
+  display: none;
+  color: #f00;
+}
+.milo_select {
+  max-height: 200px;
+  overflow: auto;
+  cursor: pointer;
+}
+.milo_select li {
+  list-style: none;
+}
+.milo_input:disabled {
+  opacity: 0.7;
+}
+</style><style>.milo-alert-frame {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+}
+.milo-alert-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: 9998;
+}
+.milo-alert {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.milo-alert-box {
+  display: inline-block;
+  width: 420px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  font-size: 18px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  text-align: left;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.milo-alert-box .milo-alert-header {
+  position: relative;
+  padding: 15px 15px 10px;
+}
+.milo-alert-box .milo-alert-header .milo-alert-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("https://ossweb-img.qq.com/images/milosdk/close.png");
+  background-size: contain;
+  cursor: pointer;
+}
+.milo-alert-box .milo-alert-content {
+  padding: 10px 15px;
+  color: #606266;
+  font-size: 14px;
+}
+.milo-alert-box .milo-alert-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 15px 0;
+}
+.milo-alert-box .milo-alert-footer div {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #dcdfe6;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  margin: 0 5px;
+  min-width: 88px;
+}
+.milo-alert-box .milo-alert-footer .milo-btn-confirm {
+  background-color: #409eff;
+  border-color: #409eff;
+  display: none;
+}
+.milo-alert-box .milo-alert-footer .milo-btn-cancel {
+  background-color: #a7a6a4;
+  border-color: #a7a6a4;
+  display: none;
+}
+.milo-alert-box-mobile {
+  display: inline-block;
+  width: 80vw;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #ebeef5;
+  font-size: 16px;
+  color: #606266;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.milo-alert-box-mobile .milo-alert-header {
+  position: relative;
+  padding: 27px 15px 0;
+  color: #000;
+  font-weight: bold;
+}
+.milo-alert-box-mobile .milo-alert-header .milo-alert-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("https://ossweb-img.qq.com/images/milosdk/close.png");
+  background-size: contain;
+  cursor: pointer;
+}
+.milo-alert-box-mobile .milo-alert-content {
+  padding: 15px;
+  color: #606266;
+  font-size: 14px;
+  border-bottom: 1px solid #ebeef5;
+}
+.milo-alert-box-mobile .milo-alert-footer {
+  display: flex;
+}
+.milo-alert-box-mobile .milo-alert-footer div {
+  padding: 15px;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+.milo-alert-box-mobile .milo-alert-footer .milo-btn-cancel {
+  display: none;
+  border-right: 1px solid #ebeef5;
+  color: #000;
+}
+.milo-alert-box-mobile .milo-alert-footer .milo-btn-confirm {
+  flex: 1;
+  color: #0f4379;
+  display: none;
+}
+</style><style>#milo-feedback::-webkit-scrollbar {
+  width: 7px;
+  height: 6px;
+  background-color: #fff;
+}
+#milo-feedback::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #fff;
+}
+#milo-feedback::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #babdc2;
+}
+#milo-feedback {
+  height: 450px;
+}
+#milo-feedback .tabs {
+  display: flex;
+  justify-content: center;
+}
+#milo-feedback .tabs .tab {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+#milo-feedback .tabs .tab.active {
+  background-color: #ccc;
+}
+#milo-feedback .tab-content {
+  display: none;
+  padding: 10px;
+}
+#milo-feedback .tab-content.active {
+  display: block;
+}
+#milo-feedback .sub-tabs {
+  display: flex;
+  justify-content: center;
+}
+#milo-feedback .sub-tab {
+  padding: 2px 10px;
+  cursor: pointer;
+}
+#milo-feedback .sub-tab.active {
+  color: #409eff;
+  border-bottom: #409eff 1px solid;
+}
+#milo-feedback .sub-tab-content {
+  display: none;
+  text-align: left;
+}
+#milo-feedback .sub-tab-content.active {
+  display: block;
+}
+#milo-feedback .milo-form-label {
+  vertical-align: middle;
+  float: left;
+  width: 100px;
+  font-size: 14px;
+  color: #606266;
+  line-height: 30px;
+  padding: 0 12px 0 0;
+  box-sizing: border-box;
+}
+#milo-feedback .milo-form-item {
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  outline: none;
+  padding: 0 15px;
+  display: inline-block;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 250px;
+}
+#milo-feedback .milo-form-row {
+  clear: both;
+  padding: 2px 0;
+}
+#milo-feedback .milo-form-label.is-require:before {
+  content: "*";
+  color: #f56c6c;
+  margin-right: 4px;
+}
+#milo-feedback textarea {
+  height: 70px !important;
+}
+#milo-feedback  select {
+  margin: 3px 0;
+}
+#milo-feedback #milo-feedback-submit {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+  width: 100%;
+  height: 50px;
+  border: 0;
+}
+#milo-feedback .list-container {
+  min-height: 360px;
+  height: 360px;
+  overflow-y: auto;
+}
+#milo-feedback .list {
+  list-style-type: none;
+  padding: 0;
+}
+#milo-feedback .list li {
+  transition: background-color 0.3s ease;
+}
+#milo-feedback .list li .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f6f9fc;
+  border-radius: 6px;
+  padding: 5px 15px;
+}
+#milo-feedback .remark {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+#milo-feedback .list li .item-reply {
+  padding: 5px 20px;
+  background-color: #f6f9fc;
+  border-radius: 6px;
+  margin: 10px 0;
+  margin-left: 15px;
+}
+#milo-feedback .list li .item-title {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#milo-feedback .list li .toggle-btn {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+#milo-feedback .list li .item-content {
+  margin-top: 10px;
+  display: none;
+  padding-left: 20px;
+  transition: opacity 0.3s ease;
+}
+#milo-feedback .nodata {
+  text-align: center;
+}
+#milo-feedback .list li .arrow-up,
+#milo-feedback .list li .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+#milo-feedback .list li .arrow-up {
+  border-bottom: 5px solid #000;
+}
+#milo-feedback .list li .arrow-down {
+  border-top: 5px solid #000;
+}
+</style><style>#milo-invite-code {
+  width: 100%;
+  display: flex;
+}
+#milo-invite-text {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1d2129;
+  font-weight: 400;
+  border: 1px solid #165dff;
+}
+#milo-invite-btn {
+  background-color: #3c7eff;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  font-size: 12px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  font-weight: 400;
+}
+</style><style>.miloui-selector {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative;
+}
+.milo-disabled .miloui-selector-value {
+  color: #c9cdd4;
+  cursor: not-allowed;
+}
+.miloui-selector:hover {
+  border-color: #c0c4cc;
+}
+.miloui-selector-value {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  cursor: pointer;
+  user-select: none;
+}
+.miloui-selector-value:before {
+  content: ' ';
+  display: inline-block;
+  -webkit-transform: rotate(314deg);
+  -ms-transform: rotate(314deg);
+  transform: rotate(314deg);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+.miloui-selector-options {
+  position: absolute;
+  height: auto;
+  min-height: 40px;
+  max-height: 240px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 8px;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 9999;
+  user-select: none;
+}
+.miloui-selector-option-item {
+  padding: 5px;
+  line-height: 30px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.miloui-selector-option-item:hover {
+  background-color: #f5f7fa;
+}
+.miloui-selector-option-item_active {
+  color: #f00;
+}
+</style><style>.account-avatar-2023 {display: none; position: absolute; width: 26px; height: 26px; left: 5px; top: 2px; border-radius: 50%;}.login-welcome-2023 {display: none; position: absolute; left: 50px; top: 3px; font-size: 16px; cursor: pointer;}.login-bind-2023 {display: none; position: absolute; left: 50px; top: 0px; font-size: 12px;}.login-ready-2023 {position: absolute; top: -2px; margin: 0; padding: 0;}.login-ready-detail-2023 {display: inline; position: absolute; top: 18px; margin: 0; padding: 0;}.login-bind-zone-2023 {color: #b8a26c; cursor: pointer;}.login-logout-2023 {color: #b8a26c; cursor: pointer;}.login-summon-2023 {display: none; position: absolute; left: 50px; top: 0px; font-size: 12px;}.login-nickname-2023 {display: inline; position: relative; top: -2px; height: 12px;}.login-game-2023 {position: absolute; left: 0px; top: 15px; cursor: pointer;}.screen-mask-2023 {display: none; position: fixed; left: 0; top: 0; width: 100%; height: 2000px; background-color: rgba(0, 0, 0, 0.7); z-index: 9;}</style></head>
+
+<body style="padding-top:0;background-color: #f2efe6;"><div class="header-container-2023" id="header-2023" style="width: 1600px;"><img id="banner-image-2023" class="banner-image-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/bannerImage.jpg" style="width: 1600px; height: 300px;"><img id="detail-button-2023" class="detail-button-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/detailButton.png" onclick="window.open(&#39;https://pvp.qq.com/cp/a20170829bbgxsm/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;home&#39;,&#39;首页&#39;);" style="width: 196.667px; height: 50px; left: 125px; top: 283.333px;"><div id="logo-2023" class="logo-container-2023" onmouseenter="onShowIPDrawer(true)">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/logo.png">    <div class="show-more-ip-2023">        <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/moreIPButton.png">    </div></div><div id="login-2023" class="login-container-2023" style="width: 130px; color: rgb(255, 255, 255); white-space: nowrap; user-select: none;">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/login.png">    <img id="account-avatar-2023" class="account-avatar-2023" style="display: none;">    <div id="login-welcome-2023" class="login-welcome-2023" onclick="onWelcome()" style="display: block;">欢迎登录</div>    <div id="login-bind-2023" class="login-bind-2023" style="display: none;">        <p class="login-ready-2023">您已登录</p>        <p class="login-ready-detail-2023">            <span>请</span>            <span class="login-bind-zone-2023" onclick="onBindZone()">选择大区</span>            <span>，或者</span>            <span class="login-logout-2023" onclick="onLogout()">注销</span>        </p>    </div>    <div id="login-summon-2023" class="login-summon-2023" style="display: none;">        <p class="login-nickname-2023">            <span id="summon-name-2023"></span>            <span class="login-logout-2023" onclick="onLogout()">注销</span>        </p>        <span class="login-logout-2023 login-game-2023" onclick="onShowAccount()">点击查看游戏战绩</span>    </div>    <div id="screen-mask-2023" class="screen-mask-2023"></div></div><div id="download-button-2023" class="download-button-2023"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/downloadButtonBG.png"><div class="download-word-2023">下载游戏</div></div><div id="menu-container-2023" class="menu-container-2023" style="left: 265px;"><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-link-2023" onclick="onOpenMain()">首页</div>        <div class="menu1-small-word-2023">HOME</div>    </div></li><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-2023">游戏资料</div>        <div class="menu1-small-word-2023">DATA</div>    </div>    <div class="menu2-bg-2023">        <img class="menu2-triangle-tip-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/menuTriangle.png">        <ul>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/cp/a20170829bbgxsm/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;version&#39;,&#39;版本专区&#39;);"><span class="menu2-word-2023-1">版本专区</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/web201605/herolist.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;hero&#39;,&#39;英雄资料&#39;);"><span class="menu2-word-2023-1">英雄资料</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/coming/v2/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;blz&#39;,&#39;爆料站&#39;);"><span class="menu2-word-2023-1">爆料站</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/web201605/wallpaper.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;wallpaper&#39;,&#39;游戏壁纸&#39;);"><span class="menu2-word-2023-1">游戏壁纸</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/ip/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;worldview&#39;,&#39;世界观站&#39;);"><span class="menu2-word-2023-1">世界观站</span></li>        </ul>    </div></li><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-2023">内容中心</div>        <div class="menu1-small-word-2023">CONTENTS</div>    </div>    <div class="menu2-bg-2023">        <img class="menu2-triangle-tip-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/menuTriangle.png">        <ul>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/raiders/index.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;strategy_center&#39;,&#39;攻略中心&#39;);"><span class="menu2-word-2023-2">攻略中心</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.icreate.qq.com/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;strategy_sucai&#39;,&#39;开放素材库&#39;);"><span class="menu2-word-2023-2">开放素材库</span></li>            <li class="menu2-new-2023 li-2023 menu2-new-2023-position-2" onclick="window.open(&#39;https://yingdi.qq.com/creation/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;creation&#39;,&#39;内容共创平台&#39;);"><span class="menu2-word-2023-2">内容共创平台</span></li>        </ul>    </div></li><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-2023">赛事中心</div>        <div class="menu1-small-word-2023">MATCH</div>    </div>    <div class="menu2-bg-2023">        <img class="menu2-triangle-tip-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/menuTriangle.png">        <ul>            <li class="menu2-hot-2023 menu2-2023 li-2023 menu2-new-2023-position-3" onclick="window.open(&#39;https://pvp.qq.com/match/kpl/kingproleague/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_KPL&#39;,&#39;KPL&#39;);"><span class="menu2-word-2023-3">KPL</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/match/kgl/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_Kjia&#39;,&#39;K甲联赛&#39;);"><span class="menu2-word-2023-3">K甲</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/match/WCC/KCC2023S1/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_kcc&#39;,&#39;挑战者杯&#39;);"><span class="menu2-word-2023-3">挑战者杯</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/cp/a20220328qgds/index.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_city&#39;,&#39;全国大赛&#39;);"><span class="menu2-word-2023-3">全国大赛</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/cp/a20220315open/index.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_gaoxiao&#39;,&#39;王者高校联赛&#39;);"><span class="menu2-word-2023-3">高校联赛</span></li>            <li class="menu2-new-2023 menu2-2023 li-2023 menu2-new-2023-position-3" onclick="window.open(&#39;https://pvp.qq.com/saibao/index.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_saibao&#39;,&#39;saibao&#39;);"><span class="menu2-word-2023-3">赛事授权</span></li>            <li class="menu2-new-2023 menu2-2023 li-2023 menu2-new-2023-position-3" onclick="window.open(&#39;https://pvp.qq.com/cp/a20240508sssq/index.shtml&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_hezuo&#39;,&#39;hezuo&#39;);"><span class="menu2-word-2023-3">授权合作赛</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/matchdata/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;match_datamore&#39;,&#39;赛事数据&#39;);"><span class="menu2-word-2023-3">赛事数据</span></li>        </ul>    </div></li><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-2023">王者文化</div>        <div class="menu1-small-word-2023">CULTURE</div>    </div>    <div class="menu2-bg-2023">        <img class="menu2-triangle-tip-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/menuTriangle.png">        <ul>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/history&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;history&#39;,&#39;王者文化站&#39;);"><span class="menu2-word-2023-4">王者文化站</span></li>            <li class="menu2-new-2023 li-2023 menu2-new-2023-position-4" onclick="window.open(&#39;https://pvp.qq.com/cp/a20210427ipgzzt/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;ip&#39;,&#39;IP共创计划&#39;);"><span class="menu2-word-2023-4">IP共创计划</span></li>            <li class="menu2-new-2023 menu2-2023 li-2023 menu2-new-2023-position-4" onclick="window.open(&#39;https://wangzhe.recogame.com/wangzhe.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;wangka&#39;,&#39;龙翼王者卡&#39;);"><span class="menu2-word-2023-4">龙翼王者卡</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/hdy/p1/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;creative_community&#39;,&#39;共创基地&#39;);"><span class="menu2-word-2023-4">共创基地</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://value.qq.com/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;day_up&#39;,&#39;天天向上&#39;);"><span class="menu2-word-2023-4">王者荣耀天天向上</span></li>        </ul>    </div></li><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-2023">玩家支持</div>        <div class="menu1-small-word-2023">PLAYER</div>    </div>    <div class="menu2-bg-2023">        <img class="menu2-triangle-tip-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/menuTriangle.png">        <ul>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://game.qq.com/act/a20210705protect/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;player_addict&#39;,&#39;腾讯游戏防沉迷&#39;);"><span class="menu2-word-2023-5">腾讯游戏防沉迷</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://jiazhang.qq.com/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;player_watch&#39;,&#39;成长守护平台&#39;);"><span class="menu2-word-2023-5">成长守护平台</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/cp/a20190909talk/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;player_drj&#39;,&#39;对局环境情报站&#39;);"><span class="menu2-word-2023-5">对局环境情报站</span></li>            <li class="menu2-2023 li-2023" onclick="onShowServicePopup(true); PTTSendClick(&#39;link&#39;,&#39;player_kf&#39;,&#39;客服专区&#39;);"><span class="menu2-word-2023-5">客服专区</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://pvp.qq.com/web201706/newsdetail.shtml?tid=398886&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;player_feedback&#39;,&#39;礼包兑换&#39;);"><span class="menu2-word-2023-5">礼包兑换</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://tool.helper.qq.com/v3/wzry/official_website/index.html&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;player_service&#39;,&#39;自助服务&#39;);"><span class="menu2-word-2023-5">自助服务</span></li>            <li class="menu2-2023 li-2023" onclick="window.open(&#39;https://igame.qq.com/tip/igame-web/privilege-web/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;wifi&#39;,&#39;商户特权&#39;);"><span class="menu2-word-2023-5">商户特权</span></li>            <li class="menu2-new-2023 menu2-2023 li-2023 menu2-new-2023-position-5" onclick="window.open(&#39;https://pvp.qq.com/cp/a20220914wza/&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;wza&#39;,&#39;手语打法参考&#39;);"><span class="menu2-word-2023-5">手语打法参考</span></li>        </ul>    </div></li><li class="menu1-2023 li-2023">    <div class="menu1-word-contianer-2023">        <div class="menu1-big-word-2023">IP新游</div>        <div class="menu1-small-word-2023">NEW GAMES</div>    </div>    <div class="menu2-bg-2023">        <img class="menu2-triangle-tip-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/menuTriangle.png">        <ul>            <li class="menu2-new-2023 li-2023 menu2-new-2023-position-6" onclick="window.open(&#39;https://poxiao.qq.com/?ADTAG=pvp.nav.hokpc&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;poxiao&#39;,&#39;破晓&#39;);"><span class="menu2-word-2023-6">王者荣耀·星之破晓</span></li>            <li class="menu2-new-2023 li-2023 menu2-new-2023-position-6" onclick="window.open(&#39;https://world.qq.com/?ADTAG=pvp.nav.hokpc&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;shijie&#39;,&#39;世界&#39;);"><span class="menu2-word-2023-6">王者荣耀·世界</span></li>            <li class="menu2-new-2023 li-2023 menu2-new-2023-position-6" onclick="window.open(&#39;https://wxq.qq.com/?ADTAG=pvp.qqpc&#39;, &#39;_blank&#39;); PTTSendClick(&#39;link&#39;,&#39;wxq&#39;,&#39;王者万象棋&#39;);"><span class="menu2-word-2023-6">王者万象棋</span></li>        </ul>    </div></li></div><div id="ip-drawer-2023" class="ip-drawer-2023" onmouseleave="onShowIPDrawer(false)">    <img id="ip-drawer-bg-2023" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/ipBG.png" style="width: 1501px; height: 236px;">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/ipTitle.png" style="position: absolute; left: 30px; top: 40px;">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/pvpIP.png" style="position: absolute; left: 170px; top: 35px; ">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/poxiaoIP.png" style="position: absolute; left: 470px; top: 35px; cursor: pointer;" onclick="window.open(&#39;https://poxiao.qq.com/?ADTAG=pvp.nav.hokpc&#39;, &#39;_blank&#39;)">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/worldIP.png" style="position: absolute; left: 770px; top: 35px; cursor: pointer;" onclick="window.open(&#39;https://world.qq.com/?ADTAG=pvp.nav.hokpc&#39;, &#39;_blank&#39;)">    <img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/wxqIP.png" style="position: absolute; left: 1070px; top: 35px; cursor: pointer;" onclick="window.open(&#39;https://wxq.qq.com/?ADTAG=pvp.qqpc&#39;, &#39;_blank&#39;)"></div></div>
+    <div>
         <!-- 内容区域1 S -->
         <div class="zkcontent">
             <div class="zk-con-box">
@@ -1138,7 +2410,7 @@ div.wegameLoginIcon {
                     </div>
                     <div class="herolist-content">
                         <p id="JErroTips" style="display:none;">输入英雄不存在，请重新输入</p>
-                        <ul class="herolist clearfix"><li><a href="https://pvp.qq.com/web201605/herodetail/hainuo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/563.jpg" width="91" height="91" alt="海诺">海诺</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/duoliya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/159.jpg" width="91" height="91" alt="朵莉亚">朵莉亚</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yalian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/514.jpg" width="91" height="91" alt="亚连">亚连</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jixiaoman.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/564.jpg" width="91" height="91" alt="姬小满">姬小满</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/laixiao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/545.jpg" width="91" height="91" alt="莱西奥">莱西奥</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhaohuaizhen.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/544.jpg" width="91" height="91" alt="赵怀真">赵怀真</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/haiyue.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/521.jpg" width="91" height="91" alt="海月">海月</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/geya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/548.jpg" width="91" height="91" alt="戈娅">戈娅</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sangqi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/534.jpg" width="91" height="91" alt="桑启">桑启</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/fei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/542.jpg" width="91" height="91" alt="暃">暃</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jinchan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/540.jpg" width="91" height="91" alt="金蝉">金蝉</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yunying.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/538.jpg" width="91" height="91" alt="云缨">云缨</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/ailin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/155.jpg" width="91" height="91" alt="艾琳">艾琳</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sikongzhen.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/537.jpg" width="91" height="91" alt="司空震">司空震</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/528.jpg" width="91" height="91" alt="澜">澜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xialuote.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/536.jpg" width="91" height="91" alt="夏洛特">夏洛特</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/aguduo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/533.jpg" width="91" height="91" alt="阿古朵">阿古朵</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mengtian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/527.jpg" width="91" height="91" alt="蒙恬">蒙恬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jing.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/531.jpg" width="91" height="91" alt="镜">镜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mengya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/524.jpg" width="91" height="91" alt="蒙犽">蒙犽</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lubandashi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/525.jpg" width="91" height="91" alt="鲁班大师">鲁班大师</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xishi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/523.jpg" width="91" height="91" alt="西施">西施</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/machao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/518.jpg" width="91" height="91" alt="马超">马超</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dongfangyao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/522.jpg" width="91" height="91" alt="曜">曜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yunzhongjun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/506.jpg" width="91" height="91" alt="云中君">云中君</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/505.jpg" width="91" height="91" alt="瑶">瑶</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/pangu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/529.jpg" width="91" height="91" alt="盘古">盘古</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhubajie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/511.jpg" width="91" height="91" alt="猪八戒">猪八戒</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/change.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/515.jpg" width="91" height="91" alt="嫦娥">嫦娥</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/shangguanwaner.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/513.jpg" width="91" height="91" alt="上官婉儿">上官婉儿</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lixin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/507.jpg" width="91" height="91" alt="李信">李信</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/shenmengxi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/312.jpg" width="91" height="91" alt="沈梦溪">沈梦溪</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jialuo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/508.jpg" width="91" height="91" alt="伽罗">伽罗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dunshan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/509.jpg" width="91" height="91" alt="盾山">盾山</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/simayi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/137.jpg" width="91" height="91" alt="司马懿">司马懿</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunce.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/510.jpg" width="91" height="91" alt="孙策">孙策</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yuange.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/125.jpg" width="91" height="91" alt="元歌">元歌</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/milaidi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/504.jpg" width="91" height="91" alt="米莱狄">米莱狄</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/kuangtie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/503.jpg" width="91" height="91" alt="狂铁">狂铁</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yixing.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/197.jpg" width="91" height="91" alt="弈星">弈星</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/peiqinhu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/502.jpg" width="91" height="91" alt="裴擒虎">裴擒虎</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yangyuhuan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/176.jpg" width="91" height="91" alt="杨玉环">杨玉环</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/gongsunli.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/199.jpg" width="91" height="91" alt="公孙离">公孙离</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mingshiyin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/501.jpg" width="91" height="91" alt="明世隐">明世隐</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/nvwa.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/179.jpg" width="91" height="91" alt="女娲">女娲</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mengqi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/198.jpg" width="91" height="91" alt="梦奇">梦奇</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sulie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/194.jpg" width="91" height="91" alt="苏烈">苏烈</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/bailixuance.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/195.jpg" width="91" height="91" alt="百里玄策">百里玄策</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/bailishouyue.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/196.jpg" width="91" height="91" alt="百里守约">百里守约</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/kai.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/193.jpg" width="91" height="91" alt="铠">铠</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/guiguzi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/189.jpg" width="91" height="91" alt="鬼谷子">鬼谷子</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/ganjiangmoye.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/182.jpg" width="91" height="91" alt="干将莫邪">干将莫邪</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/donghuangtaiyi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/187.jpg" width="91" height="91" alt="东皇太一">东皇太一</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/daqiao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/191.jpg" width="91" height="91" alt="大乔">大乔</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/huangzhong.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/192.jpg" width="91" height="91" alt="黄忠">黄忠</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhugeliang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/190.jpg" width="91" height="91" alt="诸葛亮">诸葛亮</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/nezha.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/180.jpg" width="91" height="91" alt="哪吒">哪吒</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/taiyizhenren.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/186.jpg" width="91" height="91" alt="太乙真人">太乙真人</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/caiwenji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/184.jpg" width="91" height="91" alt="蔡文姬">蔡文姬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yadianna.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/183.jpg" width="91" height="91" alt="雅典娜">雅典娜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yangjian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/178.jpg" width="91" height="91" alt="杨戬">杨戬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/chengjisihan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/177.jpg" width="91" height="91" alt="成吉思汗">成吉思汗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhongkui.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/175.jpg" width="91" height="91" alt="钟馗">钟馗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yuji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/174.jpg" width="91" height="91" alt="虞姬">虞姬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liyuanfang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/173.jpg" width="91" height="91" alt="李元芳">李元芳</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhangfei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/171.jpg" width="91" height="91" alt="张飞">张飞</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liubei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/170.jpg" width="91" height="91" alt="刘备">刘备</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/houyi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/169.jpg" width="91" height="91" alt="后羿">后羿</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/niumo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/168.jpg" width="91" height="91" alt="牛魔">牛魔</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunwukong.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/167.jpg" width="91" height="91" alt="孙悟空">孙悟空</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yase.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/166.jpg" width="91" height="91" alt="亚瑟">亚瑟</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jvyoujing.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/163.jpg" width="91" height="91" alt="橘右京">橘右京</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/nakelulu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/162.jpg" width="91" height="91" alt="娜可露露">娜可露露</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/buzhihuowu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/157.jpg" width="91" height="91" alt="不知火舞">不知火舞</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhangliang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/156.jpg" width="91" height="91" alt="张良">张良</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/huamulan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/154.jpg" width="91" height="91" alt="花木兰">花木兰</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lanlingwang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/153.jpg" width="91" height="91" alt="兰陵王">兰陵王</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/wangzhaojun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/152.jpg" width="91" height="91" alt="王昭君">王昭君</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/hanxin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/150.jpg" width="91" height="91" alt="韩信">韩信</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liubang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/149.jpg" width="91" height="91" alt="刘邦">刘邦</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jiangziya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/148.jpg" width="91" height="91" alt="姜子牙">姜子牙</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/luna.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/146.jpg" width="91" height="91" alt="露娜">露娜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/chengyaojin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/144.jpg" width="91" height="91" alt="程咬金">程咬金</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/anqila.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/142.jpg" width="91" height="91" alt="安琪拉">安琪拉</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/diaochan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/141.jpg" width="91" height="91" alt="貂蝉">貂蝉</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/guanyu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/140.jpg" width="91" height="91" alt="关羽">关羽</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/laofuzi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/139.jpg" width="91" height="91" alt="老夫子">老夫子</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/wuzetian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/136.jpg" width="91" height="91" alt="武则天">武则天</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xiangyu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/135.jpg" width="91" height="91" alt="项羽">项羽</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/damo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/134.jpg" width="91" height="91" alt="达摩">达摩</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/direnjie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/133.jpg" width="91" height="91" alt="狄仁杰">狄仁杰</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/makeboluo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/132.jpg" width="91" height="91" alt="马可波罗">马可波罗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/libai.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/131.jpg" width="91" height="91" alt="李白">李白</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/gongbenwuzang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/130.jpg" width="91" height="91" alt="宫本武藏">宫本武藏</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dianwei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/129.jpg" width="91" height="91" alt="典韦">典韦</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/caocao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/128.jpg" width="91" height="91" alt="曹操">曹操</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhenji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/127.jpg" width="91" height="91" alt="甄姬">甄姬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xiahoudun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/126.jpg" width="91" height="91" alt="夏侯惇">夏侯惇</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhouyv.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/124.jpg" width="91" height="91" alt="周瑜">周瑜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lvbu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/123.jpg" width="91" height="91" alt="吕布">吕布</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/miyue.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/121.jpg" width="91" height="91" alt="芈月">芈月</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/baiqi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/120.jpg" width="91" height="91" alt="白起">白起</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/bianque.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/119.jpg" width="91" height="91" alt="扁鹊">扁鹊</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunbin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/118.jpg" width="91" height="91" alt="孙膑">孙膑</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhongwuyan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/117.jpg" width="91" height="91" alt="钟无艳">钟无艳</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/ake.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/116.jpg" width="91" height="91" alt="阿轲">阿轲</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/gaojianli.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/115.jpg" width="91" height="91" alt="高渐离">高渐离</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liushan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/114.jpg" width="91" height="91" alt="刘禅">刘禅</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhuangzhou.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/113.jpg" width="91" height="91" alt="庄周">庄周</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lubanqihao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/112.jpg" width="91" height="91" alt="鲁班七号">鲁班七号</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunshangxiang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/111.jpg" width="91" height="91" alt="孙尚香">孙尚香</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yingzheng.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/110.jpg" width="91" height="91" alt="嬴政">嬴政</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/daji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/109.jpg" width="91" height="91" alt="妲己">妲己</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mozi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/108.jpg" width="91" height="91" alt="墨子">墨子</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhaoyun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/107.jpg" width="91" height="91" alt="赵云">赵云</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xiaoqiao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/106.jpg" width="91" height="91" alt="小乔">小乔</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lianpo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/105.jpg" width="91" height="91" alt="廉颇">廉颇</a></li></ul>
+                        <ul class="herolist clearfix"><li><a href="https://pvp.qq.com/web201605/herodetail/ying.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/558.jpg" width="91" height="91" alt="影">影</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/shaosiyuan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/577.jpg" width="91" height="91" alt="少司缘">少司缘</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yuanliuzhizi_tank.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/581.jpg" width="91" height="91" alt="元流之子(坦克)">元流之子(坦克)</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yuanliuzhizi_magic.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/582.jpg" width="91" height="91" alt="元流之子(法师)">元流之子(法师)</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dasiming.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/517.jpg" width="91" height="91" alt="大司命">大司命</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/aoyin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/519.jpg" width="91" height="91" alt="敖隐">敖隐</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/hainuo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/563.jpg" width="91" height="91" alt="海诺">海诺</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/duoliya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/159.jpg" width="91" height="91" alt="朵莉亚">朵莉亚</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yalian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/514.jpg" width="91" height="91" alt="亚连">亚连</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jixiaoman.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/564.jpg" width="91" height="91" alt="姬小满">姬小满</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/laixiao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/545.jpg" width="91" height="91" alt="莱西奥">莱西奥</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhaohuaizhen.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/544.jpg" width="91" height="91" alt="赵怀真">赵怀真</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/haiyue.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/521.jpg" width="91" height="91" alt="海月">海月</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/geya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/548.jpg" width="91" height="91" alt="戈娅">戈娅</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sangqi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/534.jpg" width="91" height="91" alt="桑启">桑启</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/fei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/542.jpg" width="91" height="91" alt="暃">暃</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jinchan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/540.jpg" width="91" height="91" alt="金蝉">金蝉</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yunying.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/538.jpg" width="91" height="91" alt="云缨">云缨</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/ailin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/155.jpg" width="91" height="91" alt="艾琳">艾琳</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sikongzhen.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/537.jpg" width="91" height="91" alt="司空震">司空震</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/528.jpg" width="91" height="91" alt="澜">澜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xialuote.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/536.jpg" width="91" height="91" alt="夏洛特">夏洛特</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/aguduo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/533.jpg" width="91" height="91" alt="阿古朵">阿古朵</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mengtian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/527.jpg" width="91" height="91" alt="蒙恬">蒙恬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jing.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/531.jpg" width="91" height="91" alt="镜">镜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mengya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/524.jpg" width="91" height="91" alt="蒙犽">蒙犽</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lubandashi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/525.jpg" width="91" height="91" alt="鲁班大师">鲁班大师</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xishi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/523.jpg" width="91" height="91" alt="西施">西施</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/machao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/518.jpg" width="91" height="91" alt="马超">马超</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dongfangyao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/522.jpg" width="91" height="91" alt="曜">曜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yunzhongjun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/506.jpg" width="91" height="91" alt="云中君">云中君</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/505.jpg" width="91" height="91" alt="瑶">瑶</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/pangu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/529.jpg" width="91" height="91" alt="盘古">盘古</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhubajie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/511.jpg" width="91" height="91" alt="猪八戒">猪八戒</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/change.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/515.jpg" width="91" height="91" alt="嫦娥">嫦娥</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/shangguanwaner.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/513.jpg" width="91" height="91" alt="上官婉儿">上官婉儿</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lixin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/507.jpg" width="91" height="91" alt="李信">李信</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/shenmengxi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/312.jpg" width="91" height="91" alt="沈梦溪">沈梦溪</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jialuo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/508.jpg" width="91" height="91" alt="伽罗">伽罗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dunshan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/509.jpg" width="91" height="91" alt="盾山">盾山</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/simayi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/137.jpg" width="91" height="91" alt="司马懿">司马懿</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunce.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/510.jpg" width="91" height="91" alt="孙策">孙策</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yuange.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/125.jpg" width="91" height="91" alt="元歌">元歌</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/milaidi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/504.jpg" width="91" height="91" alt="米莱狄">米莱狄</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/kuangtie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/503.jpg" width="91" height="91" alt="狂铁">狂铁</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yixing.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/197.jpg" width="91" height="91" alt="弈星">弈星</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/peiqinhu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/502.jpg" width="91" height="91" alt="裴擒虎">裴擒虎</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yangyuhuan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/176.jpg" width="91" height="91" alt="杨玉环">杨玉环</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/gongsunli.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/199.jpg" width="91" height="91" alt="公孙离">公孙离</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mingshiyin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/501.jpg" width="91" height="91" alt="明世隐">明世隐</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/nvwa.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/179.jpg" width="91" height="91" alt="女娲">女娲</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mengqi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/198.jpg" width="91" height="91" alt="梦奇">梦奇</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sulie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/194.jpg" width="91" height="91" alt="苏烈">苏烈</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/bailixuance.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/195.jpg" width="91" height="91" alt="百里玄策">百里玄策</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/bailishouyue.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/196.jpg" width="91" height="91" alt="百里守约">百里守约</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/kai.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/193.jpg" width="91" height="91" alt="铠">铠</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/guiguzi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/189.jpg" width="91" height="91" alt="鬼谷子">鬼谷子</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/ganjiangmoye.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/182.jpg" width="91" height="91" alt="干将莫邪">干将莫邪</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/donghuangtaiyi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/187.jpg" width="91" height="91" alt="东皇太一">东皇太一</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/daqiao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/191.jpg" width="91" height="91" alt="大乔">大乔</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/huangzhong.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/192.jpg" width="91" height="91" alt="黄忠">黄忠</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhugeliang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/190.jpg" width="91" height="91" alt="诸葛亮">诸葛亮</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/nezha.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/180.jpg" width="91" height="91" alt="哪吒">哪吒</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/taiyizhenren.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/186.jpg" width="91" height="91" alt="太乙真人">太乙真人</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/caiwenji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/184.jpg" width="91" height="91" alt="蔡文姬">蔡文姬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yadianna.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/183.jpg" width="91" height="91" alt="雅典娜">雅典娜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yangjian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/178.jpg" width="91" height="91" alt="杨戬">杨戬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/chengjisihan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/177.jpg" width="91" height="91" alt="成吉思汗">成吉思汗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhongkui.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/175.jpg" width="91" height="91" alt="钟馗">钟馗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yuji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/174.jpg" width="91" height="91" alt="虞姬">虞姬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liyuanfang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/173.jpg" width="91" height="91" alt="李元芳">李元芳</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhangfei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/171.jpg" width="91" height="91" alt="张飞">张飞</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liubei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/170.jpg" width="91" height="91" alt="刘备">刘备</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/houyi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/169.jpg" width="91" height="91" alt="后羿">后羿</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/niumo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/168.jpg" width="91" height="91" alt="牛魔">牛魔</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunwukong.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/167.jpg" width="91" height="91" alt="孙悟空">孙悟空</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yase.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/166.jpg" width="91" height="91" alt="亚瑟">亚瑟</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jvyoujing.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/163.jpg" width="91" height="91" alt="橘右京">橘右京</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/nakelulu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/162.jpg" width="91" height="91" alt="娜可露露">娜可露露</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/buzhihuowu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/157.jpg" width="91" height="91" alt="不知火舞">不知火舞</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhangliang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/156.jpg" width="91" height="91" alt="张良">张良</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/huamulan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/154.jpg" width="91" height="91" alt="花木兰">花木兰</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lanlingwang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/153.jpg" width="91" height="91" alt="兰陵王">兰陵王</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/wangzhaojun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/152.jpg" width="91" height="91" alt="王昭君">王昭君</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/hanxin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/150.jpg" width="91" height="91" alt="韩信">韩信</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liubang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/149.jpg" width="91" height="91" alt="刘邦">刘邦</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/jiangziya.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/148.jpg" width="91" height="91" alt="姜子牙">姜子牙</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/luna.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/146.jpg" width="91" height="91" alt="露娜">露娜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/chengyaojin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/144.jpg" width="91" height="91" alt="程咬金">程咬金</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/anqila.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/142.jpg" width="91" height="91" alt="安琪拉">安琪拉</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/diaochan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/141.jpg" width="91" height="91" alt="貂蝉">貂蝉</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/guanyu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/140.jpg" width="91" height="91" alt="关羽">关羽</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/laofuzi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/139.jpg" width="91" height="91" alt="老夫子">老夫子</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/wuzetian.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/136.jpg" width="91" height="91" alt="武则天">武则天</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xiangyu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/135.jpg" width="91" height="91" alt="项羽">项羽</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/damo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/134.jpg" width="91" height="91" alt="达摩">达摩</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/direnjie.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/133.jpg" width="91" height="91" alt="狄仁杰">狄仁杰</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/makeboluo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/132.jpg" width="91" height="91" alt="马可波罗">马可波罗</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/libai.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/131.jpg" width="91" height="91" alt="李白">李白</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/gongbenwuzang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/130.jpg" width="91" height="91" alt="宫本武藏">宫本武藏</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/dianwei.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/129.jpg" width="91" height="91" alt="典韦">典韦</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/caocao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/128.jpg" width="91" height="91" alt="曹操">曹操</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhenji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/127.jpg" width="91" height="91" alt="甄姬">甄姬</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xiahoudun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/126.jpg" width="91" height="91" alt="夏侯惇">夏侯惇</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhouyv.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/124.jpg" width="91" height="91" alt="周瑜">周瑜</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lvbu.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/123.jpg" width="91" height="91" alt="吕布">吕布</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/miyue.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/121.jpg" width="91" height="91" alt="芈月">芈月</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/baiqi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/120.jpg" width="91" height="91" alt="白起">白起</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/bianque.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/119.jpg" width="91" height="91" alt="扁鹊">扁鹊</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunbin.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/118.jpg" width="91" height="91" alt="孙膑">孙膑</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhongwuyan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/117.jpg" width="91" height="91" alt="钟无艳">钟无艳</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/ake.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/116.jpg" width="91" height="91" alt="阿轲">阿轲</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/gaojianli.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/115.jpg" width="91" height="91" alt="高渐离">高渐离</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/liushan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/114.jpg" width="91" height="91" alt="刘禅">刘禅</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhuangzhou.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/113.jpg" width="91" height="91" alt="庄周">庄周</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lubanqihao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/112.jpg" width="91" height="91" alt="鲁班七号">鲁班七号</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/sunshangxiang.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/111.jpg" width="91" height="91" alt="孙尚香">孙尚香</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/yingzheng.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/110.jpg" width="91" height="91" alt="嬴政">嬴政</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/daji.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/109.jpg" width="91" height="91" alt="妲己">妲己</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/mozi.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/108.jpg" width="91" height="91" alt="墨子">墨子</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/zhaoyun.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/107.jpg" width="91" height="91" alt="赵云">赵云</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/xiaoqiao.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/106.jpg" width="91" height="91" alt="小乔">小乔</a></li><li><a href="https://pvp.qq.com/web201605/herodetail/lianpo.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/105.jpg" width="91" height="91" alt="廉颇">廉颇</a></li></ul>
                     </div>
                 </div>
                 <!-- 英雄介绍 E -->
@@ -1195,27 +2467,26 @@ div.wegameLoginIcon {
         PTTSendClick('down-nav','down_detail','内页下载')
     }
 </script> 
-    <!-- Lib  -->
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/jquery-1.11.3.min.js.下载"></script>
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/lazyload.min.js.下载"></script>
-<!-- <script src="//game.gtimg.cn/images/js/milo/milo.js"></script> -->
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/milo.js.下载" crossorigin="anonymous"></script>
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/ide.gbk.min.js.下载"></script>
-<!-- Site header footer  -->
-<!-- <script src="ossweb-img/js/header.js"></script> -->
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/header.js.下载" charset="gbk"></script>
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/footer.js.下载" charset="gbk"></script><div><div id="gfooter" ams="15592/35033/m11738" age="17" ieg-logo="1" class="footer-wrap"><div class="foot"><div class="foot_cpright"><div class="foot_lefts"><a target="_blank" rel="noopener" href="https://ieg.tencent.com/" title="腾讯互动娱乐" class="foot_ieg_logo">腾讯互动娱乐</a><a target="_blank" href="https://timi.qq.com/" title="天美工作室群" class="foot_left logo1">timi</a></div><ul class="foot_links"><li class="link_map"><a target="_blank" rel="noopener" href="https://ieg.tencent.com/">腾讯互动娱乐</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://game.qq.com/contract.shtml">服务条款</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://game.qq.com/privacy_guide.shtml?ADTAG=gamepcbottom">隐私保护指引</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://game.qq.com/privacy_guide_children.shtml?ADTAG=gamepcbottom">儿童隐私保护指引</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://careers.tencent.com/">腾讯游戏招聘</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://kf.qq.com/">腾讯游戏客服</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://game.qq.com/web201910/introduce.html?ADTAG=gamepcbottom">游戏列表</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://www.tencent.com/zh-cn/partnership.html">广告服务及商务合作</a><span class="f_line">|</span></li><li class="copyright_zh"><a target="_blank" rel="noopener" href="https://www.tencent.com/law/mo_law.shtml?/law/copyright.htm">腾讯公司版权所有</a><a target="_blank" rel="noopener" href="https://game.qq.com/self-discipline_pact.shtml">网络游戏行业防沉迷自律公约</a></li><li class="copyright_en"><p class="copyright_txt">COPYRIGHT &#169; 1998 - 2024 TENCENT. ALL RIGHTS RESERVED.</p></li><li class="limit_age">本网络游戏适合17+岁的用户使用；为了您的健康，请合理控制游戏时间。</li><li class="copyright_public"><a target="_blank" rel="noopener" href="https://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" title="深圳市市场监督管理局企业主体身份公示"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/gswj.png" width="15" height="15" alt="深圳市市场监督管理局企业主体身份公示">工商网监电子标识 </a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://www.qq.com/culture.shtml">粤网文[2023]2882-203号</a><span class="f_line">|</span><a target="_blank" rel="noopener" href="https://game.qq.com/culture2.htm">（署）网出证（粤）字第054号</a></li><li class="copyright_private"><a rel="noopener" href="javascript:;"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/icplogo.png" width="13" height="15" alt="文网游备字[2016]M-CSG 0059 号">文网游备字[2016]M-CSG 0059 号</a><span class="f_line">|</span>新广出审[2017] 6712号<span class="f_line">|</span>ISBN 978-7-7979-8408-9</li></ul></div><div class="foot_bottom foot-tips fl">    	<p><em>抵制不良游戏</em><em>拒绝盗版游戏</em><em>注意自我保护</em><em>谨防受骗上当</em><em>适度游戏益脑</em><em>沉迷游戏伤身</em><em>合理安排时间</em><em>享受健康生活</em></p>        <p class="intro">《王者荣耀》全部背景故事发生于架空世界“王者大陆”中。相关人物、地理、事件均为艺术创作，并非正史。若因观看王者故事对相关历史人物产生兴趣，建议查阅正史记载。</p>    	<p class="report">全国文化市场统一举报电话：12318</p>    </div></div></div></div>
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/title.js.下载"></script><div class="ost_box ost_bg" id="ost_box" style="position: absolute;"><ul class="ost_inner ost_lsn"><li class="ost_logo ost_h40 ost_fl ost_bg"><a rel="noopener" href="https://game.qq.com/?ADTAG=IED.InnerCop.gameWeb.topNav" target="_blank" class="ost_blnk ost_hdn" title="腾讯游戏logo">腾讯游戏logo</a></li><li id="ost_g" class="ost_ad ost_h40 ost_fl"><img class="ost_nb" id="ost_go" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/9c229fff68c7e22054eb0323d77bb8f3.jpg" alt=""></li><li class="ost_total ost_ml10 ost_fr"><h3 class="ost_czsh ost_h40"><a rel="noopener" target="_blank" href="https://game.qq.com/web201910/jiazhang.html?ADTAG=gamepcbanner">成长守护平台</a></h3><h3 class="ost_title ost_h40" id="ost_t">腾讯游戏热门推荐<sup class="ost_icon_reddot" id="ost_rank_v"></sup></h3><div class="ost_pop" id="ost_p"></div></li><li class="ost_fr ost_log ost_bg" id="ost_log"></li></ul><div id="ost_d" class="ost_big"></div></div>
-<!-- AMS KV Link -->
-<div id="kvLinkSetDiv" style="display:none">
-<div class="kv-bg" style="background-image:url(//ossweb-img.qq.com/upload/webplat/info/yxzj/20240119/71072943028037.jpg);">
-	        		<a href="https://pvp.qq.com/coming/v2/skins/0119-syjxlb.shtml" onclick="PTTSendClick(&#39;btn&#39;,&#39;topkv&#39;,&#39;进入专题&#39;);" class="kv_link" title="查看详情" target="_blank">查看详情</a>
+    	<!-- Lib  -->
+	<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/jquery-1.11.3.min.js.下载"></script>
+	<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/lazyload.min.js.下载"></script>
+	<!-- <script src="//game.gtimg.cn/images/js/milo/milo.js"></script> -->
+	<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/milo.js.下载" crossorigin="anonymous"></script>
+	<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/ide.gbk.min.js.下载"></script>
+	<!-- Site header footer  -->
+	<!-- <script src="ossweb-img/js/header.js"></script> -->
+	<!-- <script src="//game.gtimg.cn/images/yxzj/web201706/js/footer.js" charset="gbk"></script> -->
+	<!-- AMS KV Link -->
+	<div id="kvLinkSetDiv" style="display:none">
+	<div class="kv-bg" style="background-image:url(//ossweb-img.qq.com/upload/webplat/info/yxzj/20240718/75977778810758.jpg);">
+	        		<a href="https://pvp.qq.com/coming/v2/skins/0719-mgdf.shtml?ADTAG=pvp.skin.pcgw" onclick="PTTSendClick(&#39;btn&#39;,&#39;topkv&#39;,&#39;进入专题&#39;);" class="kv_link" title="查看详情" target="_blank">查看详情</a>
         </div>
 
-</div>
+	</div>
     <!-- Page js -->
     <!-- 统计代码 -->
     <script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/ping_tcss_tgideas_https_min.js.下载"></script>
+    <script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/header.js.下载" charset="utf-8"></script>
     <script type="text/javascript">
         var setSite = {   //设置网站属性
             siteType: "os",
@@ -1343,7 +2614,7 @@ div.wegameLoginIcon {
 
 
     </script>
-    <script type="text/javascript" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/statistics.js.下载" charset="utf-8"></script><script src="https://lotus.ingame.qq.com/tdbank/report?r=0.7479353449371295&amp;params=HTjlrFFVNdMftAkj9KmTlJ3FAoDiPaJp|20240121|pvp.qq.com/web201605/herolist.shtml"></script>
+    <script type="text/javascript" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/statistics.js.下载" charset="utf-8"></script><script src="https://lotus.ingame.qq.com/tdbank/report?r=0.7597728295596973&amp;params=bVnNAi7YrIQi0gwOQxw61NL6i7WRYP8y|20240926|pvp.qq.com/web201605/herolist.shtml"></script>
 
 
-<script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/eas.js.下载"></script><script src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/index.js.下载"></script><iframe id="loginWxIframe" name="loginWxIframe" scrolling="no" frameborder="0" style="display: none;" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/logout_wx.html"></iframe><div id="loginDiv" style="height: 368px; width: 622px; border: 0px; padding: 0px; margin: 0px; position: absolute; z-index: 100002; top: 20%; left: 30%; display: none;"><iframe id="loginIframe" name="loginIframe" scrolling="no" width="100%" height="100%" frameborder="0" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/logout.html"></iframe></div><iframe id="loginWxIframe" name="loginWxIframe" scrolling="no" frameborder="0" style="display: none;" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/logout_wx(1).html"></iframe><iframe id="loginIframe" name="loginIframe" scrolling="no" frameborder="0" style="display: none;" src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/logout(1).html"></iframe><iframe src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/asyncCookie.html" id="loginStatusSyncFrame_ams_ame" width="0" height="0" miloloadstatus="2" style="border: 0px; display: none;"></iframe></body></html>
+</body><div style="all: initial;"><div id="__hcfy__" style="all: initial;"><template shadowrootmode="open"><style>#root{-webkit-text-size-adjust:100%;box-sizing:border-box;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.28581;text-transform:none;color:#182026;font-family:-apple-system,"BlinkMacSystemFont","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue","Icons16",sans-serif;touch-action:manipulation}#root>.bp5-portal{z-index:9999999999}</style><link rel="stylesheet" href="chrome-extension://oikmahiipjniocckomdccmplodldodja/normalize.css"><link rel="stylesheet" href="chrome-extension://oikmahiipjniocckomdccmplodldodja/blueprint.css"><link rel="stylesheet" href="chrome-extension://oikmahiipjniocckomdccmplodldodja/blueprint-select.css"><link rel="stylesheet" href="chrome-extension://oikmahiipjniocckomdccmplodldodja/cropper.css"><style>#translate-panel{background-color:#f6f7f9;display:flex;flex-direction:column;padding-bottom:8px}.bp5-dark #translate-panel{background-color:#252a31}#translate-panel .fixed{flex-shrink:0;margin-bottom:10px}#translate-panel .body{flex-grow:1;overflow:auto;overscroll-behavior:contain}#translate-panel .body::-webkit-scrollbar{width:8px;background-color:rgba(0,0,0,0);-webkit-border-radius:100px}#translate-panel .body::-webkit-scrollbar:hover{background-color:rgba(0,0,0,.09)}#translate-panel .body::-webkit-scrollbar-thumb:vertical{background:rgba(0,0,0,.5);-webkit-border-radius:100px}#translate-panel .body::-webkit-scrollbar-thumb:vertical:active{background:rgba(0,0,0,.61);-webkit-border-radius:100px}#translate-panel.size-small,#translate-panel.size-small h6.bp5-heading,#translate-panel.size-small .bp5-control.bp5-large,#translate-panel.size-small textarea.bp5-input.bp5-small{font-size:14px}#translate-panel.size-small .phonetic-item,#translate-panel.size-small .quick-settings a{font-size:12px}#translate-panel.size-middle,#translate-panel.size-middle h6.bp5-heading,#translate-panel.size-middle .bp5-control.bp5-large,#translate-panel.size-middle textarea.bp5-input{font-size:18px}#translate-panel.size-middle .phonetic-item,#translate-panel.size-middle .quick-settings a{font-size:14px}#translate-panel.size-large,#translate-panel.size-large h6.bp5-heading,#translate-panel.size-large .bp5-control.bp5-large,#translate-panel.size-large textarea.bp5-input.bp5-large{font-size:22px}#translate-panel.size-large .source,#translate-panel.size-large .phonetic-item,#translate-panel.size-large .quick-settings a{font-size:18px}#translate-panel .bp5-button.bp5-small,#translate-panel .bp5-small .bp5-button{min-height:20px;min-width:20px}#translate-panel .header{display:flex;align-items:center;padding:4px 6px 4px 10px;border-bottom:1px solid #d1d1d1}.bp5-dark #translate-panel .header{border-bottom-color:rgba(17,20,24,.4)}#translate-panel .header .drag-block{min-width:5px;flex-shrink:0;flex-grow:1;align-self:stretch}#translate-panel .header .left{flex-shrink:0;display:flex}#translate-panel .header .right{flex-shrink:0;display:flex;align-items:center}#translate-panel .header .right .bp5-icon-arrow-right{flex-shrink:0;margin:0 5px}#translate-panel .header .right>.bp5-button{flex-shrink:0;margin:0 1px}#translate-panel .header .right>.bp5-button:last-child{margin-right:0}#translate-panel .quick-settings{padding:4px 9px;margin:0 1px}#translate-panel .quick-settings>div{margin-bottom:5px}#translate-panel .quick-settings .bp5-control{margin-bottom:0}#translate-panel .query-text{position:relative;padding:10px 10px 2px 10px}#translate-panel .query-text textarea.bp5-input{min-height:44px;font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";overscroll-behavior:contain}#translate-panel .query-text .translate-btn{position:absolute;opacity:.6}#translate-panel .query-text .translate-btn:hover{opacity:1}#translate-panel .body{padding:0 10px}#translate-panel .body .bp5-card:first-child{margin-top:1px}#translate-panel .body .bp5-card:last-child{margin-bottom:1px}#translate-panel .body .no-api{margin:20px 0}.result-block{margin:8px 0;padding:2px 5px}.result-block .bp5-button{visibility:hidden}.result-block .error .bp5-button,.result-block:hover .bp5-button{visibility:visible}.result-block .legend{display:flex;align-items:center;justify-content:space-between}.result-block .legend .legend-left{display:flex;align-items:center}.result-block .legend .api-ico,.result-block .legend .bp5-heading{flex-shrink:0;white-space:nowrap}.result-block .legend .api-ico{display:inline-block;width:14px;height:14px;background-size:contain;margin-right:3px}.result-block .legend .bp5-heading{margin-bottom:0;margin-right:10px}.result-block .legend .source{cursor:pointer;font-size:12px;display:inline-flex;align-items:center}.result-block .legend .source .source-text{overflow:hidden}.result-block .legend .source .bp5-icon{position:relative;top:-1px;margin-left:1px}.result-block .phonetic{display:flex;flex-wrap:wrap}.result-block .phonetic .phonetic-item{display:flex;align-items:center;font-size:12px}.result-block .phonetic .phonetic-item:not(:last-child){margin-right:12px}.result-block .common-result p{line-height:1.3;margin:2px 0;overflow-wrap:break-word}.result-block .common-result .dict a{text-decoration:underline}.result-block .error{font-size:12px;padding:5px 10px}.result-block .dict-pos{margin-right:5px}.external-translators{margin-bottom:3px;padding:0;display:flex;flex-wrap:wrap}.external-translators>div{margin:0 5px 5px 0}.quick-links a{margin:0 5px 5px 0}#popper-container{width:250px;max-width:100%;position:absolute;left:0;top:0;z-index:9999999998;touch-action:none;transition:opacity .2s;background-color:#f6f7f9}.bp5-dark #popper-container{background-color:#252a31}#popper-container.show{opacity:1;pointer-events:auto;-moz-user-select:auto;user-select:auto}#popper-container,#popper-container[data-popper-reference-hidden=true]{opacity:0;pointer-events:none;-moz-user-select:none;user-select:none}#popper-container .drag-block{cursor:-webkit-grab;cursor:grab}#popper-container.pin{position:fixed}#popper-container.pin .arrow{display:none}#popper-container .arrow,#popper-container .arrow::before{position:absolute;width:8px;height:8px;z-index:-1}#popper-container .arrow::before{content:"";transform:rotate(45deg);background:#f6f7f9}.bp5-dark #popper-container .arrow::before{background-color:#252a31}#popper-container .arrow{display:none}#popper-container.show[data-popper-placement]:not([data-popper-reference-hidden=true]) .arrow{display:block}#popper-container[data-popper-placement^=top] .arrow{bottom:-5px}#popper-container[data-popper-placement^=top] .arrow::before{border-right:1px solid #d1d1d1;border-bottom:1px solid #d1d1d1}#popper-container[data-popper-placement^=bottom] .arrow{top:-5px}#popper-container[data-popper-placement^=bottom] .arrow::before{border-left:1px solid #d1d1d1;border-top:1px solid #d1d1d1}#popper-container[data-popper-placement^=left] .arrow{right:-5px}#popper-container[data-popper-placement^=left] .arrow::before{border-right:1px solid #d1d1d1;border-top:1px solid #d1d1d1}#popper-container[data-popper-placement^=right] .arrow{left:-5px}#popper-container[data-popper-placement^=right] .arrow::before{border-left:1px solid #d1d1d1;border-bottom:1px solid #d1d1d1}#translate-btn{display:none;position:absolute;z-index:9999999999;left:0;top:0}#translate-btn .bp5-button{padding:2px;min-width:0;min-height:0}#translate-btn .btn-icon{width:18px;height:18px;background-image:url(chrome-extension://oikmahiipjniocckomdccmplodldodja/logo.png);background-size:contain}.bp5-dark #translate-btn .btn-icon{background-image:url(chrome-extension://oikmahiipjniocckomdccmplodldodja/logowhite36.png)}#translate-btn.show{display:block}.translate-type-selector .bp5-label{display:inline}.translate-type-selector .bp5-radio{margin-bottom:0}#ocr-container{position:fixed;z-index:99999999999999;left:0;top:0;right:0;bottom:0}#ocr-container .toolbar{display:none;position:absolute;z-index:1}#ocr-container img{max-width:100%}#app{cursor:default}.switch-pin{flex-shrink:0;cursor:pointer}.switch-pin .bp5-icon-pin{transition:transform .2s,color .2s;transform:rotate(-45deg)}.pin .switch-pin .bp5-icon-pin{transform:rotate(-70deg)}.cut-btn{margin-left:2px}.app-toaster-container{position:fixed !important;z-index:9999999999 !important}.app-toaster-container .bp5-toast{min-width:auto}#web-trs-panel .app-toaster-container{padding-right:0;padding-left:0}#web-trs-panel .page-trs-form-group{margin:0 0 0 0;align-items:center}#web-trs-panel .page-trs-form-group>label{width:70px}</style><div id="root" dir="ltr"><div id="app"><div id="translate-btn"><button type="button" class="bp5-button"><span class="btn-icon"></span></button></div><div id="popper-container" class="bp5-elevation-4" style="width: 288.369px; transform: translate(0px, 0px);"><div id="translate-panel" class="size-small"><div class="fixed"><div class="header"><div class="left"><div class="switch-pin"><button type="button" class="bp5-button bp5-minimal bp5-small"><span aria-hidden="true" class="bp5-icon bp5-icon-pin"><svg data-icon="pin" height="14" role="img" viewBox="0 0 16 16" width="14"><path d="M9.41.92c-.51.51-.41 1.5.15 2.56L4.34 7.54C2.8 6.48 1.45 6.05.92 6.58l3.54 3.54-3.54 4.95 4.95-3.54 3.54 3.54c.53-.53.1-1.88-.96-3.42l4.06-5.22c1.06.56 2.04.66 2.55.15L9.41.92z" fill-rule="evenodd"></path></svg></span></button></div><button type="button" title="图片翻译" class="bp5-button bp5-minimal bp5-small"><span aria-hidden="true" class="bp5-icon bp5-icon-media"><svg data-icon="media" height="14" role="img" viewBox="0 0 16 16" width="14"><path d="M11.99 6.99c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm3-5h-14c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1zm-1 9l-5-3-1 2-3-4-3 5v-7h12v7z" fill-rule="evenodd"></path></svg></span></button><button type="button" title="语音翻译" class="bp5-button bp5-minimal bp5-small"><span class="bp5-icon"><svg version="1.1" id="Capa_1" width="14" height="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.9 490.9" xml:space="preserve"><g><g><path d="M245.5,322.9c53,0,96.2-43.2,96.2-96.2V96.2c0-53-43.2-96.2-96.2-96.2s-96.2,43.2-96.2,96.2v130.5 C149.3,279.8,192.5,322.9,245.5,322.9z M173.8,96.2c0-39.5,32.2-71.7,71.7-71.7s71.7,32.2,71.7,71.7v130.5 c0,39.5-32.2,71.7-71.7,71.7s-71.7-32.2-71.7-71.7V96.2z"></path><path d="M94.4,214.5c-6.8,0-12.3,5.5-12.3,12.3c0,85.9,66.7,156.6,151.1,162.8v76.7h-63.9c-6.8,0-12.3,5.5-12.3,12.3 s5.5,12.3,12.3,12.3h152.3c6.8,0,12.3-5.5,12.3-12.3s-5.5-12.3-12.3-12.3h-63.9v-76.7c84.4-6.3,151.1-76.9,151.1-162.8 c0-6.8-5.5-12.3-12.3-12.3s-12.3,5.5-12.3,12.3c0,76.6-62.3,138.9-138.9,138.9s-138.9-62.3-138.9-138.9 C106.6,220,101.2,214.5,94.4,214.5z"></path></g></g></svg></span></button></div><div class="drag-block" title="按住不放可以拖动"></div><div class="right"><button type="button" disabled="" title="添加到收藏夹" class="bp5-button bp5-disabled bp5-minimal bp5-small" tabindex="-1"><span aria-hidden="true" class="bp5-icon bp5-icon-star-empty"><svg data-icon="star-empty" height="14" role="img" viewBox="0 0 16 16" width="14"><path d="M16 6.11l-5.53-.84L8 0 5.53 5.27 0 6.11l4 4.1L3.06 16 8 13.27 12.94 16 12 10.21l4-4.1zM4.91 13.2l.59-3.62L3 7.02l3.45-.53L8 3.2l1.55 3.29 3.45.53-2.5 2.56.59 3.62L8 11.49 4.91 13.2z" fill-rule="evenodd"></path></svg></span></button><button type="button" class="bp5-button bp5-minimal bp5-small settings" title="快捷设置"><span aria-hidden="true" class="bp5-icon bp5-icon-cog"><svg data-icon="cog" height="14" role="img" viewBox="0 0 16 16" width="14"><path d="M15.19 6.39h-1.85c-.11-.37-.27-.71-.45-1.04l1.36-1.36c.31-.31.31-.82 0-1.13l-1.13-1.13a.803.803 0 00-1.13 0l-1.36 1.36c-.33-.17-.67-.33-1.04-.44V.79c0-.44-.36-.8-.8-.8h-1.6c-.44 0-.8.36-.8.8v1.86c-.39.12-.75.28-1.1.47l-1.3-1.3c-.3-.3-.79-.3-1.09 0L1.82 2.91c-.3.3-.3.79 0 1.09l1.3 1.3c-.2.34-.36.7-.48 1.09H.79c-.44 0-.8.36-.8.8v1.6c0 .44.36.8.8.8h1.85c.11.37.27.71.45 1.04l-1.36 1.36c-.31.31-.31.82 0 1.13l1.13 1.13c.31.31.82.31 1.13 0l1.36-1.36c.33.18.67.33 1.04.44v1.86c0 .44.36.8.8.8h1.6c.44 0 .8-.36.8-.8v-1.86c.39-.12.75-.28 1.1-.47l1.3 1.3c.3.3.79.3 1.09 0l1.09-1.09c.3-.3.3-.79 0-1.09l-1.3-1.3c.19-.35.36-.71.48-1.1h1.85c.44 0 .8-.36.8-.8v-1.6a.816.816 0 00-.81-.79zm-7.2 4.6c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill-rule="evenodd"></path></svg></span></button><button type="button" title="关闭(Esc)" class="bp5-button bp5-minimal bp5-small"><span aria-hidden="true" class="bp5-icon bp5-icon-cross"><svg data-icon="cross" height="18" role="img" viewBox="0 0 16 16" width="18"><path d="M9.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71L8 6.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71L8 9.41l3.29 3.29c.18.19.43.3.71.3a1.003 1.003 0 00.71-1.71L9.41 8z" fill-rule="evenodd"></path></svg></span></button></div></div><div class="bp5-collapse"><div class="bp5-collapse-body" aria-hidden="true"><div class="quick-settings bp5-card bp5-elevation-0"><div><span aria-controls="listbox-0" class="lang-select bp5-popover-target" aria-expanded="false" aria-haspopup="listbox" role="combobox"><button type="button" class="bp5-button bp5-small"><span class="bp5-button-text">自动检测</span><span aria-hidden="true" class="bp5-icon bp5-icon-caret-down"><svg data-icon="caret-down" height="16" role="img" viewBox="0 0 16 16" width="16"><path d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 00-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z" fill-rule="evenodd"></path></svg></span></button></span><span aria-hidden="true" class="bp5-icon bp5-icon-arrow-right" style="margin: 0px 10px;"><svg data-icon="arrow-right" height="12" role="img" viewBox="0 0 16 16" width="12"><path d="M14.7 7.29l-5-5a.965.965 0 00-.71-.3 1.003 1.003 0 00-.71 1.71l3.29 3.29H1.99c-.55 0-1 .45-1 1s.45 1 1 1h9.59l-3.29 3.29a1.003 1.003 0 001.42 1.42l5-5c.18-.18.29-.43.29-.71s-.12-.52-.3-.7z" fill-rule="evenodd"></path></svg></span><span aria-controls="listbox-1" class="lang-select bp5-popover-target" aria-expanded="false" aria-haspopup="listbox" role="combobox"><button type="button" class="bp5-button bp5-small"><span class="bp5-button-text">中文(简体)</span><span aria-hidden="true" class="bp5-icon bp5-icon-caret-down"><svg data-icon="caret-down" height="16" role="img" viewBox="0 0 16 16" width="16"><path d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 00-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z" fill-rule="evenodd"></path></svg></span></button></span></div><div><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>谷歌</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>DeepL(内置)</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>DeepL</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>ChatGPT</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>Claude</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>Gemini</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>硅基</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>混元</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>文心</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>智谱</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>豆包</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>通义</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>DeepSeek</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>零一</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>MiniMax</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>百川</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>Kimi</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>百度</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>百度(专业版)</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>腾讯</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>彩云</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>阿里</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>阿里(专业版)</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox" checked=""><span class="bp5-control-indicator"></span>有道</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>火山</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox" checked=""><span class="bp5-control-indicator"></span>必应词典</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>搜狗</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>Yandex</label></div><div><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>自动朗读</label><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>自动复制</label></div><div class="bp5-radio-group"><label class="bp5-control bp5-radio bp5-inline"><input name="Blueprint5.RadioGroup-0" type="radio" value="small" checked=""><span class="bp5-control-indicator"></span>小</label><label class="bp5-control bp5-radio bp5-inline"><input name="Blueprint5.RadioGroup-0" type="radio" value="middle"><span class="bp5-control-indicator"></span>中</label><label class="bp5-control bp5-radio bp5-inline"><input name="Blueprint5.RadioGroup-0" type="radio" value="large"><span class="bp5-control-indicator"></span>大</label></div><div><label class="bp5-control bp5-checkbox bp5-inline"><input type="checkbox"><span class="bp5-control-indicator"></span>显示文本框</label><label class="bp5-control bp5-checkbox bp5-inline" style="margin-right: 0px;"><input type="checkbox"><span class="bp5-control-indicator"></span>鼠标悬浮取词</label></div><a class="bp5-text-small">打开完整设置</a></div></div></div></div><div class="body"><p>请输入需要翻译的文本。</p></div></div><div class="arrow"></div></div><div id="web-trs-panel"></div></div></div></template></div></div></html>
