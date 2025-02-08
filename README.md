@@ -7,6 +7,22 @@
 - Gitee：<https://gitee.com/yansheng0083/hero-skin>
 - GitHub：<https://github.com/yansheng836/hero-skin>
 
+## 存在问题
+
+### 2025年2月8日 停用gitee仓库
+
+因为仓库太大了，而gitee有大小限制，不在存储。
+
+### 2025年2月8日 更新html，发现有英雄被删除
+
+发现有英雄被删除：成吉思汗，导致后面的英雄顺序发生了变化，重复下载了。
+
+补全：手动在“杨戬”后面加上了。
+
+```
+<li><a href="https://pvp.qq.com/web201605/herodetail/chengjisihan.shtml" target="_blank"><img src="./英雄资料列表页-英雄介绍-王者荣耀官方网站-腾讯游戏_files/177.jpg" width="91" height="91" alt="成吉思汗">成吉思汗</a></li>
+```
+
 ## 王者荣耀
 
 官网英雄介绍主页：<https://pvp.qq.com/web201605/herolist.shtml>
