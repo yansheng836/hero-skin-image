@@ -1,0 +1,65 @@
+name: Daily job (Beijing 00:10)
+
+on:
+  schedule:
+    # Runs at 00:10 Asia/Shanghai (Beijing) time -> 16:10 UTC previous day
+    - cron: '10 16 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '8' # 根据您的 jar 包需求修改版本，例如 '8', '11', '17', '21'
+          distribution: 'temurin' # 指定使用 Temurin 发行版（OpenJDK）
+          #cache: 'maven' # 如果您在 CI 中使用 Maven，可以添加缓存
+        
+      - name: Show current time (UTC)
+        run: date -u +"%Y-%m-%d %H:%M:%S UTC"
+
+      - name: Show current time (Asia/Shanghai)
+        run: |
+          TZ=Asia/Shanghai date +"%Y-%m-%d %H:%M:%S %Z"
+
+      - name: Run project daily script if exists
+        run: |
+          java -jar hero-skin-1.0.2-wzry.jar
+
+    # Commit all changed files to the repository
+      - name: Commit to the repo
+        run: |
+          echo 'Commit to the repo'
+          git config --global user.name "yansheng836/hero-skin-lol-image"
+          git config --global user.email "hero-skin-lol-image[bot]@yansheng836.github.io"
+          # 兼容git status中文乱码问题
+          git config --global core.quotepath false
+          # 配置 Git 自动处理换行符：git windows 有^M linux没有
+          # Windows 系统推荐设置：
+          # git config --global core.autocrlf true
+          # Linux/macOS 系统推荐设置
+          #git config --global core.autocrlf input
+          # 忽略行尾的回车
+          git config --global core.whitespace cr-at-eol
+  
+          git status
+          git add .
+          # Force the build to succeed, even if no files were changed
+  
+          #git commit -m 'Update generated files' || true
+          # 如果文件没有更新时
+          if [[ -n $(git status --porcelain) ]]; then
+              git commit -m 'Update generated files'
+              git push
+          else
+              echo '没改变，不提交'
+              #git commit --allow-empty -m 'Update generated files(no file change)'
+          fi
+
+          
+          
