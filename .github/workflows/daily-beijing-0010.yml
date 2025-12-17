@@ -35,8 +35,10 @@ jobs:
       - name: Commit to the repo
         run: |
           echo 'Commit to the repo'
-          git config --global user.name "yansheng836/hero-skin-lol-image"
-          git config --global user.email "hero-skin-lol-image[bot]@yansheng836.github.io"
+          #git config --global user.name "yansheng836/hero-skin-lol-image"
+          #git config --global user.email "hero-skin-lol-image[bot]@yansheng836.github.io"
+          git config --global user.name "yansheng836bot"
+          git config --global user.email "yansheng836bot@163.com"
           # 兼容git status中文乱码问题
           git config --global core.quotepath false
           # 配置 Git 自动处理换行符：git windows 有^M linux没有
