@@ -29,7 +29,8 @@ jobs:
 
       - name: Run project daily script if exists
         run: |
-          java -jar hero-skin-1.0.4-wzry.jar
+          #java -jar hero-skin-1.0.4-wzry.jar
+          sh ./run.sh
 
     # Commit all changed files to the repository
       - name: Commit to the repo
