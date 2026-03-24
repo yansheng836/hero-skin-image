@@ -57,7 +57,7 @@ jobs:
           #git commit -m 'Update generated files' || true
           # 如果文件没有更新时
           if [[ -n $(git status --porcelain) ]]; then
-              git commit -m 'Update generated files'
+              git commit -m "Update generated files on $(date +'%Y-%m-%d %H:%M:%S')"
               git push
           else
               echo '没改变，不提交'
