@@ -8558,11 +8558,42 @@
 			"wallpaperMobileskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/97300852fdc20771e547acf17fe5a925.jpg?imageMogr2/crop/727x1070/gravity/center"
 			]
+		},
+		{
+			"cname":"元流之子(刺客)",
+			"createTimeStr":"20260401",
+			"ename":583,
+			"heroType":"打野",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yuanliuzhizi_assassin.shtml",
+			"id":130,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/1b029d7a9af191d762b047027b586619.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/1b029d7a9af191d762b047027b586619.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/1b029d7a9af191d762b047027b586619.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"破局之识",
+			"skins":[
+				"破局之识"
+			],
+			"skinsIds":[],
+			"slogan":"在战斗中，自己告诉自己真理。",
+			"title":"破局之识",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/1b029d7a9af191d762b047027b586619.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/1b029d7a9af191d762b047027b586619.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
 		}
 	],
 	"phone-bigskin-images":"大屏手机图片1200*530",
 	"wallpaper-bigskin-images":"电脑壁纸1920*882",
-	"description":"该文件用于保存王者荣耀的英雄皮肤的相关信息，到目前为止，王者荣耀一共有129个英雄，889个皮肤（含伴生皮肤）。",
+	"description":"该文件用于保存王者荣耀的英雄皮肤的相关信息，到目前为止，王者荣耀一共有130个英雄，890个皮肤（含伴生皮肤）。",
 	"wallpaper-mobileskin-images":"手机壁纸727*1071",
 	"phone-smallskin-images":"头像67*67",
 	"phone-mobileskin-images":"小屏手机图片600*410"
