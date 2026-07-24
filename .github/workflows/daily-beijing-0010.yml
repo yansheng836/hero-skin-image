@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5.6
         with:
           java-version: '8' # 根据您的 jar 包需求修改版本，例如 '8', '11', '17', '21'
           distribution: 'temurin' # 指定使用 Temurin 发行版（OpenJDK）
@@ -29,7 +29,7 @@ jobs:
 
       - name: Run project daily script if exists
         run: |
-          #java -jar hero-skin-1.0.4-wzry.jar
+          #java -jar hero-skin-<max-version>-wzry.jar
           sh ./run.sh
 
     # Commit all changed files to the repository
