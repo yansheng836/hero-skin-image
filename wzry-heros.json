@@ -8706,11 +8706,42 @@
 			"wallpaperMobileskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/3f2ecfa22ae337321d3236e98fc874b1.jpg?imageMogr2/crop/727x1070/gravity/center"
 			]
+		},
+		{
+			"cname":"刀锋宝贝",
+			"createTimeStr":"20261117",
+			"ename":646,
+			"heroType":"打野",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/daofengbaobei.shtml",
+			"id":134,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"绝命锋影",
+			"skins":[
+				"绝命锋影"
+			],
+			"skinsIds":[],
+			"slogan":"刀锋，登场。",
+			"title":"绝命锋影",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
 		}
 	],
 	"phone-bigskin-images":"大屏手机图片1200*530",
 	"wallpaper-bigskin-images":"电脑壁纸1920*882",
-	"description":"该文件用于保存王者荣耀的英雄皮肤的相关信息，到目前为止，王者荣耀一共有133个英雄，897个皮肤（含伴生皮肤）。",
+	"description":"该文件用于保存王者荣耀的英雄皮肤的相关信息，到目前为止，王者荣耀一共有134个英雄，898个皮肤（含伴生皮肤）。",
 	"wallpaper-mobileskin-images":"手机壁纸727*1071",
 	"phone-smallskin-images":"头像67*67",
 	"phone-mobileskin-images":"小屏手机图片600*410"
