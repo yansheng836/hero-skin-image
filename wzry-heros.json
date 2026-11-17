@@ -8584,12 +8584,105 @@
 			]
 		},
 		{
+			"cname":"弗洛伦",
+			"createTimeStr":"20260205",
+			"ename":631,
+			"heroType":"对抗路",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/fuluolun.shtml",
+			"id":130,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fe0a932e1012ef5173ee0ceeb9f5a7b2.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fe0a932e1012ef5173ee0ceeb9f5a7b2.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fe0a932e1012ef5173ee0ceeb9f5a7b2.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"百花剑豪",
+			"skins":[
+				"百花剑豪"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"百花剑豪",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fe0a932e1012ef5173ee0ceeb9f5a7b2.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fe0a932e1012ef5173ee0ceeb9f5a7b2.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
+			"cname":"洛里昂",
+			"createTimeStr":"20260205",
+			"ename":635,
+			"heroType":"中路",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/luoliang.shtml",
+			"id":131,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ea69feb685e784dab3b99a4724d8e921.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ea69feb685e784dab3b99a4724d8e921.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ea69feb685e784dab3b99a4724d8e921.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"永夜之魇",
+			"skins":[
+				"永夜之魇"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"永夜之魇",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ea69feb685e784dab3b99a4724d8e921.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ea69feb685e784dab3b99a4724d8e921.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
+			"cname":"安奈特",
+			"createTimeStr":"20260205",
+			"ename":640,
+			"heroType":"辅助",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/annaite.shtml",
+			"id":132,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/d2575c64f29d0295143318fa9d1549ab.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/d2575c64f29d0295143318fa9d1549ab.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/d2575c64f29d0295143318fa9d1549ab.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"风之守护",
+			"skins":[
+				"风之守护"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"风之守护",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/d2575c64f29d0295143318fa9d1549ab.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/d2575c64f29d0295143318fa9d1549ab.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
 			"cname":"元流之子(刺客)",
 			"createTimeStr":"20260401",
 			"ename":583,
 			"heroType":"打野",
 			"heroUrl":"https://pvp.qq.com/web201605/herodetail/yuanliuzhizi_assassin.shtml",
-			"id":130,
+			"id":133,
 			"newType":null,
 			"phoneBigskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/1b029d7a9af191d762b047027b586619.jpg?imageMogr2/crop/1200x530/gravity/center"
@@ -8620,7 +8713,7 @@
 			"ename":549,
 			"heroType":"",
 			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xinmoliuer.shtml",
-			"id":131,
+			"id":134,
 			"newType":null,
 			"phoneBigskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/0c5519943de40de471e48220784486ef.jpg?imageMogr2/crop/1200x530/gravity/center"
@@ -8651,7 +8744,7 @@
 			"ename":547,
 			"heroType":"射手",
 			"heroUrl":"https://pvp.qq.com/web201605/herodetail/luyana.shtml",
-			"id":132,
+			"id":135,
 			"newType":null,
 			"phoneBigskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/25e7c82c46273bc9406eb73401ae76a4.jpg?imageMogr2/crop/1200x530/gravity/center"
@@ -8682,7 +8775,7 @@
 			"ename":138,
 			"heroType":"法师",
 			"heroUrl":"https://pvp.qq.com/web201605/herodetail/wangwei.shtml",
-			"id":133,
+			"id":136,
 			"newType":null,
 			"phoneBigskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/3f2ecfa22ae337321d3236e98fc874b1.jpg?imageMogr2/crop/1200x530/gravity/center"
@@ -8708,12 +8801,105 @@
 			]
 		},
 		{
+			"cname":"莉莉安",
+			"createTimeStr":"20261117",
+			"ename":630,
+			"heroType":"法师",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/lilian.shtml",
+			"id":137,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/16edbd1ddde12072fbe5b54a4ed58602.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/16edbd1ddde12072fbe5b54a4ed58602.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/16edbd1ddde12072fbe5b54a4ed58602.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"九尾",
+			"skins":[
+				"九尾"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"九尾",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/16edbd1ddde12072fbe5b54a4ed58602.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/16edbd1ddde12072fbe5b54a4ed58602.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
+			"cname":"绯泪",
+			"createTimeStr":"20261117",
+			"ename":632,
+			"heroType":"对抗路",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/feilei.shtml",
+			"id":138,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/5548f18928540f668cedcf7297b5fcb8.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/5548f18928540f668cedcf7297b5fcb8.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/5548f18928540f668cedcf7297b5fcb8.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"猩红之刺",
+			"skins":[
+				"猩红之刺"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"猩红之刺",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/5548f18928540f668cedcf7297b5fcb8.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/5548f18928540f668cedcf7297b5fcb8.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
+			"cname":"卡芬妮",
+			"createTimeStr":"20261117",
+			"ename":633,
+			"heroType":"射手",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/kafenni.shtml",
+			"id":139,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/e54ed3564930481cd8a3d761a5510226.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/e54ed3564930481cd8a3d761a5510226.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/e54ed3564930481cd8a3d761a5510226.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"幽蓝炮姬",
+			"skins":[
+				"幽蓝炮姬"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"幽蓝炮姬",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/e54ed3564930481cd8a3d761a5510226.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/e54ed3564930481cd8a3d761a5510226.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
 			"cname":"刀锋宝贝",
 			"createTimeStr":"20261117",
 			"ename":646,
 			"heroType":"打野",
 			"heroUrl":"https://pvp.qq.com/web201605/herodetail/daofengbaobei.shtml",
-			"id":134,
+			"id":140,
 			"newType":null,
 			"phoneBigskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/1200x530/gravity/center"
@@ -8737,11 +8923,104 @@
 			"wallpaperMobileskinUrl":[
 				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/ffab130dd394777445299c817dc3ebf7.jpg?imageMogr2/crop/727x1070/gravity/center"
 			]
+		},
+		{
+			"cname":"星葵",
+			"createTimeStr":"20261117",
+			"ename":648,
+			"heroType":"打野",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/xingkui.shtml",
+			"id":141,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/87c3b05accfb7ccc73c7615b2388c368.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/87c3b05accfb7ccc73c7615b2388c368.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/87c3b05accfb7ccc73c7615b2388c368.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"琉影龙痕",
+			"skins":[
+				"琉影龙痕"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"琉影龙痕",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/87c3b05accfb7ccc73c7615b2388c368.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/87c3b05accfb7ccc73c7615b2388c368.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
+			"cname":"皮皮",
+			"createTimeStr":"20261117",
+			"ename":649,
+			"heroType":"辅助",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/pipi.shtml",
+			"id":142,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fbbcea6c09a72ccb79930017b9231a79.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fbbcea6c09a72ccb79930017b9231a79.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fbbcea6c09a72ccb79930017b9231a79.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"飞毛球",
+			"skins":[
+				"飞毛球"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"飞毛球",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fbbcea6c09a72ccb79930017b9231a79.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/fbbcea6c09a72ccb79930017b9231a79.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
+		},
+		{
+			"cname":"索文",
+			"createTimeStr":"20261117",
+			"ename":652,
+			"heroType":"射手",
+			"heroUrl":"https://pvp.qq.com/web201605/herodetail/suowen.shtml",
+			"id":143,
+			"newType":null,
+			"phoneBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/a2948e19f0be9a1c56fe12fa8dc73d5d.jpg?imageMogr2/crop/1200x530/gravity/center"
+			],
+			"phoneMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/a2948e19f0be9a1c56fe12fa8dc73d5d.jpg?imageMogr2/crop/600x410/gravity/center"
+			],
+			"phoneSmallskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/a2948e19f0be9a1c56fe12fa8dc73d5d.jpg?imageMogr2/crop/67x67/gravity/center"
+			],
+			"skinName":"风之守护",
+			"skins":[
+				"风之守护"
+			],
+			"skinsIds":[],
+			"slogan":"",
+			"title":"风之守护",
+			"wallpaperBigskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/a2948e19f0be9a1c56fe12fa8dc73d5d.jpg?imageMogr2/crop/1920x882/gravity/center"
+			],
+			"wallpaperMobileskinUrl":[
+				"https://game-1255653016.file.myqcloud.com/manage/compress/custom_wzry_A1/a2948e19f0be9a1c56fe12fa8dc73d5d.jpg?imageMogr2/crop/727x1070/gravity/center"
+			]
 		}
 	],
 	"phone-bigskin-images":"大屏手机图片1200*530",
 	"wallpaper-bigskin-images":"电脑壁纸1920*882",
-	"description":"该文件用于保存王者荣耀的英雄皮肤的相关信息，到目前为止，王者荣耀一共有134个英雄，898个皮肤（含伴生皮肤）。",
+	"description":"该文件用于保存王者荣耀的英雄皮肤的相关信息，到目前为止，王者荣耀一共有143个英雄，907个皮肤（含伴生皮肤）。",
 	"wallpaper-mobileskin-images":"手机壁纸727*1071",
 	"phone-smallskin-images":"头像67*67",
 	"phone-mobileskin-images":"小屏手机图片600*410"
